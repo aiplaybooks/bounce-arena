@@ -21,3 +21,6 @@ Goal: week 1 (until ~2026-10-21) 5k followers + 250k views. Budget $0. Never ren
 ## Accounts / secrets
 IG @bouncearena.tv (IG Login token, expires ~2026-12-13 — refresh via `GET graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token` then `gh secret set IG_TOKEN`).
 FB Page Bounce Arena 1197361546796323, page token never expires. Local copies in `.secrets/` (gitignored, never print them).
+
+## Telegram chat (owner talks to a restricted Claude)
+Telegram -> Cloudflare Worker `worker/` (https://bounce-arena-bot.bouncearena.workers.dev, checks webhook secret + owner chat id) -> `repository_dispatch: telegram` -> `.github/workflows/telegram.yml` -> `src/tg_agent.py` runs `claude -p` (CLAUDE_CODE_OAUTH_TOKEN, owner's Pro plan) with ONLY: Read config/state/CLAUDE.md, Edit config/strategy.json, Write state/tg_action.json (post/preview triggers). No shell/web/code edits — by owner's choice (option A). History: state/tg_chat.json (last 20). Worker secrets: TG_TOKEN, GH_PAT (fine-grained, 90 days), WEBHOOK_SECRET. Redeploy: `cd worker && npx wrangler@4.42.0 deploy`.
