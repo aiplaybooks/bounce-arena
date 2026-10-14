@@ -39,7 +39,6 @@
   "winner": "Canada",
   "win_t": 17.61,
   "duration": 21.12,
-  "ig_id_error": "POST https://graph.instagram.com/v23.0/17841441565485131/media -> 400: {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AqW_tYeuZmW3plf_joQv04u\"}}",
   "fb_id": "1107064831937800",
   "posted_utc": "2026-10-14T21:02:03Z",
   "fb": {
