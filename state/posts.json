@@ -42,5 +42,48 @@
   "ig_id_error": "POST https://graph.instagram.com/v23.0/17841441565485131/media -> 400: {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AqW_tYeuZmW3plf_joQv04u\"}}",
   "fb_id": "1107064831937800",
   "posted_utc": "2026-10-14T21:02:03Z"
+ },
+ {
+  "id": "20261014-210603",
+  "mode": "escape",
+  "theme": "countries",
+  "teams": [
+   "USA",
+   "Canada",
+   "Ireland",
+   "Australia",
+   "Japan",
+   "UK",
+   "Poland"
+  ],
+  "colors": [
+   "#B45CFF",
+   "#FF3B5C",
+   "#FF8A2B",
+   "#3DFF8C",
+   "#2BE7FF",
+   "#FFD23F",
+   "#3C8CFF"
+  ],
+  "hook": "Champion Canada is back. Can anyone beat them?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Champion Canada is back. Can anyone beat them?\n\nDrop your country in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #physicssimulation",
+  "params": {
+   "rings": 5,
+   "gap_deg": 33.847040732300215,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 9302,
+  "key": "G",
+  "champ": "Canada",
+  "requested": false,
+  "winner": "UK",
+  "win_t": 27.11,
+  "duration": 30.62,
+  "ig_id": "18337121866276430",
+  "posted_utc": "2026-10-14T21:07:13Z"
  }
 ]
