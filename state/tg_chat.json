@@ -8,5 +8,10 @@
   "t": "2026-10-14 21:39",
   "u": "Merhaba! Kısaca kendini tanıt ve şu anki durumu özetle.",
   "a": "Merhaba! Ben Bounce Arena'nın otomasyon asistanıyım — strateji ayarlarını (config/strategy.json) düzenliyorum ve senin adına preview/post tetikleyebiliyorum.\n\nŞu anki durum (14 Ekim 21:11 UTC itibariyle):\n- Takipçi: IG 1 + FB 25 = 26 / 5000 hedef\n- İzlenme: 2 / 250.000 hedef\n- 2 post atılmış (ikisi de escape/countries formatı)\n\nÖnemli bir sorun var: IG tarafında yayınlama hatası alınmış — \"video_url is required\" hatası, yani IG'ye post atılamamış (FB'ye gitmiş görünüyor). Bu kod/publish tarafında bir hata, benim strategy.json ile düzeltebileceğim bir şey değil — bunu masaüstündeki Claude Code oturumuna söylemen gerekiyor, orada src/publish.py düzeltilmeli.\n\nBaşka bir şey ister misin (örneğin tema/format ağırlıklarını değiştirmek ya da preview denemek)?"
+ },
+ {
+  "t": "2026-10-14 21:48",
+  "u": "Şu an bu bot çalışıyor mu",
+  "a": "Şu an için durum şu (son özet 14 Ekim 21:11 UTC):\n\nWorkflow'lar (post 4x/gün, analytics 6 saatte bir) GitHub Actions'ta otomatik çalışıyor, yani \"bot\" dönüyor. Ama IG tarafında publish hatası var: \"video_url is required\" hatası nedeniyle IG'ye post gitmemiş. FB tarafı çalışıyor görünüyor (25 takipçi var).\n\nYani kısaca: bot çalışıyor ve otomatik post atmaya devam ediyor, ama IG yayınları başarısız oluyor — bu bir kod hatası, src/publish.py'de düzeltilmesi lazım. Onu masaüstündeki Claude Code'a söylemen gerekiyor, ben strategy.json ile bunu çözemem.\n\nİstersen şimdi bir preview denemesi tetikleyebilirim, görmek ister misin?"
  }
 ]
