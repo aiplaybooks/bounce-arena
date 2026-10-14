@@ -15,7 +15,8 @@ Goal: week 1 (until ~2026-10-21) 5k followers + 250k views. Budget $0. Never ren
 - `src/render.py` pygame -> ffmpeg 1080x1920@60. `src/audio.py` synthesized pentatonic bounce sounds (no licensed audio).
 - `src/publish.py` IG (graph.instagram.com, video_url from temp asset on public `media` release, deleted after) + FB Page `video_reels`. `src/run.py` one cycle.
 - `src/analytics.py` metrics, comment country requests -> `state/requests.json`, `state/summary.md`.
-- Workflows: `post.yml` (4 UTC slots), `analytics.yml` (every 6h).
+- Workflows: `post.yml` (4 UTC slots), `analytics.yml` (every 6h, then `src/tuner.py`: claude -p Sonnet retunes strategy.json, logs to `state/changelog.md`, Telegram note only when it changed something or flags `KOD:`).
+- Each post gets an auto first comment (`first_comment` in strategy) on IG+FB; publishes retry once.
 - `src/notify.py` Telegram @bounce_arena_bot -> owner (chat 1274408121): video per post + daily digest at 06:15 UTC.
 
 ## Accounts / secrets

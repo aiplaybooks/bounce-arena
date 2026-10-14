@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -53,11 +54,25 @@ def main():
                     ("fb_id", lambda: publish.fb_reel(mp4, job["caption"]))):
         if a.only and not net.startswith(a.only):
             continue
-        try:
-            job[net] = fn()
-        except Exception as e:  # one network failing must not block the other
-            traceback.print_exc()
-            job[net + "_error"] = str(e)[:300]
+        for attempt in (1, 2):  # one retry: transient Meta errors are common
+            try:
+                job[net] = fn()
+                job.pop(net + "_error", None)
+                break
+            except Exception as e:  # one network failing must not block the other
+                traceback.print_exc()
+                job[net + "_error"] = str(e)[:300]
+                if attempt == 1:
+                    time.sleep(30)
+    if job.get("first_comment"):
+        for net, fn in (("ig", publish.ig_comment), ("fb", publish.fb_comment)):
+            if job.get(net + "_id"):
+                time.sleep(5)
+                try:
+                    fn(job[net + "_id"], job["first_comment"])
+                except Exception as e:
+                    print(f"{net} first comment:", e)
+                    job[net + "_comment_error"] = str(e)[:200]
     log_post(job)
     report(job, mp4)
     if "ig_id" not in job and "fb_id" not in job:
@@ -88,7 +103,6 @@ def log_post(job):
     p = os.path.join(ROOT, "state", "posts.json")
     os.makedirs(os.path.dirname(p), exist_ok=True)
     posts = json.load(open(p, encoding="utf8")) if os.path.exists(p) else []
-    import time
     job["posted_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     posts.append(job)
     with open(p, "w", encoding="utf8") as f:

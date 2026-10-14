@@ -73,10 +73,11 @@ def make_job(force_mode=None, force_theme=None):
     seed = find_seed(mode, teams, params, fm["seconds"], rng)
     tags = st["tags_core"] + rng.sample(st["tags_rotating"], 2)
     caption = rng.choice(st["caption"]).format(hook=hook, request_line=request_line, tags=" ".join(tags))
+    first = rng.choice(st.get("first_comment") or [""]).format(a=teams[0], b=teams[1])
     return {
         "id": time.strftime("%Y%m%d-%H%M%S", time.gmtime()),
         "mode": mode, "theme": theme, "teams": teams, "colors": colors, "hook": hook,
-        "cta": rng.choice(st["cta"]), "caption": caption, "params": params, "seed": seed,
+        "cta": rng.choice(st["cta"]), "caption": caption, "first_comment": first, "params": params, "seed": seed,
         "key": rng.choice(st["music_keys"]), "champ": champ, "requested": request_line != "",
     }
 

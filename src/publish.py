@@ -62,3 +62,11 @@ def fb_reel(path, description):
         "upload_phase": "finish", "video_id": vid, "video_state": "PUBLISHED",
         "description": description, "access_token": tok}))
     return vid
+
+
+def ig_comment(media_id, message):
+    return _check(requests.post(f"{IG}/{media_id}/comments", data={"message": message, "access_token": os.environ["IG_TOKEN"]}))["id"]
+
+
+def fb_comment(video_id, message):
+    return _check(requests.post(f"{FB}/{video_id}/comments", data={"message": message, "access_token": os.environ["FB_PAGE_TOKEN"]}))["id"]
