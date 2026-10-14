@@ -18,5 +18,10 @@
   "t": "2026-10-14 21:49",
   "u": "İnstagrama post gitmiş,videoyu gördüm",
   "a": "Haklısın, kontrol ettim — ikinci post (saat 21:07, \"Champion Canada is back\" hook'u) IG'ye gitmiş, ig_id kayıtlı (18337121866276430). İlk post'ta (21:02, Australia hook'u) \"video_url is required\" hatası vardı ama o tekil bir hataydı, sonraki post düzelmiş görünüyor.\n\nYani şu an IG ve FB ikisi de çalışıyor. Güncel durum:\n- Takipçi: IG 1 + FB 25 = 26 / 5000\n- İzlenme: 2 / 250.000\n- 2 post atıldı, ikisi de escape/countries\n\nİlk post'taki hatayı yine de not ediyorum, tekrar ederse masaüstü Claude Code'a bakması gerekir ama şimdilik tek seferlik gibi duruyor. Başka bir şey ister misin?"
+ },
+ {
+  "t": "2026-10-14 21:51",
+  "u": "Analytics neden 6 saatte bir çalıştırıyorsun?",
+  "a": "6 saatte bir çalışması `.github/workflows/analytics.yml` içinde ayarlanmış bir zamanlama — benim strategy.json ile değiştirebileceğim bir şey değil, kod/workflow tarafı.\n\nMantığı muhtemelen şu: IG/FB metrikleri (görüntülenme, takipçi) kısa sürede çok değişmiyor, günde 4 kez post atılıyor ama her postun gerçek performansı (izlenme, beğeni) birkaç saat içinde oturuyor. 6 saatlik aralık hem güncel veri sağlıyor hem de gereksiz API çağrısı/log kirliliği yaratmıyor — ayrıca `state/summary.md` ve Telegram günlük özet (06:15 UTC) bu verilerle besleniyor.\n\nDaha sık (örneğin 1-2 saatte bir) çalışmasını istiyorsan bu da masaüstü Claude Code'da workflow dosyasının değiştirilmesini gerektirir, ben burada yapamam. İstersen iletebilirim ama kod değişikliği gerektiğini söylemiş olayım."
  }
 ]
