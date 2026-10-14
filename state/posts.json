@@ -41,7 +41,12 @@
   "duration": 21.12,
   "ig_id_error": "POST https://graph.instagram.com/v23.0/17841441565485131/media -> 400: {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AqW_tYeuZmW3plf_joQv04u\"}}",
   "fb_id": "1107064831937800",
-  "posted_utc": "2026-10-14T21:02:03Z"
+  "posted_utc": "2026-10-14T21:02:03Z",
+  "fb": {
+   "post_video_avg_time_watched": 0,
+   "blue_reels_play_count": 2,
+   "post_video_followers": 0
+  }
  },
  {
   "id": "20261014-210603",
@@ -84,6 +89,15 @@
   "win_t": 27.11,
   "duration": 30.62,
   "ig_id": "18337121866276430",
-  "posted_utc": "2026-10-14T21:07:13Z"
+  "posted_utc": "2026-10-14T21:07:13Z",
+  "ig": {
+   "views": 0,
+   "reach": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 0
+  }
  }
 ]
