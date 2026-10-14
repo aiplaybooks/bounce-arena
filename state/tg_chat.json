@@ -13,5 +13,10 @@
   "t": "2026-10-14 21:48",
   "u": "Şu an bu bot çalışıyor mu",
   "a": "Şu an için durum şu (son özet 14 Ekim 21:11 UTC):\n\nWorkflow'lar (post 4x/gün, analytics 6 saatte bir) GitHub Actions'ta otomatik çalışıyor, yani \"bot\" dönüyor. Ama IG tarafında publish hatası var: \"video_url is required\" hatası nedeniyle IG'ye post gitmemiş. FB tarafı çalışıyor görünüyor (25 takipçi var).\n\nYani kısaca: bot çalışıyor ve otomatik post atmaya devam ediyor, ama IG yayınları başarısız oluyor — bu bir kod hatası, src/publish.py'de düzeltilmesi lazım. Onu masaüstündeki Claude Code'a söylemen gerekiyor, ben strategy.json ile bunu çözemem.\n\nİstersen şimdi bir preview denemesi tetikleyebilirim, görmek ister misin?"
+ },
+ {
+  "t": "2026-10-14 21:49",
+  "u": "İnstagrama post gitmiş,videoyu gördüm",
+  "a": "Haklısın, kontrol ettim — ikinci post (saat 21:07, \"Champion Canada is back\" hook'u) IG'ye gitmiş, ig_id kayıtlı (18337121866276430). İlk post'ta (21:02, Australia hook'u) \"video_url is required\" hatası vardı ama o tekil bir hataydı, sonraki post düzelmiş görünüyor.\n\nYani şu an IG ve FB ikisi de çalışıyor. Güncel durum:\n- Takipçi: IG 1 + FB 25 = 26 / 5000\n- İzlenme: 2 / 250.000\n- 2 post atıldı, ikisi de escape/countries\n\nİlk post'taki hatayı yine de not ediyorum, tekrar ederse masaüstü Claude Code'a bakması gerekir ama şimdilik tek seferlik gibi duruyor. Başka bir şey ister misin?"
  }
 ]
