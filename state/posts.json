@@ -42,8 +42,8 @@
   "fb_id": "1107064831937800",
   "posted_utc": "2026-10-14T21:02:03Z",
   "fb": {
-   "post_video_avg_time_watched": 0,
-   "blue_reels_play_count": 2,
+   "post_video_avg_time_watched": 25481,
+   "blue_reels_play_count": 3,
    "post_video_followers": 0
   }
  },
@@ -90,13 +90,13 @@
   "ig_id": "18337121866276430",
   "posted_utc": "2026-10-14T21:07:13Z",
   "ig": {
-   "views": 0,
-   "reach": 0,
+   "views": 34,
+   "reach": 6,
    "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 0
+   "ig_reels_avg_watch_time": 8391
   }
  }
 ]

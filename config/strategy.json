@@ -1,7 +1,7 @@
 {
   "_note": "Claude tunes this file from state/summary.md. Weights are relative.",
   "formats": {
-    "escape": {"weight": 3, "teams": [5, 8], "rings": [4, 6], "gap_deg": [32, 42], "spin": [0.5, 1.5], "seconds": [20, 38]},
+    "escape": {"weight": 3, "teams": [5, 8], "rings": [3, 5], "gap_deg": [36, 46], "spin": [0.5, 1.5], "seconds": [18, 30]},
     "grow": {"weight": 2, "teams": [4, 6], "grow_step": [1.4, 2.0], "target_r": [115, 135], "seconds": [16, 32]}
   },
   "themes": {"countries": 4, "colors": 1},
