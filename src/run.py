@@ -44,6 +44,8 @@ def main():
     audio.build(events, job["duration"], wav, job["key"])
     render.render(sim, job, mp4, wav)
     if a.dry_run:
+        import notify
+        notify.video(mp4, f"👀 Önizleme (yayınlanmadı)\n{job['hook']}\n{job['mode']}/{job['theme']} · winner {job['winner']} · {job['duration']}s")
         return
     import publish
     thumb_ms = int(min(win_t * 0.5, 4.0) * 1000)

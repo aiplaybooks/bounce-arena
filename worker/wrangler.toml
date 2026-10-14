@@ -1,0 +1,8 @@
+name = "bounce-arena-bot"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+REPO = "aiplaybooks/bounce-arena"
+CHAT_ID = "1274408121"
+# secrets (wrangler secret put): TG_TOKEN, GH_PAT, WEBHOOK_SECRET
