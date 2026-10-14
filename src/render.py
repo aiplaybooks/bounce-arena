@@ -157,7 +157,7 @@ class Painter:
             p[3] += 900 * dt
             p[4] -= dt
             if p[4] > 0:
-                gfx.filled_circle(surf, int(p[0]), int(p[1]), max(1, int(7 * p[4])), p[5])
+                gfx.filled_circle(surf, int(p[0]), int(p[1]), max(2, int(13 * p[4])), p[5])
                 alive.append(p)
         self.particles = alive
         self.scoreboard(surf, standings)
