@@ -13,7 +13,7 @@ Goal: week 1 (until ~2026-10-21) 5k followers + 250k views. Budget $0. Never ren
 - `src/physics.py` deterministic sim (escape rings / grow); `race_stats` for cheap seed search.
 - `src/plan.py` picks format/theme/teams/hook/caption from strategy + comment requests + last champion.
 - `src/render.py` pygame -> ffmpeg 1080x1920@60. `src/audio.py` synthesized pentatonic bounce sounds (no licensed audio).
-- `src/publish.py` IG (graph.instagram.com, resumable upload) + FB Page `video_reels`. `src/run.py` one cycle.
+- `src/publish.py` IG (graph.instagram.com, video_url from temp asset on public `media` release, deleted after) + FB Page `video_reels`. `src/run.py` one cycle.
 - `src/analytics.py` metrics, comment country requests -> `state/requests.json`, `state/summary.md`.
 - Workflows: `post.yml` (4 UTC slots), `analytics.yml` (every 6h).
 - `src/notify.py` Telegram @bounce_arena_bot -> owner (chat 1274408121): video per post + daily digest at 06:15 UTC.
