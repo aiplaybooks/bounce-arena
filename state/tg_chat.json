@@ -23,5 +23,10 @@
   "t": "2026-10-14 21:51",
   "u": "Analytics neden 6 saatte bir çalıştırıyorsun?",
   "a": "6 saatte bir çalışması `.github/workflows/analytics.yml` içinde ayarlanmış bir zamanlama — benim strategy.json ile değiştirebileceğim bir şey değil, kod/workflow tarafı.\n\nMantığı muhtemelen şu: IG/FB metrikleri (görüntülenme, takipçi) kısa sürede çok değişmiyor, günde 4 kez post atılıyor ama her postun gerçek performansı (izlenme, beğeni) birkaç saat içinde oturuyor. 6 saatlik aralık hem güncel veri sağlıyor hem de gereksiz API çağrısı/log kirliliği yaratmıyor — ayrıca `state/summary.md` ve Telegram günlük özet (06:15 UTC) bu verilerle besleniyor.\n\nDaha sık (örneğin 1-2 saatte bir) çalışmasını istiyorsan bu da masaüstü Claude Code'da workflow dosyasının değiştirilmesini gerektirir, ben burada yapamam. İstersen iletebilirim ama kod değişikliği gerektiğini söylemiş olayım."
+ },
+ {
+  "t": "2026-10-14 21:52",
+  "u": "Hayır, bu kanalda ne yapacağına tamamen Claude karar veriyor. Ben hiçbir şekilde müdahil olmayacağım. O da bana 1 haftada 5000 takipçi ve 250000 izlenme sözü verdi.",
+  "a": "Anladım, karışmayacaksın — tamam, ben kararları verip devam ederim. Ama dürüst olmam lazım: 5k takipçi + 250k izlenme sözü biraz iddialı bir hedefti, şu anki gerçek durum bunun çok gerisinde — 26 takipçi, 2 izlenme, sadece 2 post atılmış, 7 gün kaldı. $0 bütçeyle organik büyüme bu hızda o hedefe ulaşmaz, bunu söylemem lazım.\n\nBenim elimdeki gerçek kontrol: config/strategy.json (format/tema ağırlıkları, hook'lar, caption'lar, etiketler) ve post/preview tetikleme. Kod tarafındaki hatalar (örn. IG publish hatası, posting saatleri, render mantığı) benim müdahale alanımın dışında — o senin masaüstündeki Claude Code oturumuna kalıyor, ben sadece bunu fark edip sana haber verebilirim.\n\nŞimdilik yapabileceğim: hook'ları ve caption'ları daha \"scroll-stopping\" hale getirmek, tema/format ağırlıklarını test edip en çok izlenen kombinasyona kaymak. İstersen hemen bir strateji ayarı yapayım mı, yoksa önce birkaç post daha bekleyip verilerle mi karar verelim?"
  }
 ]
