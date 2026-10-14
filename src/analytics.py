@@ -112,6 +112,9 @@ def main():
     with open(os.path.join(ROOT, "state", "summary.md"), "w", encoding="utf8") as f:
         f.write("\n".join(lines) + "\n")
     print("\n".join(lines[:2]))
+    if time.gmtime().tm_hour == 6:  # one Telegram digest per day (06:15 UTC run)
+        import notify
+        notify.text("\n".join(lines))
 
 
 if __name__ == "__main__":

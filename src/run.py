@@ -57,8 +57,29 @@ def main():
             traceback.print_exc()
             job[net + "_error"] = str(e)[:300]
     log_post(job)
+    report(job, mp4)
     if "ig_id" not in job and "fb_id" not in job:
         sys.exit("both publishes failed")
+
+
+def report(job, mp4):
+    import notify
+    import publish
+    import requests
+    lines = [f"🎬 {job['hook']}", f"{job['mode']}/{job['theme']} · winner {job['winner']} · {job['duration']}s"]
+    if job.get("ig_id"):
+        try:
+            link = requests.get(f"{publish.IG}/{job['ig_id']}", params={"fields": "permalink", "access_token": os.environ["IG_TOKEN"]}, timeout=20).json().get("permalink")
+        except Exception:
+            link = None
+        lines.append(f"IG ✅ {link or job['ig_id']}")
+    if job.get("fb_id"):
+        lines.append(f"FB ✅ https://www.facebook.com/reel/{job['fb_id']}")
+    for net in ("ig_id", "fb_id"):
+        if job.get(net + "_error"):
+            lines.append(f"{net[:2].upper()} ❌ {job[net + '_error'][:200]}")
+    lines += ["", job["caption"]]
+    notify.video(mp4, "\n".join(lines))
 
 
 def log_post(job):
