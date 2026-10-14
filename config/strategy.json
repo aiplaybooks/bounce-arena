@@ -14,6 +14,8 @@
       "Which country escapes first?",
       "Only one gets out first. Pick now",
       "Pick your country before it's too late",
+      "Wait for the last gap... it's brutal",
+      "99% pick wrong. Can you call it?",
       "{a} vs {b}... who escapes first?",
       "Champion {champ} is back. Can anyone beat them?"
     ],
@@ -21,11 +23,13 @@
       "Every bounce makes it bigger. Who wins?",
       "First to fill the arena wins",
       "Pick one. It grows every bounce",
+      "Watch till the last bounce. It's close",
+      "This one comes down to the final hit",
       "{a} vs {b}... who grows fastest?",
       "Champion {champ} is back. Can anyone beat them?"
     ]
   },
-  "cta": ["Follow for the rematch", "Winner returns tomorrow", "Comment who races next"],
+  "cta": ["Follow for the rematch", "Winner returns tomorrow", "Comment who races next", "Follow before the next one drops"],
   "caption": [
     "{hook} 👀\n\nComment your pick BEFORE the end 👇{request_line}\nThe winner returns in the next battle — follow so you don't miss it.\n\n{tags}",
     "{hook}\n\nDrop your country in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}"
