@@ -1,0 +1,22 @@
+# Bounce Arena — autonomous IG/FB Reels channel
+
+Owner talks Turkish; reply in Turkish. Content is English (US/UK/CA/AU).
+Goal: week 1 (until ~2026-10-21) 5k followers + 250k views. Budget $0. Never render video on the owner's PC — rendering runs in GitHub Actions.
+
+## Token-saving rules
+- Start a session by reading ONLY `state/summary.md` (written by analytics every 6h). Do not reread chat history or the whole codebase.
+- Tune behaviour by editing `config/strategy.json` (format/theme weights, hooks, captions, tags). Code changes only when the summary shows a real problem.
+- Test narrowly: `gh workflow run post -f preview=true` (3 PNG stills) or `-f dry_run=true` (mp4 artifact, no publish). Never full-run to test.
+- Pull state before editing: `git pull`. Bot commits to `state/` after every run.
+
+## Layout
+- `src/physics.py` deterministic sim (escape rings / grow); `race_stats` for cheap seed search.
+- `src/plan.py` picks format/theme/teams/hook/caption from strategy + comment requests + last champion.
+- `src/render.py` pygame -> ffmpeg 1080x1920@60. `src/audio.py` synthesized pentatonic bounce sounds (no licensed audio).
+- `src/publish.py` IG (graph.instagram.com, resumable upload) + FB Page `video_reels`. `src/run.py` one cycle.
+- `src/analytics.py` metrics, comment country requests -> `state/requests.json`, `state/summary.md`.
+- Workflows: `post.yml` (4 UTC slots), `analytics.yml` (every 6h).
+
+## Accounts / secrets
+IG @bouncearena.tv (IG Login token, expires ~2026-12-13 — refresh via `GET graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token` then `gh secret set IG_TOKEN`).
+FB Page Bounce Arena 1197361546796323, page token never expires. Local copies in `.secrets/` (gitignored, never print them).

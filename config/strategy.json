@@ -1,0 +1,36 @@
+{
+  "_note": "Claude tunes this file from state/summary.md. Weights are relative.",
+  "formats": {
+    "escape": {"weight": 3, "teams": [5, 8], "rings": [4, 6], "gap_deg": [32, 42], "spin": [0.5, 1.5], "seconds": [20, 38]},
+    "grow": {"weight": 2, "teams": [4, 6], "grow_step": [1.4, 2.0], "target_r": [115, 135], "seconds": [16, 32]}
+  },
+  "themes": {"countries": 4, "colors": 1},
+  "countries_core": ["USA", "UK", "Canada", "Australia"],
+  "countries_extra": ["Germany", "Brazil", "Mexico", "India", "Japan", "France", "Italy", "Spain", "Ireland", "New Zealand", "Philippines", "South Korea", "Nigeria", "Turkey", "Poland", "Sweden"],
+  "colors": ["Red", "Blue", "Green", "Yellow", "Purple", "Orange", "Cyan", "Pink"],
+  "champion_rematch_prob": 0.5,
+  "hooks": {
+    "escape": [
+      "Which country escapes first?",
+      "Only one gets out first. Pick now",
+      "Pick your country before it's too late",
+      "{a} vs {b}... who escapes first?",
+      "Champion {champ} is back. Can anyone beat them?"
+    ],
+    "grow": [
+      "Every bounce makes it bigger. Who wins?",
+      "First to fill the arena wins",
+      "Pick one. It grows every bounce",
+      "{a} vs {b}... who grows fastest?",
+      "Champion {champ} is back. Can anyone beat them?"
+    ]
+  },
+  "cta": ["Follow for the rematch", "Winner returns tomorrow", "Comment who races next"],
+  "caption": [
+    "{hook} 👀\n\nComment your pick BEFORE the end 👇{request_line}\nThe winner returns in the next battle — follow so you don't miss it.\n\n{tags}",
+    "{hook}\n\nDrop your country in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}"
+  ],
+  "tags_core": ["#satisfying", "#physics", "#simulation"],
+  "tags_rotating": ["#oddlysatisfying", "#marblerace", "#satisfyingvideo", "#bouncingball", "#countryballs", "#physicssimulation", "#reels", "#asmr"],
+  "music_keys": ["C", "D", "E", "G", "A"]
+}

@@ -1,0 +1,24 @@
+name: analytics
+on:
+  schedule:
+    - cron: "15 0,6,12,18 * * *"
+  workflow_dispatch:
+concurrency: {group: state, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests==2.32.3
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python src/analytics.py
+      - run: |
+          git config user.name "bounce-bot" && git config user.email "bot@users.noreply.github.com"
+          git add state && (git diff --cached --quiet || (git commit -qm "state: analytics" && git pull -q --rebase && git push -q))
