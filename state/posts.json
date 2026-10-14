@@ -98,5 +98,48 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 8391
   }
+ },
+ {
+  "id": "20261014-225544",
+  "mode": "escape",
+  "theme": "countries",
+  "teams": [
+   "Canada",
+   "Turkey",
+   "UK",
+   "USA",
+   "Australia",
+   "Ireland"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#FF5CD1",
+   "#3C8CFF",
+   "#2BE7FF",
+   "#FF3B5C",
+   "#3DFF8C"
+  ],
+  "hook": "99% pick wrong. Can you call it?",
+  "cta": "Follow for the rematch",
+  "caption": "99% pick wrong. Can you call it? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #reels #countryballs",
+  "first_comment": "Comment your country and it races next 🏁",
+  "params": {
+   "rings": 4,
+   "gap_deg": 40.441286736167214,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 994262,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "USA",
+  "win_t": 18.33,
+  "duration": 21.83,
+  "ig_id": "18091855292689577",
+  "fb_id": "1574886487742298",
+  "posted_utc": "2026-10-14T22:57:16Z"
  }
 ]
