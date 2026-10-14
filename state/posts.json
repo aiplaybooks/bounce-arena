@@ -1,51 +1,5 @@
 [
  {
-  "id": "20261014-205850",
-  "mode": "escape",
-  "theme": "countries",
-  "teams": [
-   "UK",
-   "Australia",
-   "USA",
-   "France",
-   "Spain",
-   "Mexico",
-   "Sweden",
-   "Canada"
-  ],
-  "colors": [
-   "#3C8CFF",
-   "#3DFF8C",
-   "#FF5CD1",
-   "#2BE7FF",
-   "#FF8A2B",
-   "#FFD23F",
-   "#B45CFF",
-   "#FF3B5C"
-  ],
-  "hook": "UK vs Australia... who escapes first?",
-  "cta": "Follow for the rematch",
-  "caption": "UK vs Australia... who escapes first?\n\nDrop your country in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #asmr",
-  "params": {
-   "rings": 4,
-   "gap_deg": 41.49565907270386,
-   "spin": [
-    0.5,
-    1.5
-   ]
-  },
-  "seed": 785886,
-  "key": "D",
-  "champ": null,
-  "requested": false,
-  "winner": "Australia",
-  "win_t": 20.97,
-  "duration": 24.48,
-  "ig_id_error": "POST https://graph.instagram.com/v23.0/%EF%BB%BF17841441565485131/media -> 400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AZAvB-9MY-bAH_5N9Ck7-Cx\"}}",
-  "fb_id_error": "POST https://graph.facebook.com/v23.0/%EF%BB%BF1197361546796323/video_reels -> 400: {\"error\":{\"message\":\"Unsupported post request. Object with ID '\\ufeff1197361546796323' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API docume",
-  "posted_utc": "2026-10-14T20:59:14Z"
- },
- {
   "id": "20261014-210125",
   "mode": "escape",
   "theme": "countries",

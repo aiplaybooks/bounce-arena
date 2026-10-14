@@ -25,6 +25,7 @@ def main():
     ap.add_argument("--preview", action="store_true", help="only write 3 PNG stills, no video")
     ap.add_argument("--mode")
     ap.add_argument("--theme")
+    ap.add_argument("--only", choices=["ig", "fb"], help="publish to one network")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
     job = plan.make_job(a.mode, a.theme)
@@ -48,6 +49,8 @@ def main():
     thumb_ms = int(min(win_t * 0.5, 4.0) * 1000)
     for net, fn in (("ig_id", lambda: publish.ig_reel(mp4, job["caption"], thumb_ms)),
                     ("fb_id", lambda: publish.fb_reel(mp4, job["caption"]))):
+        if a.only and not net.startswith(a.only):
+            continue
         try:
             job[net] = fn()
         except Exception as e:  # one network failing must not block the other

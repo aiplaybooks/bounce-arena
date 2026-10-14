@@ -12,6 +12,7 @@ on:
       preview: {type: boolean, default: false, description: "3 PNG stills only"}
       mode: {type: string, default: "", description: "escape|grow (empty = strategy)"}
       theme: {type: string, default: "", description: "countries|colors (empty = strategy)"}
+      only: {type: string, default: "", description: "ig|fb (empty = both)"}
 concurrency: {group: state, cancel-in-progress: false}
 permissions: {contents: write}
 jobs:
@@ -30,12 +31,14 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "${{ inputs.preview }}" = "true" ]; then ARGS="$ARGS --preview"; fi
           if [ -n "${{ inputs.mode }}" ]; then ARGS="$ARGS --mode ${{ inputs.mode }}"; fi
           if [ -n "${{ inputs.theme }}" ]; then ARGS="$ARGS --theme ${{ inputs.theme }}"; fi
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
           python src/run.py $ARGS
       - uses: actions/upload-artifact@v4
         if: always()
