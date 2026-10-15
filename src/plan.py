@@ -65,6 +65,20 @@ def make_job(force_mode=None, force_theme=None):
         colors = PALETTE[:]
         rng.shuffle(colors)
         colors = colors[:n]
+    elif theme in st.get("pools", {}):
+        pool = st["pools"][theme]["names"]
+        last = next((p for p in reversed(posts) if p.get("theme") == theme and p.get("winner")), None)
+        picks = []
+        if last and last["winner"] in pool and rng.random() < st["champion_rematch_prob"]:
+            champ = last["winner"]
+            picks.append(champ)
+        rest = [x for x in pool if x not in picks]
+        rng.shuffle(rest)
+        teams = (picks + rest)[:n]
+        rng.shuffle(teams)
+        colors = PALETTE[:]
+        rng.shuffle(colors)
+        colors = colors[:n]
     else:
         idx = list(range(len(st["colors"])))
         rng.shuffle(idx)
@@ -72,7 +86,9 @@ def make_job(force_mode=None, force_theme=None):
         teams = [st["colors"][i] for i in idx]
         colors = [PALETTE[i] for i in idx]
     hooks = [h for h in st["hooks"][mode] if ("{champ}" in h) == bool(champ)]
-    if theme != "countries":
+    if theme in st.get("pools", {}):
+        hooks = [h.replace("country", st["pools"][theme]["noun"]).replace("countries", st["pools"][theme]["noun"] + "s") for h in hooks]
+    elif theme != "countries":
         hooks = [h.replace("country", "color") for h in hooks]
     hook = rng.choice(hooks).format(a=teams[0], b=teams[1], champ=champ)
     params = {}

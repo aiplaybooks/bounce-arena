@@ -13,7 +13,7 @@ on:
       dry_run: {type: boolean, default: true, description: "render only, do not publish"}
       preview: {type: boolean, default: false, description: "3 PNG stills only"}
       mode: {type: string, default: "", description: "escape|grow (empty = strategy)"}
-      theme: {type: string, default: "", description: "countries|colors (empty = strategy)"}
+      theme: {type: string, default: "", description: "theme name from strategy (empty = strategy)"}
       only: {type: string, default: "", description: "ig|fb (empty = both)"}
 concurrency: {group: state, cancel-in-progress: false}
 permissions: {contents: write}

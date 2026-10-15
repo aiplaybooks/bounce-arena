@@ -1,13 +1,91 @@
 {
   "_note": "Claude tunes this file from state/summary.md. Weights are relative.",
   "formats": {
-    "escape": {"weight": 3, "teams": [5, 8], "rings": [3, 5], "gap_deg": [40, 50], "spin": [0.5, 1.5], "seconds": [16, 26]},
-    "grow": {"weight": 2, "teams": [4, 6], "grow_step": [1.4, 2.0], "target_r": [115, 135], "seconds": [16, 32]}
+    "escape": {
+      "weight": 3,
+      "teams": [
+        5,
+        8
+      ],
+      "rings": [
+        3,
+        5
+      ],
+      "gap_deg": [
+        40,
+        50
+      ],
+      "spin": [
+        0.5,
+        1.5
+      ],
+      "seconds": [
+        16,
+        26
+      ]
+    },
+    "grow": {
+      "weight": 2,
+      "teams": [
+        4,
+        6
+      ],
+      "grow_step": [
+        1.4,
+        2.0
+      ],
+      "target_r": [
+        115,
+        135
+      ],
+      "seconds": [
+        16,
+        32
+      ]
+    }
   },
-  "themes": {"countries": 4, "colors": 1},
-  "countries_core": ["USA", "UK", "Canada", "Australia"],
-  "countries_extra": ["Germany", "Brazil", "Mexico", "India", "Japan", "France", "Italy", "Spain", "Ireland", "New Zealand", "Philippines", "South Korea", "Nigeria", "Turkey", "Poland", "Sweden"],
-  "colors": ["Red", "Blue", "Green", "Yellow", "Purple", "Orange", "Cyan", "Pink"],
+  "themes": {
+    "countries": 3,
+    "colors": 0,
+    "singers": 3,
+    "footballers": 3,
+    "billionaires": 2,
+    "brands": 3
+  },
+  "countries_core": [
+    "USA",
+    "UK",
+    "Canada",
+    "Australia"
+  ],
+  "countries_extra": [
+    "Germany",
+    "Brazil",
+    "Mexico",
+    "India",
+    "Japan",
+    "France",
+    "Italy",
+    "Spain",
+    "Ireland",
+    "New Zealand",
+    "Philippines",
+    "South Korea",
+    "Nigeria",
+    "Turkey",
+    "Poland",
+    "Sweden"
+  ],
+  "colors": [
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Purple",
+    "Orange",
+    "Cyan",
+    "Pink"
+  ],
   "champion_rematch_prob": 0.5,
   "hooks": {
     "escape": [
@@ -30,18 +108,122 @@
       "Champion {champ} is back. Can anyone beat them?"
     ]
   },
-  "cta": ["Follow for the rematch", "Winner returns tomorrow", "Comment who races next", "Follow before the next one drops"],
+  "cta": [
+    "Follow for the rematch",
+    "Winner returns tomorrow",
+    "Comment who races next",
+    "Follow before the next one drops"
+  ],
   "caption": [
     "{hook} 👀\n\nComment your pick BEFORE the end 👇{request_line}\nThe winner returns in the next battle — follow so you don't miss it.\n\n{tags}",
-    "{hook}\n\nDrop your country in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}"
+    "{hook}\n\nDrop your country in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}",
+    "{hook}\n\nComment who you'd bet on and we'll race them next 🏁{request_line}\nNew physics battle every day.\n\n{tags}"
   ],
   "first_comment": [
     "Who did you pick? Be honest 👇",
     "{a} or {b}? Wrong answers only 😅",
     "Comment your country and it races next 🏁",
-    "Did you call it? 👀 Reply with your pick"
+    "Did you call it? 👀 Reply with your pick",
+    "Comment a name and it races next 🏁"
   ],
-  "tags_core": ["#satisfying", "#physics", "#simulation"],
-  "tags_rotating": ["#oddlysatisfying", "#marblerace", "#satisfyingvideo", "#bouncingball", "#countryballs", "#physicssimulation", "#reels", "#asmr"],
-  "music_keys": ["C", "D", "E", "G", "A"]
+  "tags_core": [
+    "#satisfying",
+    "#physics",
+    "#simulation"
+  ],
+  "tags_rotating": [
+    "#oddlysatisfying",
+    "#marblerace",
+    "#satisfyingvideo",
+    "#bouncingball",
+    "#countryballs",
+    "#physicssimulation",
+    "#reels",
+    "#asmr"
+  ],
+  "music_keys": [
+    "C",
+    "D",
+    "E",
+    "G",
+    "A"
+  ],
+  "pools": {
+    "singers": {
+      "noun": "singer",
+      "names": [
+        "Taylor",
+        "Drake",
+        "Beyonce",
+        "Eminem",
+        "Rihanna",
+        "Bieber",
+        "Ariana",
+        "Adele",
+        "Shakira",
+        "Weeknd",
+        "Bruno",
+        "Dua Lipa",
+        "Ed Sheeran",
+        "Billie",
+        "Kanye",
+        "Cardi B"
+      ]
+    },
+    "footballers": {
+      "noun": "player",
+      "names": [
+        "Messi",
+        "Ronaldo",
+        "Mbappe",
+        "Haaland",
+        "Neymar",
+        "Bellingham",
+        "Salah",
+        "Vinicius",
+        "Kane",
+        "Modric",
+        "Yamal",
+        "De Bruyne"
+      ]
+    },
+    "billionaires": {
+      "noun": "billionaire",
+      "names": [
+        "Elon",
+        "Bezos",
+        "Zuckerberg",
+        "Gates",
+        "Buffett",
+        "Arnault",
+        "Ellison",
+        "MrBeast",
+        "Jensen",
+        "Page",
+        "Ambani",
+        "Dangote"
+      ]
+    },
+    "brands": {
+      "noun": "brand",
+      "names": [
+        "Nike",
+        "Adidas",
+        "Apple",
+        "Google",
+        "Tesla",
+        "Netflix",
+        "Gucci",
+        "Lego",
+        "Disney",
+        "Samsung",
+        "Pepsi",
+        "Coca-Cola",
+        "McDonalds",
+        "Amazon",
+        "Spotify",
+        "Xbox"
+      ]
+    }
+  }
 }
