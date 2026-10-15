@@ -14,3 +14,10 @@
 - The shorter escape pacing from the previous trim looks like it's helping: watch%/len is now ~38% on both posts with IG watch data (11.8/30.62, 8.2/21.83) vs ~27% before the trim — consistent across n=2 but still too few to lock in further changes.
 - Post 20261014-210125 (first ever post) has no ig_id/ig metrics at all, only fb — looks like the IG publish failed that cycle even with the one retry. Flagged below as KOD for the owner to check publish logs.
 - Next time: once grow/colors posts exist and/or comment requests come in, compare format and hook performance properly; keep watching whether the ~38% retention holds as more escape posts land.
+
+## 2026-10-15 06:57 UTC
+- All 4 posts so far are escape/countries (grow/colors still at 0 — random draw, weights 3:2 and 4:1 left untouched since nothing is broken, just unlucky sampling).
+- Watch%/len is monotonically improving as videos get shorter across all 3 posts with IG data: 12.2/30.62 (40%), 8.2/21.83 (38%), 8.6/18.85 (46%) — the shortest post has the best retention, so trimmed escape further: seconds 18-30 -> 16-26, gap_deg 36-46 -> 40-50 (faster races, same ring count since no data isolates rings alone).
+- Hooks/captions/tags/countries left untouched — max 2 posts per hook variant, 0 comment requests in state/requests.json, nowhere near the ~3-per-variant threshold.
+- Views (792) and followers (26) are far behind the 250k/5k week-1 goal with 6 days left; once grow has a few posts, compare format performance and reconsider the hook set with real data.
+- Next time: check if avg watch% keeps climbing with the 16-26s range; if grow/colors still have 0 posts after this round, that's worth a second look (not just randomness).
