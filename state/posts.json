@@ -266,5 +266,45 @@
    "blue_reels_play_count": 0,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261015-131336",
+  "mode": "grow",
+  "theme": "singers",
+  "teams": [
+   "Bieber",
+   "Eminem",
+   "Bruno",
+   "Dua Lipa",
+   "Cardi B",
+   "Beyonce"
+  ],
+  "colors": [
+   "#FF3B5C",
+   "#B45CFF",
+   "#2BE7FF",
+   "#3C8CFF",
+   "#FF8A2B",
+   "#FFD23F"
+  ],
+  "hook": "Champion Bruno is back. Can anyone beat them?",
+  "cta": "Comment who races next",
+  "caption": "Champion Bruno is back. Can anyone beat them?\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #reels #bouncingball",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {
+   "grow_step": 1.740776947997193,
+   "target_r": 121.66783190720088,
+   "ball_r": 34.0
+  },
+  "seed": 194533,
+  "key": "A",
+  "champ": "Bruno",
+  "requested": false,
+  "winner": "Bieber",
+  "win_t": 18.46,
+  "duration": 21.97,
+  "ig_id": "17920338876242752",
+  "fb_id": "1137703832164170",
+  "posted_utc": "2026-10-15T13:15:09Z"
  }
 ]
