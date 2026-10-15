@@ -90,13 +90,13 @@
   "ig_id": "18337121866276430",
   "posted_utc": "2026-10-14T21:07:13Z",
   "ig": {
-   "views": 216,
-   "reach": 174,
+   "views": 418,
+   "reach": 344,
    "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 12169
+   "ig_reels_avg_watch_time": 12152
   }
  },
  {
@@ -142,13 +142,13 @@
   "fb_id": "1574886487742298",
   "posted_utc": "2026-10-14T22:57:16Z",
   "ig": {
-   "views": 434,
-   "reach": 377,
+   "views": 1309,
+   "reach": 1124,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 8246
+   "ig_reels_avg_watch_time": 9311
   },
   "fb": {
    "post_video_avg_time_watched": 20327,
@@ -203,13 +203,13 @@
   "fb_id": "4796839457255165",
   "posted_utc": "2026-10-15T01:58:55Z",
   "ig": {
-   "views": 136,
-   "reach": 114,
+   "views": 139,
+   "reach": 115,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 8550
+   "ig_reels_avg_watch_time": 8456
   },
   "fb": {
    "post_video_avg_time_watched": 15086,
@@ -251,6 +251,20 @@
   "duration": 22.85,
   "ig_id": "18199240393378183",
   "fb_id": "959769323361030",
-  "posted_utc": "2026-10-15T10:00:40Z"
+  "posted_utc": "2026-10-15T10:00:40Z",
+  "ig": {
+   "views": 130,
+   "reach": 112,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 8018
+  },
+  "fb": {
+   "post_video_avg_time_watched": 0,
+   "blue_reels_play_count": 0,
+   "post_video_followers": 0
+  }
  }
 ]

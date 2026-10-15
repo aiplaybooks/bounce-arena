@@ -27,3 +27,10 @@
 - AUDIO CHANGED: melody removed (owner said it was headache-inducing), now only soft low collision pops/ticks. Compare avg watch%/len of posts after 2026-10-15 vs before before judging other changes.
 - Posts 4 -> 6/day (added 12:30 and 19:00 UTC).
 - plan.py now forces any format/theme with weight>0 and <3 posts first (grow and colors had 0 posts).
+
+## 2026-10-15 12:57 UTC
+- Found themes.colors weight=0, which breaks the "never 0, keep >=20% of leader" rule (leader weight 3) — fixed to 2, matching billionaires' weight. No colors posts exist yet; plan.py's forced-first-run logic should now pick it up.
+- Still only 5 posts total (4 escape/countries, 1 grow/singers) — every format/theme/hook comparison is well below the ~3-per-variant noise threshold, so weights, hooks, captions and tags are otherwise untouched this round.
+- Watch%/len on the 3 escape posts with IG data (42.6%, 39.8%, 45.1%) still looks consistent with the shortest post retaining best, matching the prior trend; the single grow/singers post is lower (35% at 22.85s) but n=1 so no pacing change yet.
+- No comment requests in state/requests.json, so countries_core/extra untouched.
+- Next time: once grow/colors/footballers/billionaires/brands each have >=3 posts, compare theme performance properly; watch whether grow's retention stays below escape's as more grow posts land (would justify trimming grow seconds range too).
