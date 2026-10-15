@@ -21,3 +21,4 @@
 - Hooks/captions/tags/countries left untouched — max 2 posts per hook variant, 0 comment requests in state/requests.json, nowhere near the ~3-per-variant threshold.
 - Views (792) and followers (26) are far behind the 250k/5k week-1 goal with 6 days left; once grow has a few posts, compare format performance and reconsider the hook set with real data.
 - Next time: check if avg watch% keeps climbing with the 16-26s range; if grow/colors still have 0 posts after this round, that's worth a second look (not just randomness).
+- 2026-10-15: <4 posts with full metrics (3 IG: 434/216/136 views, watch 8.2-12.2s) -> no weight changes; added escape hook 'Bet you can't guess the winner'. grow still 0 posts.
