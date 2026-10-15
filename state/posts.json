@@ -155,5 +155,52 @@
    "blue_reels_play_count": 0,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261015-015722",
+  "mode": "escape",
+  "theme": "countries",
+  "teams": [
+   "Ireland",
+   "UK",
+   "Australia",
+   "France",
+   "USA",
+   "Philippines",
+   "Canada",
+   "India"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#FF3B5C",
+   "#FF5CD1",
+   "#2BE7FF",
+   "#B45CFF",
+   "#3C8CFF",
+   "#3DFF8C",
+   "#FF8A2B"
+  ],
+  "hook": "Only one gets out first. Pick now",
+  "cta": "Comment who races next",
+  "caption": "Only one gets out first. Pick now 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #marblerace",
+  "first_comment": "Comment your country and it races next 🏁",
+  "params": {
+   "rings": 5,
+   "gap_deg": 40.00027422055308,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 465873,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "France",
+  "win_t": 15.34,
+  "duration": 18.85,
+  "ig_id": "17910000681482035",
+  "fb_id": "4796839457255165",
+  "posted_utc": "2026-10-15T01:58:55Z"
  }
 ]
