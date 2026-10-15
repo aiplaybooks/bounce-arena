@@ -216,5 +216,41 @@
    "blue_reels_play_count": 1,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261015-095907",
+  "mode": "grow",
+  "theme": "singers",
+  "teams": [
+   "Rihanna",
+   "Billie",
+   "Weeknd",
+   "Bruno"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#B45CFF",
+   "#FF8A2B",
+   "#3DFF8C"
+  ],
+  "hook": "Watch till the last bounce. It's close",
+  "cta": "Winner returns tomorrow",
+  "caption": "Watch till the last bounce. It's close\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #reels",
+  "first_comment": "Comment your country and it races next 🏁",
+  "params": {
+   "grow_step": 1.7703258304969292,
+   "target_r": 127.77646922990361,
+   "ball_r": 34.0
+  },
+  "seed": 631218,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Bruno",
+  "win_t": 19.34,
+  "duration": 22.85,
+  "ig_id": "18199240393378183",
+  "fb_id": "959769323361030",
+  "posted_utc": "2026-10-15T10:00:40Z"
  }
 ]
