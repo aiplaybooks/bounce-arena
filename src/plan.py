@@ -23,14 +23,24 @@ def wpick(rng, weights):
     return rng.choices(keys, [weights[k] if isinstance(weights[k], (int, float)) else weights[k]["weight"] for k in keys])[0]
 
 
+def explore(rng, weights, posts, field, n=3):
+    """Any option with weight > 0 but fewer than n posts goes first, so every variant gets data."""
+    low = [k for k in weights if wpick_w(weights[k]) > 0 and sum(p.get(field) == k for p in posts) < n]
+    return rng.choice(low) if low else wpick(rng, weights)
+
+
+def wpick_w(v):
+    return v if isinstance(v, (int, float)) else v["weight"]
+
+
 def make_job(force_mode=None, force_theme=None):
     st = load("config/strategy.json", {})
     posts = load("state/posts.json", [])
     requests = load("state/requests.json", {})
     rng = random.Random(time.time_ns())
-    mode = force_mode or wpick(rng, st["formats"])
+    mode = force_mode or explore(rng, st["formats"], posts, "mode")
     fm = st["formats"][mode]
-    theme = force_theme or wpick(rng, st["themes"])
+    theme = force_theme or explore(rng, st["themes"], posts, "theme")
     n = rng.randint(*fm["teams"])
     champ = None
     request_line = ""

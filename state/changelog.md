@@ -22,3 +22,8 @@
 - Views (792) and followers (26) are far behind the 250k/5k week-1 goal with 6 days left; once grow has a few posts, compare format performance and reconsider the hook set with real data.
 - Next time: check if avg watch% keeps climbing with the 16-26s range; if grow/colors still have 0 posts after this round, that's worth a second look (not just randomness).
 - 2026-10-15: <4 posts with full metrics (3 IG: 434/216/136 views, watch 8.2-12.2s) -> no weight changes; added escape hook 'Bet you can't guess the winner'. grow still 0 posts.
+
+## 2026-10-15 owner/desk change
+- AUDIO CHANGED: melody removed (owner said it was headache-inducing), now only soft low collision pops/ticks. Compare avg watch%/len of posts after 2026-10-15 vs before before judging other changes.
+- Posts 4 -> 6/day (added 12:30 and 19:00 UTC).
+- plan.py now forces any format/theme with weight>0 and <3 posts first (grow and colors had 0 posts).

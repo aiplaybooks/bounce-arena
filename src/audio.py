@@ -3,22 +3,23 @@ import wave
 import numpy as np
 
 SR = 44100
-# Two octaves of a major pentatonic scale per key; bounces walk up and down it.
-KEYS = {"C": 261.63, "D": 293.66, "E": 329.63, "G": 392.00, "A": 440.00}
-PENTA = [0, 2, 4, 7, 9, 12, 14, 16, 19, 21, 24]
+# Melody removed (owner: it was headache-inducing). Only soft, low collision pops/ticks.
+# `key` still nudges the pop pitch so videos don't all sound identical.
+KEYS = {"C": 0.0, "D": 0.06, "E": 0.12, "G": 0.2, "A": 0.26}
 
 
-def _pluck(freq, dur, bright=1.0):
+def _pop(freq, dur=0.09):
     t = np.arange(int(SR * dur)) / SR
-    env = np.exp(-t * 7.0) * np.minimum(1, t * 400)
-    w = np.sin(2 * np.pi * freq * t) + 0.35 * bright * np.sin(4 * np.pi * freq * t) + 0.12 * bright * np.sin(6 * np.pi * freq * t)
-    return w * env
+    f = freq * (0.65 + 0.35 * np.exp(-t * 60))  # quick downward pitch bend = "pop"
+    env = np.exp(-t * 48) * np.minimum(1, t * 900)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * env
 
 
-def _click(dur=0.03):
+def _tick(dur=0.025):
     t = np.arange(int(SR * dur)) / SR
     rng = np.random.default_rng(7)
-    return rng.standard_normal(t.size) * np.exp(-t * 180) * 0.4
+    n = np.convolve(rng.standard_normal(t.size), np.ones(12) / 12, "same")  # low-passed, not hissy
+    return n * np.exp(-t * 220) * 2.0
 
 
 def _add(buf, start, sig, gain):
@@ -31,38 +32,31 @@ def _add(buf, start, sig, gain):
 
 def build(events, duration, path, key="C"):
     buf = np.zeros(int(SR * (duration + 1.0)), dtype=np.float64)
-    base = KEYS.get(key, 261.63)
-    notes = [base * 2 ** (s / 12) for s in PENTA]
-    seq = list(range(len(notes))) + list(range(len(notes) - 2, 0, -1))
-    k = 0
-    last_note = -1.0
-    last_clack = -1.0
+    shift = 2 ** KEYS.get(key, 0.0)
+    last_pop = -1.0
+    last_tick = -1.0
     for t, kind, team, extra, *_ in events:
         if t > duration:
             break
         if kind == "bounce":
-            if t - last_note < 0.05:
+            if t - last_pop < 0.07:
                 continue
-            last_note = t
-            _add(buf, t, _pluck(notes[seq[k % len(seq)]], 0.45), 0.32)
-            k += 1
+            last_pop = t
+            _add(buf, t, _pop(170 * shift * (1 + 0.04 * (sum(map(ord, str(team))) % 5))), 0.35)
         elif kind == "clack":
-            if t - last_clack < 0.06:
+            if t - last_tick < 0.08:
                 continue
-            last_clack = t
-            _add(buf, t, _click(), 0.5)
+            last_tick = t
+            _add(buf, t, _tick(), 0.3)
         elif kind == "pass":
-            for i, s in enumerate((0, 4, 7)):
-                _add(buf, t + i * 0.03, _pluck(base * 2 ** ((s + 12) / 12), 0.8, 1.5), 0.25)
+            _add(buf, t, _pop(230 * shift, 0.14), 0.5)
         elif kind == "win":
-            for i, s in enumerate((0, 4, 7, 12, 16, 19, 24)):
-                _add(buf, t + i * 0.08, _pluck(base * 2 ** ((s + 12) / 12), 1.2, 1.6), 0.3)
-            for s in (0, 4, 7, 12):
-                _add(buf, t + 0.6, _pluck(base * 2 ** ((s + 12) / 12), 2.5, 1.2), 0.18)
+            for i in range(3):
+                _add(buf, t + i * 0.09, _pop((200 + 40 * i) * shift, 0.16), 0.55)
     buf = buf[: int(SR * duration)]
     peak = np.max(np.abs(buf)) or 1.0
-    # soft limiter keeps dense bounce clusters from clipping
-    buf = np.tanh(buf / peak * 1.4) / np.tanh(1.4) * 0.89
+    # soft limiter, and a lower ceiling than before so it never sounds harsh
+    buf = np.tanh(buf / peak * 1.2) / np.tanh(1.2) * 0.6
     pcm = (buf * 32767).astype("<i2")
     with wave.open(path, "wb") as w:
         w.setnchannels(1)
