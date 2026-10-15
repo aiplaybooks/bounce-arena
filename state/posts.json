@@ -370,5 +370,46 @@
    "blue_reels_play_count": 1,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261015-192915",
+  "mode": "escape",
+  "theme": "footballers",
+  "teams": [
+   "Bellingham",
+   "Vinicius",
+   "Kane",
+   "Ronaldo",
+   "Mbappe"
+  ],
+  "colors": [
+   "#FF3B5C",
+   "#FF8A2B",
+   "#3C8CFF",
+   "#2BE7FF",
+   "#B45CFF"
+  ],
+  "hook": "Pick your player before it's too late",
+  "cta": "Follow for the rematch",
+  "caption": "Pick your player before it's too late\n\nDrop your country in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #marblerace",
+  "first_comment": "Comment your country and it races next 🏁",
+  "params": {
+   "rings": 3,
+   "gap_deg": 45.11788040936222,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 10830,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Mbappe",
+  "win_t": 13.23,
+  "duration": 16.73,
+  "ig_id": "18022343969943454",
+  "fb_id": "1144594181577592",
+  "posted_utc": "2026-10-15T19:30:34Z"
  }
 ]
