@@ -34,3 +34,10 @@
 - Watch%/len on the 3 escape posts with IG data (42.6%, 39.8%, 45.1%) still looks consistent with the shortest post retaining best, matching the prior trend; the single grow/singers post is lower (35% at 22.85s) but n=1 so no pacing change yet.
 - No comment requests in state/requests.json, so countries_core/extra untouched.
 - Next time: once grow/colors/footballers/billionaires/brands each have >=3 posts, compare theme performance properly; watch whether grow's retention stays below escape's as more grow posts land (would justify trimming grow seconds range too).
+
+## 2026-10-15 18:53 UTC
+- grow now has n=3 with IG watch data (singers x2, billionaires x1) and is consistently below escape's n=3: grow watch%/len 32.8%, 35.0%, 30.2% (avg ~33%) vs escape 42.1%, 41.8%, 45.6% (avg ~43%) — same gap flagged last round but now both sides hit the ~3-per-variant threshold, so trimmed grow.seconds 16-32 -> 14-22 to match the shortening that already worked for escape. Left grow_step/target_r untouched to isolate the effect of length alone.
+- Still 0 posts for themes colors/footballers/brands despite weight>=2 each (only countries, singers, billionaires have posted) — plan.py's forced-first-run logic should pick these next; not a bug yet, just sequencing, revisit if still 0 after a few more cycles.
+- No comment requests in state/requests.json, so countries_core/extra and first_comment left untouched.
+- Hooks: no hook variant has reached 3 uses yet (max is 2, "Champion {champ}" and "Watch till the last bounce" each used twice) — below threshold, hooks/captions/tags untouched this round.
+- Next time: check grow watch%/len after the 14-22s trim — if it closes the gap with escape, the length theory is confirmed and escape could be trimmed further too; also check whether colors/footballers/brands have posted yet.
