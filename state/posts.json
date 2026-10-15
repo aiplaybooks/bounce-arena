@@ -306,5 +306,41 @@
   "ig_id": "17920338876242752",
   "fb_id": "1137703832164170",
   "posted_utc": "2026-10-15T13:15:09Z"
+ },
+ {
+  "id": "20261015-162153",
+  "mode": "grow",
+  "theme": "billionaires",
+  "teams": [
+   "Jensen",
+   "Ambani",
+   "MrBeast",
+   "Zuckerberg"
+  ],
+  "colors": [
+   "#B45CFF",
+   "#2BE7FF",
+   "#FF5CD1",
+   "#FFD23F"
+  ],
+  "hook": "Watch till the last bounce. It's close",
+  "cta": "Follow for the rematch",
+  "caption": "Watch till the last bounce. It's close\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #reels #bouncingball",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "grow_step": 1.7981024526864426,
+   "target_r": 120.68945485268199,
+   "ball_r": 34.0
+  },
+  "seed": 306875,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Zuckerberg",
+  "win_t": 18.32,
+  "duration": 21.83,
+  "ig_id": "18147440188580922",
+  "fb_id": "3678799068940321",
+  "posted_utc": "2026-10-15T16:23:51Z"
  }
 ]
