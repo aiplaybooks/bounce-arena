@@ -411,5 +411,50 @@
   "ig_id": "18022343969943454",
   "fb_id": "1144594181577592",
   "posted_utc": "2026-10-15T19:30:34Z"
+ },
+ {
+  "id": "20261015-225438",
+  "mode": "escape",
+  "theme": "billionaires",
+  "teams": [
+   "Bezos",
+   "Buffett",
+   "Ambani",
+   "Elon",
+   "Dangote",
+   "Page",
+   "Arnault"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#FFD23F",
+   "#B45CFF",
+   "#FF3B5C",
+   "#3C8CFF",
+   "#3DFF8C"
+  ],
+  "hook": "Only one gets out first. Pick now",
+  "cta": "Comment who races next",
+  "caption": "Only one gets out first. Pick now\n\nDrop your country in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #satisfyingvideo",
+  "first_comment": "Bezos or Buffett? Wrong answers only 😅",
+  "params": {
+   "rings": 3,
+   "gap_deg": 40.49391707108473,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 635412,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Page",
+  "win_t": 11.25,
+  "duration": 14.75,
+  "ig_id": "17906738583591519",
+  "fb_id": "2363845604354872",
+  "posted_utc": "2026-10-15T22:55:56Z"
  }
 ]
