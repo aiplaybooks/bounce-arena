@@ -634,5 +634,41 @@
   "file": "01_maze_countries.mp4",
   "ig_id": "17922714978223884",
   "posted_utc": "2026-10-16T13:13:35Z"
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "golf",
+  "theme": "clubs",
+  "teams": [
+   "Real",
+   "City",
+   "Inter",
+   "Arsenal",
+   "Chelsea",
+   "Bayern"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#FF8A2B",
+   "#3C8CFF",
+   "#B45CFF",
+   "#FF3B5C"
+  ],
+  "hook": "Pick your club before it drops",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick your club before it drops\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #ballrace #golf",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {},
+  "seed": 984099,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Arsenal",
+  "win_t": 15.92,
+  "duration": 19.43,
+  "file": "02_golf_clubs.mp4",
+  "ig_id": "18117304195794069",
+  "posted_utc": "2026-10-16T16:21:35Z"
  }
 ]

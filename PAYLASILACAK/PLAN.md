@@ -3,11 +3,10 @@
 Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.
 Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.
 
-Paylasilan: 1 - Bekleyen: 11
+Paylasilan: 2 - Bekleyen: 10
 
 | # | video | tema | sure | kazanan | hook |
 |---|---|---|---|---|---|
-| 2 | 02_golf_clubs.mp4 | golf/clubs | 19.43s | Arsenal | Pick your club before it drops |
 | 3 | 03_plinko_ai.mp4 | plinko/ai | 23.92s | Copilot | Pick the luckiest AI |
 | 4 | 04_race_countries.mp4 | race/countries | 23.17s | France | Who takes the checkered flag? |
 | 5 | 05_storm_clubs.mp4 | storm/clubs | 20.5s | Real | Pick the club that survives |
