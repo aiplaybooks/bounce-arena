@@ -112,17 +112,18 @@
     "Follow for the rematch",
     "Winner returns tomorrow",
     "Comment who races next",
-    "Follow before the next one drops"
+    "Follow before the next one drops",
+    "Tag a friend who'd pick wrong"
   ],
   "caption": [
     "{hook} 👀\n\nComment your pick BEFORE the end 👇{request_line}\nThe winner returns in the next battle — follow so you don't miss it.\n\n{tags}",
-    "{hook}\n\nDrop your country in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}",
+    "{hook}\n\nDrop your pick in the comments and it races next 🏁{request_line}\nNew physics battle every day.\n\n{tags}",
     "{hook}\n\nComment who you'd bet on and we'll race them next 🏁{request_line}\nNew physics battle every day.\n\n{tags}"
   ],
   "first_comment": [
     "Who did you pick? Be honest 👇",
     "{a} or {b}? Wrong answers only 😅",
-    "Comment your country and it races next 🏁",
+    "Comment your pick and it races next 🏁",
     "Did you call it? 👀 Reply with your pick",
     "Comment a name and it races next 🏁"
   ],
@@ -136,7 +137,7 @@
     "#marblerace",
     "#satisfyingvideo",
     "#bouncingball",
-    "#countryballs",
+    "#ballrace",
     "#physicssimulation",
     "#reels",
     "#asmr"
