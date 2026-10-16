@@ -3,37 +3,39 @@
   "order": 1,
   "file": "01_maze_countries.mp4",
   "job": {
-   "id": "20261016-103119",
+   "id": "20261016-104941",
    "mode": "maze",
    "theme": "countries",
    "teams": [
-    "France",
-    "Canada",
-    "Australia",
     "USA",
-    "UK"
+    "Canada",
+    "Nigeria",
+    "Australia",
+    "UK",
+    "Germany"
    ],
    "colors": [
-    "#3C8CFF",
-    "#3DFF8C",
     "#FF5CD1",
+    "#B45CFF",
+    "#FFD23F",
+    "#FF8A2B",
     "#2BE7FF",
-    "#FF3B5C"
+    "#3DFF8C"
    ],
-   "hook": "Which country escapes the maze first?",
-   "cta": "Follow before the next one drops",
-   "caption": "Which country escapes the maze first?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #ballrace #physicssimulation #maze",
-   "first_comment": "Who did you pick? Be honest 👇",
+   "hook": "Pick your country. First one out wins",
+   "cta": "Comment who races next",
+   "caption": "Pick your country. First one out wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #satisfyingvideo #maze",
+   "first_comment": "Comment your pick and it races next 🏁",
    "params": {
     "size": 12
    },
-   "seed": 846830,
-   "key": "E",
+   "seed": 661104,
+   "key": "C",
    "champ": null,
    "requested": false,
-   "winner": "USA",
-   "win_t": 16.84,
-   "duration": 20.35,
+   "winner": "Nigeria",
+   "win_t": 18.49,
+   "duration": 22.0,
    "file": "01_maze_countries.mp4"
   }
  },
@@ -41,35 +43,37 @@
   "order": 2,
   "file": "02_golf_clubs.mp4",
   "job": {
-   "id": "20261016-103147",
+   "id": "20261016-104947",
    "mode": "golf",
    "theme": "clubs",
    "teams": [
+    "Real",
     "City",
     "Inter",
-    "PSG",
-    "Juve",
+    "Arsenal",
+    "Chelsea",
     "Bayern"
    ],
    "colors": [
     "#FF5CD1",
-    "#3DFF8C",
-    "#FFD23F",
+    "#2BE7FF",
     "#FF8A2B",
+    "#3C8CFF",
+    "#B45CFF",
     "#FF3B5C"
    ],
    "hook": "Pick your club before it drops",
-   "cta": "Tag a friend who'd pick wrong",
-   "caption": "Pick your club before it drops\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #marblerace #oddlysatisfying #golf",
-   "first_comment": "Comment your pick and it races next 🏁",
+   "cta": "Winner returns tomorrow",
+   "caption": "Pick your club before it drops\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #ballrace #golf",
+   "first_comment": "Comment a name and it races next 🏁",
    "params": {},
-   "seed": 785562,
-   "key": "E",
+   "seed": 984099,
+   "key": "G",
    "champ": null,
    "requested": false,
-   "winner": "City",
-   "win_t": 19.99,
-   "duration": 23.5,
+   "winner": "Arsenal",
+   "win_t": 15.92,
+   "duration": 19.43,
    "file": "02_golf_clubs.mp4"
   }
  },
@@ -77,36 +81,38 @@
   "order": 3,
   "file": "03_plinko_ai.mp4",
   "job": {
-   "id": "20261016-103120",
+   "id": "20261016-104947",
    "mode": "plinko",
    "theme": "ai",
    "teams": [
-    "ChatGPT",
+    "Copilot",
+    "Claude",
     "DeepSeek",
     "Codex",
     "Llama"
    ],
    "colors": [
     "#3DFF8C",
-    "#FF3B5C",
+    "#FF8A2B",
     "#FF5CD1",
-    "#2BE7FF"
+    "#3C8CFF",
+    "#B45CFF"
    ],
-   "hook": "One jackpot slot. Who gets it?",
-   "cta": "Tag a friend who'd pick wrong",
-   "caption": "One jackpot slot. Who gets it? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #oddlysatisfying #reels #plinko",
-   "first_comment": "Comment a name and it races next 🏁",
+   "hook": "Pick the luckiest AI",
+   "cta": "Follow for the rematch",
+   "caption": "Pick the luckiest AI\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #marblerace #physicssimulation #plinko",
+   "first_comment": "Comment your pick and it races next 🏁",
    "params": {
     "per_team": 4,
-    "interval": 0.9309040386427523
+    "interval": 0.8569542054404076
    },
-   "seed": 981774,
+   "seed": 502060,
    "key": "E",
    "champ": null,
    "requested": false,
-   "winner": "Codex",
-   "win_t": 17.4,
-   "duration": 20.9,
+   "winner": "Copilot",
+   "win_t": 20.41,
+   "duration": 23.92,
    "file": "03_plinko_ai.mp4"
   }
  },
@@ -114,40 +120,38 @@
   "order": 4,
   "file": "04_race_countries.mp4",
   "job": {
-   "id": "20261016-103130",
+   "id": "20261016-104947",
    "mode": "race",
    "theme": "countries",
    "teams": [
+    "Australia",
     "Sweden",
     "USA",
-    "Australia",
-    "Canada",
-    "UK",
-    "Poland"
+    "France",
+    "UK"
    ],
    "colors": [
-    "#3DFF8C",
-    "#FFD23F",
-    "#FF8A2B",
     "#FF5CD1",
-    "#2BE7FF",
-    "#FF3B5C"
+    "#3DFF8C",
+    "#FF3B5C",
+    "#FF8A2B",
+    "#B45CFF"
    ],
-   "hook": "Which country wins the race?",
+   "hook": "Who takes the checkered flag?",
    "cta": "Winner returns tomorrow",
-   "caption": "Which country wins the race?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #ballrace #racing",
-   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "caption": "Who takes the checkered flag?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #reels #marblerace #racing",
+   "first_comment": "Australia or Sweden? Wrong answers only 😅",
    "params": {
     "laps": 3,
-    "speed": 295.580015361543
+    "speed": 262.5857837132431
    },
-   "seed": 111029,
-   "key": "E",
+   "seed": 38197,
+   "key": "A",
    "champ": null,
    "requested": false,
-   "winner": "Sweden",
-   "win_t": 22.54,
-   "duration": 26.05,
+   "winner": "France",
+   "win_t": 19.67,
+   "duration": 23.17,
    "file": "04_race_countries.mp4"
   }
  },
@@ -155,37 +159,39 @@
   "order": 5,
   "file": "05_storm_clubs.mp4",
   "job": {
-   "id": "20261016-103125",
+   "id": "20261016-104948",
    "mode": "storm",
    "theme": "clubs",
    "teams": [
-    "Milan",
-    "City",
-    "Bayern",
-    "Juve",
     "Chelsea",
-    "Dortmund"
+    "City",
+    "PSG",
+    "Juve",
+    "Milan",
+    "Real"
    ],
    "colors": [
-    "#2BE7FF",
-    "#B45CFF",
-    "#3C8CFF",
+    "#3DFF8C",
     "#FF5CD1",
+    "#B45CFF",
     "#FFD23F",
-    "#FF8A2B"
+    "#FF3B5C",
+    "#3C8CFF"
    ],
    "hook": "Pick the club that survives",
-   "cta": "Follow for the rematch",
-   "caption": "Pick the club that survives\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #satisfyingvideo #battleroyale",
-   "first_comment": "Who did you pick? Be honest 👇",
-   "params": {},
-   "seed": 671639,
-   "key": "A",
+   "cta": "Winner returns tomorrow",
+   "caption": "Pick the club that survives 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #asmr #bouncingball #battleroyale",
+   "first_comment": "Comment a name and it races next 🏁",
+   "params": {
+    "rate": 11.495109676167843
+   },
+   "seed": 588238,
+   "key": "C",
    "champ": null,
    "requested": false,
-   "winner": "City",
-   "win_t": 15.4,
-   "duration": 18.92,
+   "winner": "Real",
+   "win_t": 16.99,
+   "duration": 20.5,
    "file": "05_storm_clubs.mp4"
   }
  },
@@ -193,37 +199,37 @@
   "order": 6,
   "file": "06_territory_ai.mp4",
   "job": {
-   "id": "20261016-103124",
+   "id": "20261016-104947",
    "mode": "territory",
    "theme": "ai",
    "teams": [
-    "Copilot",
-    "DeepSeek",
-    "Llama",
+    "Claude",
     "Codex",
+    "Gemini",
+    "Llama",
     "ChatGPT"
    ],
    "colors": [
+    "#FFD23F",
+    "#FF8A2B",
     "#B45CFF",
-    "#3DFF8C",
-    "#3C8CFF",
     "#FF3B5C",
-    "#FF5CD1"
+    "#2BE7FF"
    ],
-   "hook": "Which AI paints the most?",
-   "cta": "Tag a friend who'd pick wrong",
-   "caption": "Which AI paints the most? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #satisfyingvideo #paint",
-   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "hook": "Who owns the board in 22 seconds?",
+   "cta": "Winner returns tomorrow",
+   "caption": "Who owns the board in 22 seconds? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #ballrace #marblerace #paint",
+   "first_comment": "Who did you pick? Be honest 👇",
    "params": {
-    "duration": 21.05500956839205
+    "duration": 21.729866823636062
    },
-   "seed": 890345,
+   "seed": 340347,
    "key": "A",
    "champ": null,
    "requested": false,
-   "winner": "DeepSeek",
-   "win_t": 21.06,
-   "duration": 24.57,
+   "winner": "ChatGPT",
+   "win_t": 21.73,
+   "duration": 25.23,
    "file": "06_territory_ai.mp4"
   }
  },
@@ -231,35 +237,35 @@
   "order": 7,
   "file": "07_sumo_countries.mp4",
   "job": {
-   "id": "20261016-103125",
+   "id": "20261016-104937",
    "mode": "sumo",
    "theme": "countries",
    "teams": [
     "Canada",
-    "Japan",
     "Australia",
+    "France",
     "USA",
     "UK"
    ],
    "colors": [
-    "#FFD23F",
-    "#3C8CFF",
     "#FF5CD1",
-    "#2BE7FF",
-    "#B45CFF"
+    "#FF8A2B",
+    "#B45CFF",
+    "#FF3B5C",
+    "#2BE7FF"
    ],
-   "hook": "Sumo battle: who stays on?",
-   "cta": "Follow for the rematch",
-   "caption": "Sumo battle: who stays on?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #satisfyingvideo #bouncingball #sumo",
-   "first_comment": "Comment a name and it races next 🏁",
+   "hook": "Last country on the ring wins",
+   "cta": "Winner returns tomorrow",
+   "caption": "Last country on the ring wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #physicssimulation #ballrace #sumo",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
    "params": {},
-   "seed": 233782,
+   "seed": 26699,
    "key": "D",
    "champ": null,
    "requested": false,
    "winner": "Canada",
-   "win_t": 16.5,
-   "duration": 20.02,
+   "win_t": 15.23,
+   "duration": 18.73,
    "file": "07_sumo_countries.mp4"
   }
  },
@@ -267,37 +273,35 @@
   "order": 8,
   "file": "08_tower_clubs.mp4",
   "job": {
-   "id": "20261016-103135",
+   "id": "20261016-104945",
    "mode": "tower",
    "theme": "clubs",
    "teams": [
-    "Barca",
-    "Inter",
+    "PSG",
     "Chelsea",
+    "Barca",
     "Bayern",
-    "Arsenal",
-    "Milan"
+    "Arsenal"
    ],
    "colors": [
-    "#FF3B5C",
-    "#FF5CD1",
     "#3C8CFF",
-    "#B45CFF",
-    "#3DFF8C",
-    "#FFD23F"
+    "#2BE7FF",
+    "#FF8A2B",
+    "#FFD23F",
+    "#B45CFF"
    ],
    "hook": "Pick your club. Reach the crown",
-   "cta": "Follow before the next one drops",
-   "caption": "Pick your club. Reach the crown 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #ballrace #climb",
-   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "cta": "Winner returns tomorrow",
+   "caption": "Pick your club. Reach the crown 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #bouncingball #climb",
+   "first_comment": "Comment your pick and it races next 🏁",
    "params": {},
-   "seed": 996161,
+   "seed": 946115,
    "key": "C",
    "champ": null,
    "requested": false,
-   "winner": "Bayern",
-   "win_t": 20.52,
-   "duration": 24.03,
+   "winner": "Chelsea",
+   "win_t": 17.13,
+   "duration": 20.63,
    "file": "08_tower_clubs.mp4"
   }
  },
@@ -305,36 +309,36 @@
   "order": 9,
   "file": "09_chain_ai.mp4",
   "job": {
-   "id": "20261016-103126",
+   "id": "20261016-104940",
    "mode": "chain",
    "theme": "ai",
    "teams": [
+    "Gemini",
     "Claude",
-    "Grok",
     "DeepSeek",
     "Llama"
    ],
    "colors": [
+    "#FF8A2B",
     "#2BE7FF",
-    "#FF3B5C",
-    "#3DFF8C",
+    "#FF5CD1",
     "#B45CFF"
    ],
-   "hook": "One touch = chain reaction",
-   "cta": "Tag a friend who'd pick wrong",
-   "caption": "One touch = chain reaction\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #oddlysatisfying #chainreaction",
-   "first_comment": "Comment a name and it races next 🏁",
+   "hook": "Pick your AI. Most booms wins",
+   "cta": "Follow for the rematch",
+   "caption": "Pick your AI. Most booms wins\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #reels #chainreaction",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
    "params": {
-    "duration": 22.012337836036732,
+    "duration": 25.125349606414666,
     "chain": 0.22
    },
-   "seed": 252650,
-   "key": "E",
+   "seed": 761116,
+   "key": "D",
    "champ": null,
    "requested": false,
    "winner": "Claude",
-   "win_t": 22.01,
-   "duration": 25.52,
+   "win_t": 25.13,
+   "duration": 28.63,
    "file": "09_chain_ai.mp4"
   }
  },
@@ -342,35 +346,35 @@
   "order": 10,
   "file": "10_flip_countries.mp4",
   "job": {
-   "id": "20261016-103132",
+   "id": "20261016-104945",
    "mode": "flip",
    "theme": "countries",
    "teams": [
-    "UK",
+    "Canada",
     "Australia",
-    "Nigeria",
-    "USA",
-    "Canada"
+    "Brazil",
+    "UK",
+    "USA"
    ],
    "colors": [
+    "#FF8A2B",
+    "#FF5CD1",
     "#FFD23F",
     "#B45CFF",
-    "#FF8A2B",
-    "#FF3B5C",
     "#3DFF8C"
    ],
-   "hook": "Gravity keeps flipping. Who survives?",
-   "cta": "Winner returns tomorrow",
-   "caption": "Gravity keeps flipping. Who survives? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #reels #asmr #gravity",
-   "first_comment": "UK or Australia? Wrong answers only 😅",
+   "hook": "Last country alive wins",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "Last country alive wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #ballrace #marblerace #gravity",
+   "first_comment": "Who did you pick? Be honest 👇",
    "params": {},
-   "seed": 937867,
-   "key": "C",
+   "seed": 902434,
+   "key": "A",
    "champ": null,
    "requested": false,
-   "winner": "Australia",
-   "win_t": 16.69,
-   "duration": 20.2,
+   "winner": "Canada",
+   "win_t": 19.08,
+   "duration": 22.58,
    "file": "10_flip_countries.mp4"
   }
  },
@@ -378,39 +382,39 @@
   "order": 11,
   "file": "11_pinball_clubs.mp4",
   "job": {
-   "id": "20261016-103131",
+   "id": "20261016-104952",
    "mode": "pinball",
    "theme": "clubs",
    "teams": [
-    "Milan",
     "Inter",
-    "United",
-    "Arsenal",
+    "City",
+    "Milan",
     "Barca",
-    "PSG"
+    "Real",
+    "Chelsea"
    ],
    "colors": [
-    "#FF5CD1",
-    "#3DFF8C",
-    "#FF8A2B",
-    "#B45CFF",
     "#3C8CFF",
-    "#FFD23F"
+    "#2BE7FF",
+    "#FFD23F",
+    "#3DFF8C",
+    "#B45CFF",
+    "#FF5CD1"
    ],
    "hook": "Highest score wins. Pick your club",
-   "cta": "Comment who races next",
-   "caption": "Highest score wins. Pick your club 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #asmr #pinball",
-   "first_comment": "Comment a name and it races next 🏁",
+   "cta": "Follow for the rematch",
+   "caption": "Highest score wins. Pick your club\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #pinball",
+   "first_comment": "Who did you pick? Be honest 👇",
    "params": {
-    "duration": 27.034742659149163
+    "duration": 26.067076614196356
    },
-   "seed": 637878,
-   "key": "G",
+   "seed": 549208,
+   "key": "A",
    "champ": null,
    "requested": false,
-   "winner": "Milan",
-   "win_t": 27.04,
-   "duration": 30.55,
+   "winner": "Inter",
+   "win_t": 26.07,
+   "duration": 29.58,
    "file": "11_pinball_clubs.mp4"
   }
  },
@@ -418,35 +422,37 @@
   "order": 12,
   "file": "12_hole_ai.mp4",
   "job": {
-   "id": "20261016-103125",
+   "id": "20261016-104943",
    "mode": "hole",
    "theme": "ai",
    "teams": [
-    "ChatGPT",
     "DeepSeek",
+    "ChatGPT",
     "Codex",
+    "Gemini",
     "Grok",
-    "Claude"
+    "Llama"
    ],
    "colors": [
-    "#B45CFF",
-    "#FFD23F",
-    "#3DFF8C",
     "#FF5CD1",
-    "#FF3B5C"
+    "#2BE7FF",
+    "#3DFF8C",
+    "#3C8CFF",
+    "#B45CFF",
+    "#FF8A2B"
    ],
-   "hook": "Who escapes the black hole?",
-   "cta": "Comment who races next",
-   "caption": "Who escapes the black hole?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #reels #blackhole",
-   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "hook": "Last AI standing wins",
+   "cta": "Follow for the rematch",
+   "caption": "Last AI standing wins 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #bouncingball #marblerace #blackhole",
+   "first_comment": "Comment your pick and it races next 🏁",
    "params": {},
-   "seed": 876471,
+   "seed": 879577,
    "key": "A",
    "champ": null,
    "requested": false,
    "winner": "DeepSeek",
-   "win_t": 23.23,
-   "duration": 26.75,
+   "win_t": 17.44,
+   "duration": 20.95,
    "file": "12_hole_ai.mp4"
   }
  }
