@@ -37,7 +37,9 @@
    "win_t": 18.49,
    "duration": 22.0,
    "file": "01_maze_countries.mp4"
-  }
+  },
+  "fb_id": "1040388832355550",
+  "fb_scheduled_utc": "2026-10-16 12:30"
  },
  {
   "order": 2,
@@ -75,7 +77,9 @@
    "win_t": 15.92,
    "duration": 19.43,
    "file": "02_golf_clubs.mp4"
-  }
+  },
+  "fb_id": "1470965901571305",
+  "fb_scheduled_utc": "2026-10-16 16:00"
  },
  {
   "order": 3,
@@ -114,7 +118,9 @@
    "win_t": 20.41,
    "duration": 23.92,
    "file": "03_plinko_ai.mp4"
-  }
+  },
+  "fb_id": "2193533994558648",
+  "fb_scheduled_utc": "2026-10-16 19:00"
  },
  {
   "order": 4,
@@ -153,7 +159,9 @@
    "win_t": 19.67,
    "duration": 23.17,
    "file": "04_race_countries.mp4"
-  }
+  },
+  "fb_id": "1666926661698474",
+  "fb_scheduled_utc": "2026-10-16 22:30"
  },
  {
   "order": 5,
@@ -193,7 +201,9 @@
    "win_t": 16.99,
    "duration": 20.5,
    "file": "05_storm_clubs.mp4"
-  }
+  },
+  "fb_id": "1646590043534861",
+  "fb_scheduled_utc": "2026-10-17 01:30"
  },
  {
   "order": 6,
@@ -231,7 +241,9 @@
    "win_t": 21.73,
    "duration": 25.23,
    "file": "06_territory_ai.mp4"
-  }
+  },
+  "fb_id": "28754453164212717",
+  "fb_scheduled_utc": "2026-10-17 09:30"
  },
  {
   "order": 7,
@@ -267,7 +279,9 @@
    "win_t": 15.23,
    "duration": 18.73,
    "file": "07_sumo_countries.mp4"
-  }
+  },
+  "fb_id": "948556381243067",
+  "fb_scheduled_utc": "2026-10-17 12:30"
  },
  {
   "order": 8,
@@ -303,7 +317,9 @@
    "win_t": 17.13,
    "duration": 20.63,
    "file": "08_tower_clubs.mp4"
-  }
+  },
+  "fb_id": "1327867685982450",
+  "fb_scheduled_utc": "2026-10-17 16:00"
  },
  {
   "order": 9,
@@ -340,7 +356,9 @@
    "win_t": 25.13,
    "duration": 28.63,
    "file": "09_chain_ai.mp4"
-  }
+  },
+  "fb_id": "943308468504074",
+  "fb_scheduled_utc": "2026-10-17 19:00"
  },
  {
   "order": 10,
@@ -376,7 +394,9 @@
    "win_t": 19.08,
    "duration": 22.58,
    "file": "10_flip_countries.mp4"
-  }
+  },
+  "fb_id": "2316103762558429",
+  "fb_scheduled_utc": "2026-10-17 22:30"
  },
  {
   "order": 11,
@@ -416,7 +436,9 @@
    "win_t": 26.07,
    "duration": 29.58,
    "file": "11_pinball_clubs.mp4"
-  }
+  },
+  "fb_id": "2923082311386156",
+  "fb_scheduled_utc": "2026-10-18 01:30"
  },
  {
   "order": 12,
@@ -454,6 +476,8 @@
    "win_t": 17.44,
    "duration": 20.95,
    "file": "12_hole_ai.mp4"
-  }
+  },
+  "fb_id": "1678632320647208",
+  "fb_scheduled_utc": "2026-10-18 09:30"
  }
 ]
