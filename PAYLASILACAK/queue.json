@@ -125,10 +125,14 @@
    "winner": "Copilot",
    "win_t": 20.41,
    "duration": 23.92,
-   "file": "03_plinko_ai.mp4"
+   "file": "03_plinko_ai.mp4",
+   "ig_id": "18002221868801753",
+   "posted_utc": "2026-10-16T19:27:23Z"
   },
   "fb_id": "2193533994558648",
-  "fb_scheduled_utc": "2026-10-16 19:00"
+  "fb_scheduled_utc": "2026-10-16 19:00",
+  "tries": 1,
+  "ig_id": "18002221868801753"
  },
  {
   "order": 4,

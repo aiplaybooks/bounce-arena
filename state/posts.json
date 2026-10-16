@@ -688,5 +688,42 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 10924
   }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "plinko",
+  "theme": "ai",
+  "teams": [
+   "Copilot",
+   "Claude",
+   "DeepSeek",
+   "Codex",
+   "Llama"
+  ],
+  "colors": [
+   "#3DFF8C",
+   "#FF8A2B",
+   "#FF5CD1",
+   "#3C8CFF",
+   "#B45CFF"
+  ],
+  "hook": "Pick the luckiest AI",
+  "cta": "Follow for the rematch",
+  "caption": "Pick the luckiest AI\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #marblerace #physicssimulation #plinko",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {
+   "per_team": 4,
+   "interval": 0.8569542054404076
+  },
+  "seed": 502060,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Copilot",
+  "win_t": 20.41,
+  "duration": 23.92,
+  "file": "03_plinko_ai.mp4",
+  "ig_id": "18002221868801753",
+  "posted_utc": "2026-10-16T19:27:23Z"
  }
 ]
