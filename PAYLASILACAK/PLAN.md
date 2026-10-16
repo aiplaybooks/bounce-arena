@@ -3,11 +3,10 @@
 Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.
 Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.
 
-Paylasilan: 3 - Bekleyen: 9
+Paylasilan: 4 - Bekleyen: 8
 
 | # | video | tema | sure | kazanan | hook |
 |---|---|---|---|---|---|
-| 4 | 04_race_countries.mp4 | race/countries | 23.17s | France | Who takes the checkered flag? |
 | 5 | 05_storm_clubs.mp4 | storm/clubs | 20.5s | Real | Pick the club that survives |
 | 6 | 06_territory_ai.mp4 | territory/ai | 25.23s | ChatGPT | Who owns the board in 22 seconds? |
 | 7 | 07_sumo_countries.mp4 | sumo/countries | 18.73s | Canada | Last country on the ring wins |

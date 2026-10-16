@@ -725,5 +725,42 @@
   "file": "03_plinko_ai.mp4",
   "ig_id": "18002221868801753",
   "posted_utc": "2026-10-16T19:27:23Z"
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "race",
+  "theme": "countries",
+  "teams": [
+   "Australia",
+   "Sweden",
+   "USA",
+   "France",
+   "UK"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#3DFF8C",
+   "#FF3B5C",
+   "#FF8A2B",
+   "#B45CFF"
+  ],
+  "hook": "Who takes the checkered flag?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Who takes the checkered flag?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #reels #marblerace #racing",
+  "first_comment": "Australia or Sweden? Wrong answers only 😅",
+  "params": {
+   "laps": 3,
+   "speed": 262.5857837132431
+  },
+  "seed": 38197,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "France",
+  "win_t": 19.67,
+  "duration": 23.17,
+  "file": "04_race_countries.mp4",
+  "ig_id": "18104278919567093",
+  "posted_utc": "2026-10-16T22:56:46Z"
  }
 ]
