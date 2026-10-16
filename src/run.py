@@ -150,6 +150,10 @@ def queue_cycle():
         except Exception:
             traceback.print_exc()
             break
+    import fb_schedule  # every ready video also gets scheduled on the Facebook Page, in queue order
+    for it in pending(q):
+        if not it.get("fb_id") and it.get("fb_tries", 0) < 3:
+            fb_schedule.schedule_item(q, it, PDIR)
     mkqueue.save(q)
 
 
