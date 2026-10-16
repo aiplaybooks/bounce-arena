@@ -541,5 +541,46 @@
    "blue_reels_play_count": 0,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261016-095845",
+  "mode": "escape",
+  "theme": "footballers",
+  "teams": [
+   "Neymar",
+   "Salah",
+   "De Bruyne",
+   "Kane",
+   "Mbappe"
+  ],
+  "colors": [
+   "#FF3B5C",
+   "#FFD23F",
+   "#FF8A2B",
+   "#B45CFF",
+   "#2BE7FF"
+  ],
+  "hook": "Which player escapes first?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Which player escapes first?\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "rings": 3,
+   "gap_deg": 46.42765787606961,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 842474,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "De Bruyne",
+  "win_t": 20.31,
+  "duration": 23.82,
+  "ig_id": "18005380364795353",
+  "fb_id": "1150100024216959",
+  "posted_utc": "2026-10-16T10:00:13Z"
  }
 ]
