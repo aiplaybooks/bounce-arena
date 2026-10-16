@@ -10,6 +10,32 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "PAYLASILACAK")
 
 
+def write_txt(item):
+    job = item["job"]
+    with open(os.path.join(D, item["file"][:-4] + ".txt"), "w", encoding="utf8") as f:
+        f.write(job["caption"] + "\n\n--- first comment ---\n" + job.get("first_comment", "") + "\n")
+
+
+def write_plan(q):
+    pend = [i for i in q if not i.get("ig_id")]
+    rows = ["# PAYLASILACAK - bekleyen videolar", "",
+            "Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.",
+            "Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.", "",
+            f"Paylasilan: {len(q) - len(pend)} - Bekleyen: {len(pend)}", "",
+            "| # | video | tema | sure | kazanan | hook |", "|---|---|---|---|---|---|"]
+    for it in pend:
+        j = it["job"]
+        rows.append(f"| {it['order']} | {it['file']} | {j['mode']}/{j['theme']} | {j['duration']}s | {j['winner']} | {j['hook']} |")
+    with open(os.path.join(D, "PLAN.md"), "w", encoding="utf8") as f:
+        f.write("\n".join(rows) + "\n")
+
+
+def save(q):
+    with open(os.path.join(D, "queue.json"), "w", encoding="utf8") as f:
+        json.dump(q, f, ensure_ascii=False, indent=1)
+    write_plan(q)
+
+
 def main():
     qp = os.path.join(D, "queue.json")
     old = {i["file"]: i for i in json.load(open(qp, encoding="utf8"))} if os.path.exists(qp) else {}
@@ -27,23 +53,10 @@ def main():
             for k in ("ig_id", "tries", "error"):
                 if k in old[file]:
                     item[k] = old[file][k]
-                    if k == "ig_id":
-                        job["ig_id"] = old[file][k]
         q.append(item)
-        with open(os.path.join(D, name[:-5] + ".txt"), "w", encoding="utf8") as f:
-            f.write(job["caption"] + "\n\n--- first comment ---\n" + job.get("first_comment", "") + "\n")
+        write_txt(item)
         os.remove(jp)
-    for i, it in enumerate(q, 1):
-        it["order"] = i
-    with open(qp, "w", encoding="utf8") as f:
-        json.dump(q, f, ensure_ascii=False, indent=1)
-    rows = ["# PAYLASILACAK - yayin sirasi", "", "Instagram: GitHub Actions sirayla otomatik paylasir (queue.json). Facebook: ayni sirayla, ayni isimli .txt'deki aciklamayla Page'den planla.", "",
-            "| # | video | tema | sure | kazanan | hook | IG |", "|---|---|---|---|---|---|---|"]
-    for it in q:
-        j = it["job"]
-        rows.append(f"| {it['order']} | {it['file']} | {j['mode']}/{j['theme']} | {j['duration']}s | {j['winner']} | {j['hook']} | {'paylasildi' if it.get('ig_id') else 'bekliyor'} |")
-    with open(os.path.join(D, "PLAN.md"), "w", encoding="utf8") as f:
-        f.write("\n".join(rows) + "\n")
+    save(q)
     print(f"{len(q)} videos queued")
 
 

@@ -32,7 +32,8 @@ def main():
     ap.add_argument("--name")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
-    if a.queue_first and publish_queue():
+    if a.queue_first:
+        queue_cycle()
         return
     job = plan.make_job(a.mode, a.theme)
     sim = physics.simulate(job["mode"], job["teams"], job["seed"], render.CX, render.CY, render.ARENA_R, job["params"])
@@ -92,20 +93,72 @@ def main():
         sys.exit("both publishes failed")
 
 
-QUEUE = os.path.join(ROOT, "PAYLASILACAK", "queue.json")
+PDIR = os.path.join(ROOT, "PAYLASILACAK")
+QUEUE = os.path.join(PDIR, "queue.json")
+KEEP = 6  # keep at least this many videos ready in PAYLASILACAK/
 
 
-def publish_queue():
-    """Posts the next unposted ready-made video to Instagram only (Facebook is scheduled by hand from the same folder)."""
-    if not os.path.exists(QUEUE):
-        return False
+def load_queue():
+    return json.load(open(QUEUE, encoding="utf8")) if os.path.exists(QUEUE) else []
+
+
+def pending(q):
+    return [i for i in q if not i.get("ig_id") and i.get("tries", 0) < 3 and os.path.exists(os.path.join(PDIR, i["file"]))]
+
+
+def add_video(q):
+    """Renders one fresh video into PAYLASILACAK/ (numbering continues from the highest number ever used)."""
+    import mkqueue
+    for _ in range(4):
+        job = plan.make_job()
+        sim = physics.simulate(job["mode"], job["teams"], job["seed"], render.CX, render.CY, render.ARENA_R, job["params"])
+        if sim:
+            break
+    else:
+        raise RuntimeError("no winner within time limit")
+    frames, events, winner, win_t = sim
+    job["winner"] = job["teams"][winner]
+    job["win_t"] = round(win_t, 2)
+    job["duration"] = round(len(frames) / physics.FPS, 2)
+    n = max([i["order"] for i in q], default=0) + 1
+    name = f"{n:02d}_{job['mode']}_{job['theme']}"
+    job["file"] = name + ".mp4"
+    os.makedirs(PDIR, exist_ok=True)
+    wav = os.path.join(OUT, f"{job['id']}.wav")
+    audio.build(events, job["duration"], wav, job["key"])
+    render.render(sim, job, os.path.join(PDIR, job["file"]), wav)
+    item = {"order": n, "file": job["file"], "job": job}
+    q.append(item)
+    mkqueue.write_txt(item)
+    mkqueue.save(q)
+    print("queued", name)
+
+
+def queue_cycle():
+    """Scheduled slot: post the next ready video to Instagram (IG only; Facebook is scheduled by hand), delete it
+    from PAYLASILACAK/, then top the folder up with fresh videos."""
+    import mkqueue
+    q = load_queue()
+    if not pending(q):
+        add_video(q)  # nothing ready: make one now so this slot still posts
+    publish_next(q)
+    for _ in range(2):
+        if len(pending(q)) >= KEEP:
+            break
+        try:
+            add_video(q)
+        except Exception:
+            traceback.print_exc()
+            break
+    mkqueue.save(q)
+
+
+def publish_next(q):
+    import mkqueue
     import publish
-    q = json.load(open(QUEUE, encoding="utf8"))
-    item = next((i for i in q if not i.get("ig_id") and i.get("tries", 0) < 3), None)
-    if not item:
-        return False
+    item = pending(q)[0]
     job = item["job"]
-    mp4 = os.path.join(ROOT, "PAYLASILACAK", item["file"])
+    mp4 = os.path.join(PDIR, item["file"])
     item["tries"] = item.get("tries", 0) + 1
     thumb_ms = int(min(job["win_t"] * 0.5, 4.0) * 1000)
     try:
@@ -114,10 +167,7 @@ def publish_queue():
     except Exception as e:
         traceback.print_exc()
         item["error"] = str(e)[:300]
-    finally:
-        with open(QUEUE, "w", encoding="utf8") as f:
-            json.dump(q, f, ensure_ascii=False, indent=1)
-    if not item.get("ig_id"):
+        mkqueue.save(q)
         sys.exit("queue publish failed")
     if job.get("first_comment"):
         time.sleep(5)
@@ -125,12 +175,18 @@ def publish_queue():
             publish.ig_comment(item["ig_id"], job["first_comment"])
         except Exception as e:
             print("ig first comment:", e)
+    job["posted_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     log_post(job)
     try:
         report(job, mp4)
     except Exception as e:
         print("report failed:", e)
-    return True
+    for ext in (".mp4", ".txt"):  # posted: take it out of the folder
+        try:
+            os.remove(os.path.join(PDIR, item["file"][:-4] + ext))
+        except OSError:
+            pass
+    mkqueue.save(q)
 
 
 def report(job, mp4):
