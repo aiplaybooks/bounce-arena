@@ -52,4 +52,4 @@ jobs:
         if: always()
         run: |
           git config user.name "bounce-bot" && git config user.email "bot@users.noreply.github.com"
-          git add state; git add -A "BOUNCE ARENA" 2>/dev/null || true; (git diff --cached --quiet || (git commit -qm "state: post" && git pull -q --rebase && git push -q))
+          git add state; git add -A PAYLASILACAK 2>/dev/null || true; (git diff --cached --quiet || (git commit -qm "state: post" && git pull -q --rebase && git push -q))

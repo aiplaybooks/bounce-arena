@@ -1,4 +1,4 @@
-"""Schedules every not-yet-scheduled video in BOUNCE ARENA/ on the Facebook Page, one per Instagram cron slot, in queue order."""
+"""Schedules every not-yet-scheduled video in PAYLASILACAK/ on the Facebook Page, one per Instagram cron slot, in queue order."""
 import datetime as dt
 import sys
 

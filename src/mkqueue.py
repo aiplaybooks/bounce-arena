@@ -1,4 +1,4 @@
-"""Merges the per-video job files in BOUNCE ARENA/ into queue.json (+ one caption .txt per video + PLAN.md).
+"""Merges the per-video job files in PAYLASILACAK/ into queue.json (+ one caption .txt per video + PLAN.md).
 
 Re-running keeps ig_id / tries of items that were already published.
 """
@@ -7,7 +7,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-D = os.path.join(ROOT, "BOUNCE ARENA")
+D = os.path.join(ROOT, "PAYLASILACAK")
 
 
 def write_txt(item):
@@ -18,7 +18,7 @@ def write_txt(item):
 
 def write_plan(q):
     pend = [i for i in q if not i.get("ig_id")]
-    rows = ["# BOUNCE ARENA - bekleyen videolar", "",
+    rows = ["# PAYLASILACAK - bekleyen videolar", "",
             "Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.",
             "Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.", "",
             f"Paylasilan: {len(q) - len(pend)} - Bekleyen: {len(pend)}", "",

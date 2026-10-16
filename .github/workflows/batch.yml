@@ -1,5 +1,5 @@
 name: batch
-# One-off: renders the 12 ready-made videos (one per new arena mode) and commits them to BOUNCE ARENA/.
+# One-off: renders the 12 ready-made videos (one per new arena mode) and commits them to PAYLASILACAK/.
 on:
   workflow_dispatch:
 permissions: {contents: write}
@@ -30,9 +30,9 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
       - run: pip install -q -r requirements.txt
       - name: render
-        run: python src/run.py --mode ${{ matrix.mode }} --theme ${{ matrix.theme }} --render-to BA_out --name ${{ matrix.n }}_${{ matrix.mode }}_${{ matrix.theme }}
+        run: python src/run.py --mode ${{ matrix.mode }} --theme ${{ matrix.theme }} --render-to PAYLASILACAK_out --name ${{ matrix.n }}_${{ matrix.mode }}_${{ matrix.theme }}
       - uses: actions/upload-artifact@v4
-        with: {name: "v${{ matrix.n }}", path: BA_out/*, retention-days: 3}
+        with: {name: "v${{ matrix.n }}", path: PAYLASILACAK_out/*, retention-days: 3}
   collect:
     needs: render
     if: always()
@@ -41,9 +41,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
-        with: {pattern: "v*", path: "BOUNCE ARENA", merge-multiple: true}
+        with: {pattern: "v*", path: PAYLASILACAK, merge-multiple: true}
       - run: python src/mkqueue.py
       - name: commit
         run: |
           git config user.name "bounce-bot" && git config user.email "bot@users.noreply.github.com"
-          git add "BOUNCE ARENA" && git commit -qm "BOUNCE ARENA: 12 ready-made videos" && git pull -q --rebase && git push -q
+          git add PAYLASILACAK && git commit -qm "PAYLASILACAK: 12 ready-made videos" && git pull -q --rebase && git push -q

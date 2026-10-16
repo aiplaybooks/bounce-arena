@@ -1,4 +1,4 @@
-# BOUNCE ARENA - bekleyen videolar
+# PAYLASILACAK - bekleyen videolar
 
 Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.
 Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.
