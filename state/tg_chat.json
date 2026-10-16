@@ -58,5 +58,10 @@
   "t": "2026-10-16 10:02",
   "u": "Sürekli aynı temada üretiyorsun, farklı bounce tipleri geliştir.",
   "a": "Dürüst olmam lazım: gerçekten yeni bir \"bounce tipi\" (escape/grow dışında üçüncü bir fizik mekaniği) eklemek `src/physics.py` + `src/render.py`'de kod yazılmasını gerektiriyor — benim `config/strategy.json` ile yapabileceğim bir şey değil. Bunu masaüstü Claude Code'a iletmen gerekiyor, ben orada dokunamam.\n\nAma şu an elimdekiyle yaptığım iki değişiklik var:\n1. `champion_rematch_prob` 0.5 → 0.2: aynı şampiyonun tekrar tekrar aynı rakiple yarışması (çoğu zaman countries'te) %50 ihtimalle oluyordu, bu \"hep aynı eşleşme\" hissi yaratıyordu — düşürdüm.\n2. Tema ağırlıklarını daha dengeli yaptım: countries 6→4, colors/singers/footballers 2-4→3, brands 3 sabit, billionaires 1 (en düşük izlenme aldığı için). Önceden countries çok baskındı, şimdi daha çeşitli temalar dönecek.\n\nFormat tarafında (escape/grow) zaten elimdeki tek seçenek bu ikisi — üçüncü bir mekanik istersen kodun genelleştirilmesi lazım, önerini masaüstü tarafına iletebilirsin."
+ },
+ {
+  "t": "2026-10-16 11:47",
+  "u": "sistem çalışıyor mu ?",
+  "a": "Evet, sistem çalışıyor. Son post (`20261016-095845`, escape/footballers, \"Which player escapes first?\") 10:00 UTC'de hem IG hem FB'ye başarıyla gitti (ig_id ve fb_id var) — henüz metrikleri gelmedi, çok yeni.\n\nGenel durum (06:56 UTC özeti): takipçi 26/5000, izlenme 3572/250000, 10 post atılmış (bu yeniyle 11 oldu). En iyi performans escape/countries (ort. 608 izlenme), en zayıf grow/billionaires ve escape/billionaires (~130).\n\nSıradaki slot 16:00 UTC'de. Her şey otomatik akıyor, bir sorun yok."
  }
 ]
