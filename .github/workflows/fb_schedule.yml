@@ -1,0 +1,24 @@
+name: fb_schedule
+on:
+  workflow_dispatch:
+concurrency: {group: state, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -q -r requirements.txt
+      - name: schedule on Facebook
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: cd src && python fb_schedule.py
+      - name: commit queue
+        if: always()
+        run: |
+          git config user.name "bounce-bot" && git config user.email "bot@users.noreply.github.com"
+          git add PAYLASILACAK/queue.json PAYLASILACAK/PLAN.md; (git diff --cached --quiet || (git commit -qm "fb: scheduled" && git pull -q --rebase && git push -q))

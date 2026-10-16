@@ -50,7 +50,7 @@ def ig_reel(path, caption, thumb_ms):
         _drop_asset(path)
 
 
-def fb_reel(path, description):
+def fb_reel(path, description, schedule_ts=None):
     tok, pid = os.environ["FB_PAGE_TOKEN"], os.environ["FB_PAGE_ID"]
     st = _check(requests.post(f"{FB}/{pid}/video_reels", data={"upload_phase": "start", "access_token": tok}))
     vid = st["video_id"]
@@ -58,9 +58,10 @@ def fb_reel(path, description):
     with open(path, "rb") as f:
         _check(requests.post(st.get("upload_url") or f"https://rupload.facebook.com/video-upload/{V}/{vid}", data=f, headers={
             "Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(size)}))
-    _check(requests.post(f"{FB}/{pid}/video_reels", data={
-        "upload_phase": "finish", "video_id": vid, "video_state": "PUBLISHED",
-        "description": description, "access_token": tok}))
+    data = {"upload_phase": "finish", "video_id": vid, "video_state": "PUBLISHED", "description": description, "access_token": tok}
+    if schedule_ts:
+        data.update({"video_state": "SCHEDULED", "scheduled_publish_time": str(int(schedule_ts))})
+    _check(requests.post(f"{FB}/{pid}/video_reels", data=data))
     return vid
 
 
