@@ -484,5 +484,48 @@
    "blue_reels_play_count": 0,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261016-015753",
+  "mode": "escape",
+  "theme": "colors",
+  "teams": [
+   "Pink",
+   "Red",
+   "Blue",
+   "Green",
+   "Yellow",
+   "Purple"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#FF3B5C",
+   "#3C8CFF",
+   "#3DFF8C",
+   "#FFD23F",
+   "#B45CFF"
+  ],
+  "hook": "Bet you can't guess the winner",
+  "cta": "Winner returns tomorrow",
+  "caption": "Bet you can't guess the winner\n\nDrop your country in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #asmr",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "rings": 5,
+   "gap_deg": 43.25899866874144,
+   "spin": [
+    0.5,
+    1.5
+   ]
+  },
+  "seed": 810264,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Red",
+  "win_t": 16.35,
+  "duration": 19.87,
+  "ig_id": "17910140751563876",
+  "fb_id": "1791298305326499",
+  "posted_utc": "2026-10-16T01:59:21Z"
  }
 ]
