@@ -45,10 +45,10 @@
     }
   },
   "themes": {
-    "countries": 4,
+    "countries": 6,
     "colors": 2,
-    "singers": 3,
-    "footballers": 3,
+    "singers": 2,
+    "footballers": 4,
     "billionaires": 1,
     "brands": 3
   },
@@ -90,7 +90,7 @@
   "hooks": {
     "escape": [
       "Which country escapes first?",
-      "Only one gets out first. Pick now",
+      "99% can't guess the last escape",
       "Pick your country before it's too late",
       "Wait for the last gap... it's brutal",
       "99% pick wrong. Can you call it?",
@@ -102,7 +102,7 @@
       "Every bounce makes it bigger. Who wins?",
       "First to fill the arena wins",
       "Pick one. It grows every bounce",
-      "Watch till the last bounce. It's close",
+      "Only one fills the arena. Which?",
       "This one comes down to the final hit",
       "{a} vs {b}... who grows fastest?",
       "Champion {champ} is back. Can anyone beat them?"
