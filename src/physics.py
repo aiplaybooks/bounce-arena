@@ -6,6 +6,8 @@ events, and the renderer replays the recording. Units: pixels, seconds.
 import math
 import random
 
+import arenas
+
 FPS = 60
 SUBSTEPS = 6
 TAU = math.tau
@@ -176,6 +178,8 @@ class World:
 
 def simulate(mode, teams, seed, cx, cy, arena_r, p, max_s=55.0, tail_s=3.5):
     """Runs to the winner + tail. Returns (frames, events, winner, win_t) or None if no winner."""
+    if mode in arenas.MODES:
+        return arenas.simulate(mode, teams, seed, p, 60.0, tail_s)
     w = World(mode, teams, seed, cx, cy, arena_r, p)
     frames = []
     while w.t < max_s:
@@ -188,6 +192,8 @@ def simulate(mode, teams, seed, cx, cy, arena_r, p, max_s=55.0, tail_s=3.5):
 
 def race_stats(mode, teams, seed, cx, cy, arena_r, p, max_s=55.0):
     """Cheap headless run used for seed search: winner time and closeness."""
+    if mode in arenas.MODES:
+        return arenas.stats(mode, teams, seed, p, 60.0)
     w = World(mode, teams, seed, cx, cy, arena_r, p)
     while w.t < max_s and w.win_t is None:
         w.step()

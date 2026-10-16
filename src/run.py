@@ -27,8 +27,13 @@ def main():
     ap.add_argument("--mode")
     ap.add_argument("--theme")
     ap.add_argument("--only", choices=["ig", "fb"], help="publish to one network")
+    ap.add_argument("--queue-first", action="store_true", help="publish the next ready-made video from PAYLASILACAK/ if any")
+    ap.add_argument("--render-to", help="render one finished video + job json into this folder (no publishing); use with --name")
+    ap.add_argument("--name")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
+    if a.queue_first and publish_queue():
+        return
     job = plan.make_job(a.mode, a.theme)
     sim = physics.simulate(job["mode"], job["teams"], job["seed"], render.CX, render.CY, render.ARENA_R, job["params"])
     if sim is None:
@@ -42,8 +47,16 @@ def main():
         render.render(sim, job, None, None, preview_dir=os.path.join(OUT, "preview"))
         return
     wav, mp4 = os.path.join(OUT, f"{job['id']}.wav"), os.path.join(OUT, f"{job['id']}.mp4")
+    if a.render_to:
+        os.makedirs(a.render_to, exist_ok=True)
+        mp4 = os.path.join(a.render_to, a.name + ".mp4")
+        job["file"] = a.name + ".mp4"
     audio.build(events, job["duration"], wav, job["key"])
     render.render(sim, job, mp4, wav)
+    if a.render_to:
+        with open(os.path.join(a.render_to, a.name + ".json"), "w", encoding="utf8") as f:
+            json.dump(job, f, ensure_ascii=False, indent=1)
+        return
     if a.dry_run:
         import notify
         notify.video(mp4, f"👀 Önizleme (yayınlanmadı)\n{job['hook']}\n{job['mode']}/{job['theme']} · winner {job['winner']} · {job['duration']}s")
@@ -77,6 +90,47 @@ def main():
     report(job, mp4)
     if "ig_id" not in job and "fb_id" not in job:
         sys.exit("both publishes failed")
+
+
+QUEUE = os.path.join(ROOT, "PAYLASILACAK", "queue.json")
+
+
+def publish_queue():
+    """Posts the next unposted ready-made video to Instagram only (Facebook is scheduled by hand from the same folder)."""
+    if not os.path.exists(QUEUE):
+        return False
+    import publish
+    q = json.load(open(QUEUE, encoding="utf8"))
+    item = next((i for i in q if not i.get("ig_id") and i.get("tries", 0) < 3), None)
+    if not item:
+        return False
+    job = item["job"]
+    mp4 = os.path.join(ROOT, "PAYLASILACAK", item["file"])
+    item["tries"] = item.get("tries", 0) + 1
+    thumb_ms = int(min(job["win_t"] * 0.5, 4.0) * 1000)
+    try:
+        item["ig_id"] = job["ig_id"] = publish.ig_reel(mp4, job["caption"], thumb_ms)
+        item.pop("error", None)
+    except Exception as e:
+        traceback.print_exc()
+        item["error"] = str(e)[:300]
+    finally:
+        with open(QUEUE, "w", encoding="utf8") as f:
+            json.dump(q, f, ensure_ascii=False, indent=1)
+    if not item.get("ig_id"):
+        sys.exit("queue publish failed")
+    if job.get("first_comment"):
+        time.sleep(5)
+        try:
+            publish.ig_comment(item["ig_id"], job["first_comment"])
+        except Exception as e:
+            print("ig first comment:", e)
+    log_post(job)
+    try:
+        report(job, mp4)
+    except Exception as e:
+        print("report failed:", e)
+    return True
 
 
 def report(job, mp4):

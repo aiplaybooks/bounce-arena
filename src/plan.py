@@ -4,6 +4,7 @@ import os
 import random
 import time
 
+import arenas
 import physics
 from render import ARENA_R, CX, CY, PALETTE
 
@@ -42,6 +43,8 @@ def make_job(force_mode=None, force_theme=None):
     fm = st["formats"][mode]
     theme = force_theme or explore(rng, st["themes"], posts, "theme")
     n = rng.randint(*fm["teams"])
+    if theme in st.get("pools", {}):
+        n = min(n, len(st["pools"][theme]["names"]))
     champ = None
     request_line = ""
     if theme == "countries":
@@ -86,18 +89,24 @@ def make_job(force_mode=None, force_theme=None):
         teams = [st["colors"][i] for i in idx]
         colors = [PALETTE[i] for i in idx]
     hooks = [h for h in st["hooks"][mode] if ("{champ}" in h) == bool(champ)]
+    if not hooks:
+        champ = None
+        hooks = [h for h in st["hooks"][mode] if "{champ}" not in h]
+    noun = {"countries": "country", "colors": "color"}.get(theme) or st["pools"][theme]["noun"]
     if theme in st.get("pools", {}):
         hooks = [h.replace("country", st["pools"][theme]["noun"]).replace("countries", st["pools"][theme]["noun"] + "s") for h in hooks]
     elif theme != "countries":
         hooks = [h.replace("country", "color") for h in hooks]
-    hook = rng.choice(hooks).format(a=teams[0], b=teams[1], champ=champ)
+    hook = rng.choice(hooks).format(a=teams[0], b=teams[1], champ=champ, noun=noun)
     params = {}
     if mode == "escape":
         params = {"rings": rng.randint(*fm["rings"]), "gap_deg": rng.uniform(*fm["gap_deg"]), "spin": tuple(fm["spin"])}
-    else:
+    elif mode == "grow":
         params = {"grow_step": rng.uniform(*fm["grow_step"]), "target_r": rng.uniform(*fm["target_r"]), "ball_r": 34.0}
-    seed = find_seed(mode, teams, params, fm["seconds"], rng)
-    tags = st["tags_core"] + rng.sample(st["tags_rotating"], 2)
+    else:  # arenas.py modes: list of two numbers = random range, anything else = fixed value
+        params = {k: (rng.uniform(*v) if isinstance(v, list) else v) for k, v in fm.get("params", {}).items()}
+    seed = find_seed(mode, teams, params, fm["seconds"], rng, arenas.TRIES.get(mode, 120))
+    tags = st["tags_core"] + rng.sample(st["tags_rotating"], 2) + st.get("mode_tags", {}).get(mode, [])
     caption = rng.choice(st["caption"]).format(hook=hook, request_line=request_line, tags=" ".join(tags))
     first = rng.choice(st.get("first_comment") or [""]).format(a=teams[0], b=teams[1])
     return {

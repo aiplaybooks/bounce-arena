@@ -35,6 +35,7 @@ def build(events, duration, path, key="C"):
     shift = 2 ** KEYS.get(key, 0.0)
     last_pop = -1.0
     last_tick = -1.0
+    last_boom = -1.0
     for t, kind, team, extra, *_ in events:
         if t > duration:
             break
@@ -50,6 +51,11 @@ def build(events, duration, path, key="C"):
             _add(buf, t, _tick(), 0.3)
         elif kind == "pass":
             _add(buf, t, _pop(230 * shift, 0.14), 0.5)
+        elif kind == "boom":
+            if t - last_boom < 0.05:
+                continue
+            last_boom = t
+            _add(buf, t, _pop(150 * shift * (1 + 0.1 * (int(t * 40) % 4)), 0.1), 0.3)
         elif kind == "win":
             for i in range(3):
                 _add(buf, t + i * 0.09, _pop((200 + 40 * i) * shift, 0.16), 0.55)

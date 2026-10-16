@@ -2,7 +2,7 @@
   "_note": "Claude tunes this file from state/summary.md. Weights are relative.",
   "formats": {
     "escape": {
-      "weight": 4,
+      "weight": 2,
       "teams": [
         5,
         8
@@ -42,6 +42,175 @@
         14,
         22
       ]
+    },
+    "maze": {
+      "weight": 2,
+      "teams": [
+        4,
+        6
+      ],
+      "seconds": [
+        16,
+        26
+      ],
+      "params": {
+        "size": 12
+      }
+    },
+    "golf": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        13,
+        24
+      ]
+    },
+    "plinko": {
+      "weight": 2,
+      "teams": [
+        4,
+        5
+      ],
+      "seconds": [
+        15,
+        26
+      ],
+      "params": {
+        "per_team": 4,
+        "interval": [
+          0.8,
+          0.95
+        ]
+      }
+    },
+    "race": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        18,
+        26
+      ],
+      "params": {
+        "laps": 3,
+        "speed": [
+          290,
+          320
+        ]
+      }
+    },
+    "storm": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        14,
+        26
+      ],
+      "params": {}
+    },
+    "territory": {
+      "weight": 2,
+      "teams": [
+        4,
+        5
+      ],
+      "seconds": [
+        19,
+        25
+      ],
+      "params": {
+        "duration": [
+          20,
+          24
+        ]
+      }
+    },
+    "sumo": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        14,
+        26
+      ]
+    },
+    "tower": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        14,
+        28
+      ]
+    },
+    "chain": {
+      "weight": 2,
+      "teams": [
+        4,
+        5
+      ],
+      "seconds": [
+        21,
+        27
+      ],
+      "params": {
+        "duration": [
+          22,
+          26
+        ],
+        "chain": 0.22
+      }
+    },
+    "flip": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        14,
+        28
+      ]
+    },
+    "pinball": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        23,
+        29
+      ],
+      "params": {
+        "duration": [
+          24,
+          28
+        ]
+      }
+    },
+    "hole": {
+      "weight": 2,
+      "teams": [
+        5,
+        6
+      ],
+      "seconds": [
+        14,
+        28
+      ]
     }
   },
   "themes": {
@@ -50,7 +219,9 @@
     "singers": 3,
     "footballers": 3,
     "billionaires": 1,
-    "brands": 3
+    "brands": 3,
+    "clubs": 3,
+    "ai": 3
   },
   "countries_core": [
     "USA",
@@ -106,6 +277,70 @@
       "This one comes down to the final hit",
       "{a} vs {b}... who grows fastest?",
       "Champion {champ} is back. Can anyone beat them?"
+    ],
+    "maze": [
+      "Which {noun} escapes the maze first?",
+      "Only one {noun} finds the exit",
+      "Pick your {noun}. First one out wins",
+      "99% pick the wrong {noun}. Maze edition"
+    ],
+    "golf": [
+      "Which {noun} sinks the putt first?",
+      "Hole in one... which {noun}?",
+      "Rolling to the hole. Who wins?",
+      "Pick your {noun} before it drops"
+    ],
+    "plinko": [
+      "Which {noun} wins the Plinko?",
+      "Pick the luckiest {noun}",
+      "One jackpot slot. Who gets it?",
+      "Highest score wins. Pick one"
+    ],
+    "race": [
+      "Which {noun} wins the race?",
+      "3 laps. Pick your {noun}",
+      "Boost pads change everything",
+      "Who takes the checkered flag?"
+    ],
+    "storm": [
+      "Last {noun} standing wins",
+      "The storm is closing in. Who survives?",
+      "Pick the {noun} that survives"
+    ],
+    "territory": [
+      "Which {noun} paints the most?",
+      "Who owns the board in 22 seconds?",
+      "Pick your {noun}. Biggest territory wins"
+    ],
+    "sumo": [
+      "Last {noun} on the ring wins",
+      "Sumo battle: who stays on?",
+      "Pick your {noun}. Don't fall off"
+    ],
+    "tower": [
+      "First {noun} to the crown wins",
+      "Who climbs to the top first?",
+      "Pick your {noun}. Reach the crown"
+    ],
+    "chain": [
+      "Which {noun} blows up the most?",
+      "One touch = chain reaction",
+      "Pick your {noun}. Most booms wins"
+    ],
+    "flip": [
+      "Gravity keeps flipping. Who survives?",
+      "Last {noun} alive wins",
+      "Dodge the spikes. Pick one"
+    ],
+    "pinball": [
+      "Which {noun} scores the most?",
+      "Pinball battle: pick one",
+      "Highest score wins. Pick your {noun}"
+    ],
+    "hole": [
+      "Who escapes the black hole?",
+      "Last {noun} standing wins",
+      "The black hole eats them one by one"
     ]
   },
   "cta": [
@@ -225,6 +460,74 @@
         "Spotify",
         "Xbox"
       ]
+    },
+    "clubs": {
+      "noun": "club",
+      "names": [
+        "Real",
+        "Barca",
+        "City",
+        "Arsenal",
+        "Bayern",
+        "PSG",
+        "Juve",
+        "United",
+        "Chelsea",
+        "Inter",
+        "Milan",
+        "Dortmund"
+      ]
+    },
+    "ai": {
+      "noun": "AI",
+      "names": [
+        "ChatGPT",
+        "Claude",
+        "Codex",
+        "Grok",
+        "DeepSeek",
+        "Gemini",
+        "Copilot",
+        "Llama"
+      ]
     }
+  },
+  "mode_tags": {
+    "maze": [
+      "#maze"
+    ],
+    "golf": [
+      "#golf"
+    ],
+    "plinko": [
+      "#plinko"
+    ],
+    "race": [
+      "#racing"
+    ],
+    "storm": [
+      "#battleroyale"
+    ],
+    "territory": [
+      "#paint"
+    ],
+    "sumo": [
+      "#sumo"
+    ],
+    "tower": [
+      "#climb"
+    ],
+    "chain": [
+      "#chainreaction"
+    ],
+    "flip": [
+      "#gravity"
+    ],
+    "pinball": [
+      "#pinball"
+    ],
+    "hole": [
+      "#blackhole"
+    ]
   }
 }

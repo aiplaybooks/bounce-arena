@@ -39,9 +39,11 @@ class Painter:
         self.fonts = {}
         self.label_cache = {}
         self.glow = {}
-        self.trails = [deque(maxlen=9) for _ in teams]
+        self.trails = {}
         self.particles = []
         self.rng = random.Random(1)
+        self.base = None
+        self.texts = {}
         self.hook_surfs = self._wrap(hook.upper(), 92, W - 120, (255, 255, 255))
 
     def font(self, size):
@@ -77,6 +79,7 @@ class Painter:
         return out
 
     def glow_sprite(self, team, r):
+        r = max(6, int(r) // 3 * 3)
         key = (team, int(r))
         if key not in self.glow:
             gr = int(r * 2.2)
@@ -89,16 +92,77 @@ class Painter:
         return self.glow[key]
 
     def label(self, team, r):
+        r = max(6, int(r) // 3 * 3)
         key = (team, int(r))
         if key not in self.label_cache:
             name = self.teams[team].upper()
             size = r * 0.78
             f = self.font(size)
-            while f.size(name)[0] > r * 1.75 and size > 12:
+            while f.size(name)[0] > r * 1.75 and size > 11:
                 size -= 2
                 f = self.font(size)
-            self.label_cache[key] = self._outlined(name, f, (255, 255, 255), 2)
+            self.label_cache[key] = self._outlined(name, f, (255, 255, 255), 2) if size >= 11 and r >= 15 else None
         return self.label_cache[key]
+
+    def col(self, c):
+        if isinstance(c, int):
+            return self.colors[c % len(self.colors)]
+        if isinstance(c, tuple) and c and c[0] == "t":
+            return mix(BG_BOT, self.colors[c[1] % len(self.colors)], max(0.0, min(1.0, c[2])))
+        return c
+
+    def shape(self, surf, s):
+        k = s[0]
+        if k == "line":
+            _, x1, y1, x2, y2, w, c = s
+            c = self.col(c)
+            dx, dy = x2 - x1, y2 - y1
+            l = math.hypot(dx, dy) or 1.0
+            nx, ny = -dy / l * w / 2, dx / l * w / 2
+            poly = [(x1 + nx, y1 + ny), (x2 + nx, y2 + ny), (x2 - nx, y2 - ny), (x1 - nx, y1 - ny)]
+            gfx.filled_polygon(surf, poly, c)
+            gfx.filled_circle(surf, int(x1), int(y1), int(w / 2), c)
+            gfx.filled_circle(surf, int(x2), int(y2), int(w / 2), c)
+        elif k == "circle":
+            _, x, y, r, c = s
+            if r >= 1:
+                gfx.filled_circle(surf, int(x), int(y), int(r), self.col(c))
+                gfx.aacircle(surf, int(x), int(y), int(r), self.col(c))
+        elif k == "ring":
+            _, x, y, r, w, c = s
+            c = self.col(c)
+            for j in range(max(1, int(w))):
+                gfx.aacircle(surf, int(x), int(y), max(1, int(r - w / 2 + j)), c)
+        elif k == "rect":
+            _, x, y, w, h, c = s
+            if w > 0 and h > 0:
+                pygame.draw.rect(surf, self.col(c), (int(x), int(y), int(w), int(h)))
+        elif k == "poly":
+            _, pts, c = s
+            gfx.filled_polygon(surf, pts, self.col(c))
+            gfx.aapolygon(surf, pts, self.col(c))
+        elif k == "capsule":
+            _, x, y1, y2, r, c = s
+            c = self.col(c)
+            pygame.draw.rect(surf, c, (int(x - r), int(y1), int(2 * r), int(y2 - y1)))
+            gfx.filled_circle(surf, int(x), int(y1), int(r), c)
+            gfx.filled_circle(surf, int(x), int(y2), int(r), c)
+            gfx.aacircle(surf, int(x), int(y1), int(r), c)
+            gfx.aacircle(surf, int(x), int(y2), int(r), c)
+        elif k == "text":
+            _, txt, x, y, size, c = s
+            key = (txt, int(size), self.col(c))
+            if key not in self.texts:
+                self.texts[key] = self._outlined(txt, self.font(size), self.col(c), 3)
+            t = self.texts[key]
+            surf.blit(t, (int(x - t.get_width() / 2), int(y - t.get_height() / 2)))
+
+    def draw_grid(self, surf, g):
+        x0, y0, cs, n, owner = g
+        for i, o in enumerate(owner):
+            r, c = divmod(i, n)
+            col = (26, 26, 48) if o < 0 else mix((26, 26, 48), self.colors[o % len(self.colors)], 0.62)
+            pygame.draw.rect(surf, col, (int(x0 + c * cs) + 1, int(y0 + r * cs) + 1, int(cs) - 2, int(cs) - 2))
 
     def ring(self, surf, R, thick, gap, ang, color):
         half = thick / 2
@@ -122,22 +186,30 @@ class Painter:
             self.particles.append([x, y, s * math.cos(a), s * math.sin(a), self.rng.uniform(0.4, 1.1), c])
 
     def draw(self, surf, fr, idx, win_frame, winner, standings):
-        surf.blit(self.bg, (0, 0))
-        y = 210
-        for s in self.hook_surfs:
-            surf.blit(s, ((W - s.get_width()) // 2, y))
-            y += s.get_height() - 18
+        if self.base is None:
+            self.base = self.bg.copy()
+            y = 210
+            for s in self.hook_surfs:
+                self.base.blit(s, ((W - s.get_width()) // 2, y))
+                y += s.get_height() - 18
+            for s in fr.get("static") or ():
+                self.shape(self.base, s)
+        surf.blit(self.base, (0, 0))
+        if fr.get("grid"):
+            self.draw_grid(surf, fr["grid"])
+        for s in fr.get("shapes") or ():
+            self.shape(surf, s)
         nr = len(fr["rings"])
         for i, (R, thick, gap, ang) in enumerate(fr["rings"]):
             hue = (190 + 120 * i / max(1, nr - 1)) % 360
             c = pygame.Color(0)
             c.hsva = (hue, 75, 100, 100)
             self.ring(surf, R, thick, gap, ang, (c.r, c.g, c.b))
-        for x, y2, r, team, alive in fr["balls"]:
+        for bi, (x, y2, r, team, alive) in enumerate(fr["balls"]):
             if not alive:
                 continue
             col = self.colors[team % len(self.colors)]
-            tr = self.trails[team]
+            tr = self.trails.setdefault(bi, deque(maxlen=9))
             for k, (tx, ty) in enumerate(tr):
                 f = (k + 1) / (len(tr) + 1)
                 gfx.filled_circle(surf, int(tx), int(ty), max(2, int(r * f * 0.8)), mix(BG_BOT, col, f * 0.55))
@@ -148,7 +220,8 @@ class Painter:
             gfx.aacircle(surf, int(x), int(y2), int(r), mix(col, (255, 255, 255), 0.5))
             gfx.filled_circle(surf, int(x - r * 0.35), int(y2 - r * 0.4), max(2, int(r * 0.22)), mix(col, (255, 255, 255), 0.6))
             lab = self.label(team, r)
-            surf.blit(lab, (int(x - lab.get_width() / 2), int(y2 - lab.get_height() / 2)))
+            if lab:
+                surf.blit(lab, (int(x - lab.get_width() / 2), int(y2 - lab.get_height() / 2)))
         dt = 1 / FPS
         alive = []
         for p in self.particles:
@@ -192,6 +265,8 @@ class Painter:
 
 
 def standings_for(mode, fr, teams, target_r):
+    if fr.get("standings") is not None:
+        return fr["standings"]
     if mode == "escape":
         rows = []
         for (x, y, r, team, alive), layer in zip(fr["balls"], fr["layers"]):
