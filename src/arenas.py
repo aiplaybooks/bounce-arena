@@ -117,6 +117,7 @@ class Arena:
         self.lead = None
         self.lead_changes = 0
         self._lastev = {}
+        self.after = 0  # frames since the win; the world is frozen from then on
         self.setup()
 
     # -- helpers -------------------------------------------------------------------------------
@@ -134,6 +135,9 @@ class Arena:
             self.events.append((self.t, "win", team, 0, b.x, b.y))
 
     def step(self):
+        if self.win_t is not None:
+            self.after += 1
+            return
         dt = 1.0 / FPS / self.SUB
         for _ in range(self.SUB):
             self.t += dt
@@ -530,7 +534,7 @@ class Race(Arena):
     def setup(self):
         p, rng = self.p, self.rng
         self.laps = p.get("laps", 3)
-        self.ya, self.yb, self.ri, self.ro = CY - 150, CY + 150, 100, 300
+        self.ya, self.yb, self.ri, self.ro = CY - 150, CY + 150, 70, 300
         self.base = p.get("speed", 300.0)
         self.pads = []
         kinds = [1, 1, -1, -1]
@@ -548,10 +552,9 @@ class Race(Arena):
                 st.append(("rect", CX + self.ri + j * 20, CY - 10 + k * 10, 20, 10, (255, 255, 255) if (j + k) % 2 == 0 else (0, 0, 0)))
         st.append(("text", "START / FINISH", CX + 200, CY - 38, 26, WHITE))
         for i in range(self.n):
-            row, col = divmod(i, 3)
-            x = CX + 125 + col * 65 + (20 if row % 2 else 0)
-            y = CY + 55 + row * 75
-            b = Ball(x, y, 28, i, 0.0, -150.0)
+            x = CX + self.ri + 21 + i * (self.ro - self.ri - 42) / max(1, self.n - 1)
+            y = CY + 45  # everyone starts on the same line, side by side
+            b = Ball(x, y, 21, i, 0.0, -150.0)
             b.aux = (self.base * (1 + rng.uniform(-0.04, 0.04)), rng.uniform(0, TAU), rng.uniform(0, TAU), rng.uniform(0.9, 1.7), rng.uniform(2.0, 3.4))
             b.px = math.atan2(y - CY, x - CX)
             b.score = 0.0  # cumulative angle
@@ -595,6 +598,10 @@ class Race(Arena):
                 if abs(wrap(ang - am)) < hw:
                     tgt *= mult
                     break
+            if self.ya < b.y < self.yb:
+                pass
+            else:
+                tgt *= d / ((self.ri + self.ro) / 2)  # same centre-line speed in every lane through the bends
             vt += (tgt - vt) / 0.30 * dt
             vn *= max(0.0, 1 - 4 * dt)
             b.vx, b.vy = vt * tx + vn * nx, vt * ty + vn * ny
@@ -641,7 +648,8 @@ class Storm(Arena):
     def setup(self):
         p, rng = self.p, self.rng
         self.W = BX1 - BX0
-        self.sp = [rng.uniform(*p.get("storm", (9, 17))) for _ in range(4)]  # L R T B
+        self.rate = p.get("rate", rng.uniform(9.0, 12.0))
+        self.tx, self.ty = CX + rng.uniform(-230, 230), CY + rng.uniform(-230, 230)
         self.r0 = 34
         for i in range(self.n):
             a = TAU * i / self.n + rng.uniform(-0.2, 0.2)
@@ -657,17 +665,13 @@ class Storm(Arena):
         self.last_reseek = 0.0
 
     def edges(self):
-        t = self.t
-        f = t * (1 + t / 40)
-        offs = [s * f for s in self.sp]
-        minw = 170
-        for a, bb in ((0, 1), (2, 3)):
-            tot = offs[a] + offs[bb]
-            if self.W - tot < minw:
-                k = (self.W - minw) / tot
-                offs[a] *= k
-                offs[bb] *= k
-        return BX0 + offs[0], BX1 - offs[1], BY0 + offs[2], BY1 - offs[3]
+        """Safe zone: shrinks and drifts toward a random corner-ish target, so balls have to run to stay inside."""
+        t = min(self.t, self.win_t if self.win_t is not None else self.t)
+        half = max(95.0, 425.0 - self.rate * t * (1 + t / 45))
+        f = min(1.0, t / 24.0)
+        zx = min(BX1 - half, max(BX0 + half, CX + (self.tx - CX) * f))
+        zy = min(BY1 - half, max(BY0 + half, CY + (self.ty - CY) * f))
+        return zx - half, zx + half, zy - half, zy + half
 
     def tick(self, dt):
         L, R, T, B = self.edges()
@@ -680,8 +684,8 @@ class Storm(Arena):
         for b in live:
             if reseek:
                 b.aux = rng.uniform(5.0, 10.0)
-            b.vx += b.aux * (CX - b.x) * dt
-            b.vy += b.aux * (CY - b.y) * dt
+            b.vx += b.aux * ((L + R) / 2 - b.x) * dt
+            b.vy += b.aux * ((T + B) / 2 - b.y) * dt
             if self.t > b.t0:
                 b.t0 = self.t + rng.uniform(1.0, 2.2)
                 a = rng.uniform(0, TAU)
@@ -717,10 +721,6 @@ class Storm(Arena):
                 self.win(alive[0].team, alive[0])
             elif not alive:
                 self.failed = True
-        for b in self.balls:  # visual: shrink with hp
-            if not b.dead:
-                b.r = self.r0 * (0.62 + 0.38 * b.score)
-
     def dyn(self):
         L, R, T, B = self.edges()
         red = (84, 12, 30)
@@ -733,8 +733,16 @@ class Storm(Arena):
             sh.append(("rect", BX0, T, L - BX0, B - T, red))
         if R < BX1:
             sh.append(("rect", R, T, BX1 - R, B - T, red))
-        sh += [("line", L, T, R, T, 6, (255, 70, 90)), ("line", L, B, R, B, 6, (255, 70, 90)),
-               ("line", L, T, L, B, 6, (255, 70, 90)), ("line", R, T, R, B, 6, (255, 70, 90))]
+        sh += [("line", L, T, R, T, 6, (255, 255, 255)), ("line", L, B, R, B, 6, (255, 255, 255)),
+               ("line", L, T, L, B, 6, (255, 255, 255)), ("line", R, T, R, B, 6, (255, 255, 255))]
+        for b in self.balls:  # HP bar over each ball; red ring while it stands in the storm
+            if b.dead:
+                continue
+            if b.x < L or b.x > R or b.y < T or b.y > B:
+                sh.append(("ring", b.x, b.y, b.r + 8, 5, (255, 60, 70)))
+            hp = max(0.0, b.score)
+            col = (70, 230, 110) if hp > 0.5 else (255, 200, 60) if hp > 0.25 else (255, 70, 70)
+            sh += [("rect", b.x - 32, b.y - b.r - 24, 64, 11, (20, 20, 30)), ("rect", b.x - 30, b.y - b.r - 22, 60 * hp, 7, col)]
         return sh
 
     def leader(self):
@@ -1498,7 +1506,7 @@ def simulate(mode, teams, seed, p, max_s=60.0, tail_s=3.5):
         frames.append(w.snapshot(first=not frames))
         if w.failed:
             return None
-        if w.win_t is not None and w.t > w.win_t + tail_s:
+        if w.win_t is not None and w.after >= tail_s * FPS:
             return frames, w.events, w.winner, w.win_t
     return None
 

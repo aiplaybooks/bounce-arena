@@ -89,18 +89,18 @@
     "race": {
       "weight": 2,
       "teams": [
-        5,
-        6
+        4,
+        5
       ],
       "seconds": [
-        18,
-        26
+        19,
+        27
       ],
       "params": {
         "laps": 3,
         "speed": [
-          290,
-          320
+          235,
+          265
         ]
       }
     },
@@ -114,7 +114,12 @@
         14,
         26
       ],
-      "params": {}
+      "params": {
+        "rate": [
+          9,
+          12
+        ]
+      }
     },
     "territory": {
       "weight": 2,

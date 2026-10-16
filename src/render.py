@@ -9,6 +9,7 @@ os.environ.setdefault("SDL_VIDEODRIVER", "dummy")
 import pygame  # noqa: E402
 import pygame.gfxdraw as gfx  # noqa: E402
 
+from arenas import MODES as ARENA_MODES  # noqa: E402
 from physics import FPS  # noqa: E402
 
 W, H = 1080, 1920
@@ -222,6 +223,8 @@ class Painter:
             lab = self.label(team, r)
             if lab:
                 surf.blit(lab, (int(x - lab.get_width() / 2), int(y2 - lab.get_height() / 2)))
+        if self.mode in ARENA_MODES and win_frame is not None and idx >= win_frame:
+            self.particles = []  # world freezes on the win
         dt = 1 / FPS
         alive = []
         for p in self.particles:
@@ -292,7 +295,8 @@ def render(sim, job, out_mp4, audio_wav, preview_dir=None):
         picks = {30, len(frames) // 2, min(len(frames) - 1, win_frame + 50)}
         for i, fr in enumerate(frames):
             for e in ev_by_frame.get(i, ()):
-                painter.spawn_burst(e[4], e[5], e[2], 60 if e[1] == "win" else 18)
+                if not (e[1] == "win" and job["mode"] in ARENA_MODES):
+                    painter.spawn_burst(e[4], e[5], e[2], 60 if e[1] == "win" else 18)
             painter.draw(surf, fr, i, win_frame, winner, standings_for(job["mode"], fr, job["teams"], target_r))
             if i in picks:
                 pygame.image.save(surf, os.path.join(preview_dir, f"frame_{i:05d}.png"))
@@ -303,7 +307,8 @@ def render(sim, job, out_mp4, audio_wav, preview_dir=None):
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for i, fr in enumerate(frames):
         for e in ev_by_frame.get(i, ()):
-            painter.spawn_burst(e[4], e[5], e[2], 60 if e[1] == "win" else 18)
+            if not (e[1] == "win" and job["mode"] in ARENA_MODES):
+                    painter.spawn_burst(e[4], e[5], e[2], 60 if e[1] == "win" else 18)
         painter.draw(surf, fr, i, win_frame, winner, standings_for(job["mode"], fr, job["teams"], target_r))
         proc.stdin.write(pygame.image.tobytes(surf, "RGB"))
     proc.stdin.close()
