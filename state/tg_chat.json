@@ -53,5 +53,10 @@
   "t": "2026-10-16 05:13",
   "u": "Bugunkü paylaşım planın nedir?",
   "a": "Bugün 4 post gidecek, saatler sabit (09:30, 16:00, 22:30, 01:30 UTC) — bu workflow'da ayarlı, benim değiştiremediğim yer. Hangi format/tema çıkacağı strategy.json'daki ağırlıklara göre rastgele seçiliyor, ben de şimdi veriye göre ağırlıkları güncelledim:\n\n- escape 3→4, grow 2→1: escape/countries ortalama 606 izlenme (n=4) alırken grow 129-146 arasında kalıyor, üstüne grow'da bilinen bitiş hatası var (top target'a ulaşınca durmuyor) — düzelene kadar grow'u azalttım.\n- countries 3→4: en iyi performans gösteren tema.\n- billionaires 2→1: hem escape hem grow kombinasyonunda en düşük izlenmeleri verdi (131, 128).\n\nYani bugün ağırlıklı olarak escape/countries çıkacak, ara sıra footballers/brands/singers, grow ve billionaires daha az görünecek. Pending yorum isteği de yok şu an, o yüzden tema seçimi tamamen ağırlıklara kalıyor."
+ },
+ {
+  "t": "2026-10-16 10:02",
+  "u": "Sürekli aynı temada üretiyorsun, farklı bounce tipleri geliştir.",
+  "a": "Dürüst olmam lazım: gerçekten yeni bir \"bounce tipi\" (escape/grow dışında üçüncü bir fizik mekaniği) eklemek `src/physics.py` + `src/render.py`'de kod yazılmasını gerektiriyor — benim `config/strategy.json` ile yapabileceğim bir şey değil. Bunu masaüstü Claude Code'a iletmen gerekiyor, ben orada dokunamam.\n\nAma şu an elimdekiyle yaptığım iki değişiklik var:\n1. `champion_rematch_prob` 0.5 → 0.2: aynı şampiyonun tekrar tekrar aynı rakiple yarışması (çoğu zaman countries'te) %50 ihtimalle oluyordu, bu \"hep aynı eşleşme\" hissi yaratıyordu — düşürdüm.\n2. Tema ağırlıklarını daha dengeli yaptım: countries 6→4, colors/singers/footballers 2-4→3, brands 3 sabit, billionaires 1 (en düşük izlenme aldığı için). Önceden countries çok baskındı, şimdi daha çeşitli temalar dönecek.\n\nFormat tarafında (escape/grow) zaten elimdeki tek seçenek bu ikisi — üçüncü bir mekanik istersen kodun genelleştirilmesi lazım, önerini masaüstü tarafına iletebilirsin."
  }
 ]

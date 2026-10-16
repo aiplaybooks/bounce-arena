@@ -45,10 +45,10 @@
     }
   },
   "themes": {
-    "countries": 6,
-    "colors": 2,
-    "singers": 2,
-    "footballers": 4,
+    "countries": 4,
+    "colors": 3,
+    "singers": 3,
+    "footballers": 3,
     "billionaires": 1,
     "brands": 3
   },
@@ -86,7 +86,7 @@
     "Cyan",
     "Pink"
   ],
-  "champion_rematch_prob": 0.5,
+  "champion_rematch_prob": 0.2,
   "hooks": {
     "escape": [
       "Which country escapes first?",
