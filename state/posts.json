@@ -307,13 +307,13 @@
   "fb_id": "1137703832164170",
   "posted_utc": "2026-10-15T13:15:09Z",
   "ig": {
-   "views": 174,
-   "reach": 142,
+   "views": 178,
+   "reach": 146,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 7231
+   "ig_reels_avg_watch_time": 7141
   },
   "fb": {
    "post_video_avg_time_watched": 3108,
@@ -357,13 +357,13 @@
   "fb_id": "3678799068940321",
   "posted_utc": "2026-10-15T16:23:51Z",
   "ig": {
-   "views": 128,
-   "reach": 108,
+   "views": 129,
+   "reach": 109,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6512
+   "ig_reels_avg_watch_time": 6465
   },
   "fb": {
    "post_video_avg_time_watched": 17096,
@@ -412,13 +412,13 @@
   "fb_id": "1144594181577592",
   "posted_utc": "2026-10-15T19:30:34Z",
   "ig": {
-   "views": 902,
-   "reach": 747,
+   "views": 1199,
+   "reach": 1009,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6567
+   "ig_reels_avg_watch_time": 6649
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -471,13 +471,13 @@
   "fb_id": "2363845604354872",
   "posted_utc": "2026-10-15T22:55:56Z",
   "ig": {
-   "views": 131,
-   "reach": 113,
+   "views": 133,
+   "reach": 114,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6156
+   "ig_reels_avg_watch_time": 6120
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -528,13 +528,13 @@
   "fb_id": "1791298305326499",
   "posted_utc": "2026-10-16T01:59:21Z",
   "ig": {
-   "views": 147,
-   "reach": 122,
+   "views": 148,
+   "reach": 123,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10329
+   "ig_reels_avg_watch_time": 10393
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -583,13 +583,13 @@
   "fb_id": "1150100024216959",
   "posted_utc": "2026-10-16T10:00:13Z",
   "ig": {
-   "views": 1464,
-   "reach": 1171,
-   "likes": 3,
+   "views": 1692,
+   "reach": 1396,
+   "likes": 4,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10732
+   "ig_reels_avg_watch_time": 10197
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -633,7 +633,16 @@
   "duration": 22.0,
   "file": "01_maze_countries.mp4",
   "ig_id": "17922714978223884",
-  "posted_utc": "2026-10-16T13:13:35Z"
+  "posted_utc": "2026-10-16T13:13:35Z",
+  "ig": {
+   "views": 133,
+   "reach": 116,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 7954
+  }
  },
  {
   "id": "20261016-104947",
@@ -669,6 +678,15 @@
   "duration": 19.43,
   "file": "02_golf_clubs.mp4",
   "ig_id": "18117304195794069",
-  "posted_utc": "2026-10-16T16:21:35Z"
+  "posted_utc": "2026-10-16T16:21:35Z",
+  "ig": {
+   "views": 1553,
+   "reach": 995,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 10924
+  }
  }
 ]
