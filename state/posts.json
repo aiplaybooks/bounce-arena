@@ -596,5 +596,43 @@
    "blue_reels_play_count": 0,
    "post_video_followers": 0
   }
+ },
+ {
+  "id": "20261016-104941",
+  "mode": "maze",
+  "theme": "countries",
+  "teams": [
+   "USA",
+   "Canada",
+   "Nigeria",
+   "Australia",
+   "UK",
+   "Germany"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#B45CFF",
+   "#FFD23F",
+   "#FF8A2B",
+   "#2BE7FF",
+   "#3DFF8C"
+  ],
+  "hook": "Pick your country. First one out wins",
+  "cta": "Comment who races next",
+  "caption": "Pick your country. First one out wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #satisfyingvideo #maze",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {
+   "size": 12
+  },
+  "seed": 661104,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Nigeria",
+  "win_t": 18.49,
+  "duration": 22.0,
+  "file": "01_maze_countries.mp4",
+  "ig_id": "17922714978223884",
+  "posted_utc": "2026-10-16T13:13:35Z"
  }
 ]
