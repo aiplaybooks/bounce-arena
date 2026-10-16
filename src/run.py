@@ -27,7 +27,7 @@ def main():
     ap.add_argument("--mode")
     ap.add_argument("--theme")
     ap.add_argument("--only", choices=["ig", "fb"], help="publish to one network")
-    ap.add_argument("--queue-first", action="store_true", help="publish the next ready-made video from PAYLASILACAK/ if any")
+    ap.add_argument("--queue-first", action="store_true", help="publish the next ready-made video from BOUNCE ARENA/ if any")
     ap.add_argument("--render-to", help="render one finished video + job json into this folder (no publishing); use with --name")
     ap.add_argument("--name")
     a = ap.parse_args()
@@ -93,9 +93,9 @@ def main():
         sys.exit("both publishes failed")
 
 
-PDIR = os.path.join(ROOT, "PAYLASILACAK")
+PDIR = os.path.join(ROOT, "BOUNCE ARENA")
 QUEUE = os.path.join(PDIR, "queue.json")
-KEEP = 6  # keep at least this many videos ready in PAYLASILACAK/
+KEEP = 6  # keep at least this many videos ready in BOUNCE ARENA/
 
 
 def load_queue():
@@ -107,7 +107,7 @@ def pending(q):
 
 
 def add_video(q):
-    """Renders one fresh video into PAYLASILACAK/ (numbering continues from the highest number ever used)."""
+    """Renders one fresh video into BOUNCE ARENA/ (numbering continues from the highest number ever used)."""
     import mkqueue
     for _ in range(4):
         job = plan.make_job()
@@ -136,7 +136,7 @@ def add_video(q):
 
 def queue_cycle():
     """Scheduled slot: post the next ready video to Instagram (IG only; Facebook is scheduled by hand), delete it
-    from PAYLASILACAK/, then top the folder up with fresh videos."""
+    from BOUNCE ARENA/, then top the folder up with fresh videos."""
     import mkqueue
     q = load_queue()
     if not pending(q):

@@ -21,4 +21,4 @@ jobs:
         if: always()
         run: |
           git config user.name "bounce-bot" && git config user.email "bot@users.noreply.github.com"
-          git add PAYLASILACAK/queue.json PAYLASILACAK/PLAN.md; (git diff --cached --quiet || (git commit -qm "fb: scheduled" && git pull -q --rebase && git push -q))
+          git add "BOUNCE ARENA/queue.json" "BOUNCE ARENA/PLAN.md"; (git diff --cached --quiet || (git commit -qm "fb: scheduled" && git pull -q --rebase && git push -q))
