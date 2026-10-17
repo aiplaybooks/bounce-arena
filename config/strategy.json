@@ -287,65 +287,85 @@
       "Which {noun} escapes the maze first?",
       "Only one {noun} finds the exit",
       "Pick your {noun}. First one out wins",
-      "99% pick the wrong {noun}. Maze edition"
+      "99% pick the wrong {noun}. Maze edition",
+      "Only one {noun} makes it out. Who?"
     ],
     "golf": [
       "Which {noun} sinks the putt first?",
       "Hole in one... which {noun}?",
       "Rolling to the hole. Who wins?",
-      "Pick your {noun} before it drops"
+      "Pick your {noun} before it drops",
+      "99% miss the hole. Will your {noun}?"
     ],
     "plinko": [
       "Which {noun} wins the Plinko?",
       "Pick the luckiest {noun}",
       "One jackpot slot. Who gets it?",
-      "Highest score wins. Pick one"
+      "Highest score wins. Pick one",
+      "Can your {noun} land the jackpot?"
     ],
     "race": [
       "Which {noun} wins the race?",
       "3 laps. Pick your {noun}",
       "Boost pads change everything",
-      "Who takes the checkered flag?"
+      "Who takes the checkered flag?",
+      "Final lap decides everything"
     ],
     "storm": [
       "Last {noun} standing wins",
       "The storm is closing in. Who survives?",
-      "Pick the {noun} that survives"
+      "Pick the {noun} that survives",
+      "Who's still standing when the storm clears?",
+      "Pick your {noun}. One storm, one survivor"
     ],
     "territory": [
       "Which {noun} paints the most?",
       "Who owns the board in 22 seconds?",
-      "Pick your {noun}. Biggest territory wins"
+      "Pick your {noun}. Biggest territory wins",
+      "Can your {noun} out-paint the rest?",
+      "One board, one winner. Pick your {noun}"
     ],
     "sumo": [
       "Last {noun} on the ring wins",
       "Sumo battle: who stays on?",
-      "Pick your {noun}. Don't fall off"
+      "Pick your {noun}. Don't fall off",
+      "Can your {noun} stay on the ring?",
+      "One push decides it all"
     ],
     "tower": [
       "First {noun} to the crown wins",
       "Who climbs to the top first?",
-      "Pick your {noun}. Reach the crown"
+      "Pick your {noun}. Reach the crown",
+      "Can your {noun} reach the crown first?",
+      "Every step counts. Pick your {noun}"
     ],
     "chain": [
       "Which {noun} blows up the most?",
       "One touch = chain reaction",
-      "Pick your {noun}. Most booms wins"
+      "Pick your {noun}. Most booms wins",
+      "Can your {noun} trigger the biggest chain?",
+      "One spark changes everything"
     ],
     "flip": [
       "Gravity keeps flipping. Who survives?",
       "Last {noun} alive wins",
-      "Dodge the spikes. Pick one"
+      "Dodge the spikes. Pick one",
+      "Can your {noun} survive the flip?",
+      "Gravity never stops. Pick wisely"
     ],
     "pinball": [
       "Which {noun} scores the most?",
       "Pinball battle: pick one",
-      "Highest score wins. Pick your {noun}"
+      "Highest score wins. Pick your {noun}",
+      "Can your {noun} rack up the high score?",
+      "One flipper, one winner"
     ],
     "hole": [
       "Who escapes the black hole?",
       "Last {noun} standing wins",
-      "The black hole eats them one by one"
+      "The black hole eats them one by one",
+      "Can your {noun} escape the pull?",
+      "Nothing escapes... or does it?"
     ]
   },
   "cta": [

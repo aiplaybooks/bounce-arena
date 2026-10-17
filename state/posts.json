@@ -412,13 +412,13 @@
   "fb_id": "1144594181577592",
   "posted_utc": "2026-10-15T19:30:34Z",
   "ig": {
-   "views": 1199,
-   "reach": 1009,
+   "views": 1202,
+   "reach": 1013,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6649
+   "ig_reels_avg_watch_time": 6655
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -583,13 +583,13 @@
   "fb_id": "1150100024216959",
   "posted_utc": "2026-10-16T10:00:13Z",
   "ig": {
-   "views": 1692,
-   "reach": 1396,
+   "views": 2090,
+   "reach": 1723,
    "likes": 4,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10197
+   "ig_reels_avg_watch_time": 9939
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -636,12 +636,12 @@
   "posted_utc": "2026-10-16T13:13:35Z",
   "ig": {
    "views": 133,
-   "reach": 116,
+   "reach": 117,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7954
+   "ig_reels_avg_watch_time": 7904
   }
  },
  {
@@ -680,13 +680,13 @@
   "ig_id": "18117304195794069",
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
-   "views": 1553,
-   "reach": 995,
-   "likes": 3,
+   "views": 3148,
+   "reach": 2609,
+   "likes": 5,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10924
+   "ig_reels_avg_watch_time": 10242
   }
  },
  {
@@ -724,7 +724,16 @@
   "duration": 23.92,
   "file": "03_plinko_ai.mp4",
   "ig_id": "18002221868801753",
-  "posted_utc": "2026-10-16T19:27:23Z"
+  "posted_utc": "2026-10-16T19:27:23Z",
+  "ig": {
+   "views": 1629,
+   "reach": 1404,
+   "likes": 2,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 9778
+  }
  },
  {
   "id": "20261016-104947",
@@ -761,6 +770,15 @@
   "duration": 23.17,
   "file": "04_race_countries.mp4",
   "ig_id": "18104278919567093",
-  "posted_utc": "2026-10-16T22:56:46Z"
+  "posted_utc": "2026-10-16T22:56:46Z",
+  "ig": {
+   "views": 280,
+   "reach": 246,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6219
+  }
  }
 ]
