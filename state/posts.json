@@ -780,5 +780,43 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 6219
   }
+ },
+ {
+  "id": "20261016-104948",
+  "mode": "storm",
+  "theme": "clubs",
+  "teams": [
+   "Chelsea",
+   "City",
+   "PSG",
+   "Juve",
+   "Milan",
+   "Real"
+  ],
+  "colors": [
+   "#3DFF8C",
+   "#FF5CD1",
+   "#B45CFF",
+   "#FFD23F",
+   "#FF3B5C",
+   "#3C8CFF"
+  ],
+  "hook": "Pick the club that survives",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick the club that survives 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #asmr #bouncingball #battleroyale",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "rate": 11.495109676167843
+  },
+  "seed": 588238,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Real",
+  "win_t": 16.99,
+  "duration": 20.5,
+  "file": "05_storm_clubs.mp4",
+  "ig_id": "18099337556645043",
+  "posted_utc": "2026-10-17T01:56:35Z"
  }
 ]
