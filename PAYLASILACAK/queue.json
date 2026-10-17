@@ -387,10 +387,14 @@
    "winner": "Claude",
    "win_t": 25.13,
    "duration": 28.63,
-   "file": "09_chain_ai.mp4"
+   "file": "09_chain_ai.mp4",
+   "ig_id": "18096837053410916",
+   "posted_utc": "2026-10-17T19:21:34Z"
   },
   "fb_id": "943308468504074",
-  "fb_scheduled_utc": "2026-10-17 19:00"
+  "fb_scheduled_utc": "2026-10-17 19:00",
+  "tries": 1,
+  "ig_id": "18096837053410916"
  },
  {
   "order": 10,
@@ -592,5 +596,45 @@
   },
   "fb_id": "1806868927009619",
   "fb_scheduled_utc": "2026-10-18 16:00"
+ },
+ {
+  "order": 15,
+  "file": "15_maze_colors.mp4",
+  "job": {
+   "id": "20261017-192136",
+   "mode": "maze",
+   "theme": "colors",
+   "teams": [
+    "Yellow",
+    "Pink",
+    "Orange",
+    "Purple",
+    "Cyan"
+   ],
+   "colors": [
+    "#FFD23F",
+    "#FF5CD1",
+    "#FF8A2B",
+    "#B45CFF",
+    "#2BE7FF"
+   ],
+   "hook": "Only one color finds the exit",
+   "cta": "Comment who races next",
+   "caption": "Only one color finds the exit\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #reels #satisfyingvideo #maze",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "size": 12
+   },
+   "seed": 793295,
+   "key": "E",
+   "champ": null,
+   "requested": false,
+   "winner": "Pink",
+   "win_t": 16.52,
+   "duration": 20.02,
+   "file": "15_maze_colors.mp4"
+  },
+  "fb_id": "1114510934397776",
+  "fb_scheduled_utc": "2026-10-18 19:00"
  }
 ]

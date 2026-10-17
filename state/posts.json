@@ -958,5 +958,40 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 6982
   }
+ },
+ {
+  "id": "20261016-104940",
+  "mode": "chain",
+  "theme": "ai",
+  "teams": [
+   "Gemini",
+   "Claude",
+   "DeepSeek",
+   "Llama"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#2BE7FF",
+   "#FF5CD1",
+   "#B45CFF"
+  ],
+  "hook": "Pick your AI. Most booms wins",
+  "cta": "Follow for the rematch",
+  "caption": "Pick your AI. Most booms wins\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #reels #chainreaction",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {
+   "duration": 25.125349606414666,
+   "chain": 0.22
+  },
+  "seed": 761116,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Claude",
+  "win_t": 25.13,
+  "duration": 28.63,
+  "file": "09_chain_ai.mp4",
+  "ig_id": "18096837053410916",
+  "posted_utc": "2026-10-17T19:21:34Z"
  }
 ]
