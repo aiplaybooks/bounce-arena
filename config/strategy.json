@@ -377,8 +377,8 @@
   ],
   "caption": [
     "{hook} 👀\n\nComment your pick BEFORE the end 👇{request_line}\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n{tags}",
-    "{hook}\n\nDrop your pick in the comments and it races next 🏁{request_line}\nTag someone who'd lose this bet 📤\nNew physics battle every day.\n\n{tags}",
-    "{hook}\n\nComment who you'd bet on and we'll race them next 🏁{request_line}\nShare this with someone who'd pick wrong 📤\nNew physics battle every day.\n\n{tags}"
+    "{hook}\n\nDrop your pick in the comments and it races next 🏁{request_line}\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n{tags}",
+    "{hook}\n\nComment who you'd bet on and we'll race them next 🏁{request_line}\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n{tags}"
   ],
   "first_comment": [
     "Who did you pick? Be honest 👇",
