@@ -3,11 +3,10 @@
 Instagram: GitHub Actions siradaki videoyu otomatik paylasir, paylasilinca video ve .txt buradan silinir. Yeni videolar son numaradan devam eder.
 Facebook: videoyu ve ayni isimli .txt'deki aciklamayi, IG'de paylasilmadan once Page'den planla.
 
-Paylasilan: 5 - Bekleyen: 7
+Paylasilan: 6 - Bekleyen: 6
 
 | # | video | tema | sure | kazanan | hook |
 |---|---|---|---|---|---|
-| 6 | 06_territory_ai.mp4 | territory/ai | 25.23s | ChatGPT | Who owns the board in 22 seconds? |
 | 7 | 07_sumo_countries.mp4 | sumo/countries | 18.73s | Canada | Last country on the ring wins |
 | 8 | 08_tower_clubs.mp4 | tower/clubs | 20.63s | Chelsea | Pick your club. Reach the crown |
 | 9 | 09_chain_ai.mp4 | chain/ai | 28.63s | Claude | Pick your AI. Most booms wins |

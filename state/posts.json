@@ -827,5 +827,41 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 6536
   }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "territory",
+  "theme": "ai",
+  "teams": [
+   "Claude",
+   "Codex",
+   "Gemini",
+   "Llama",
+   "ChatGPT"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#FF8A2B",
+   "#B45CFF",
+   "#FF3B5C",
+   "#2BE7FF"
+  ],
+  "hook": "Who owns the board in 22 seconds?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Who owns the board in 22 seconds? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #ballrace #marblerace #paint",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "duration": 21.729866823636062
+  },
+  "seed": 340347,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "ChatGPT",
+  "win_t": 21.73,
+  "duration": 25.23,
+  "file": "06_territory_ai.mp4",
+  "ig_id": "18094702607151101",
+  "posted_utc": "2026-10-17T09:53:16Z"
  }
 ]
