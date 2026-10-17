@@ -872,5 +872,39 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 10572
   }
+ },
+ {
+  "id": "20261016-104937",
+  "mode": "sumo",
+  "theme": "countries",
+  "teams": [
+   "Canada",
+   "Australia",
+   "France",
+   "USA",
+   "UK"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#FF8A2B",
+   "#B45CFF",
+   "#FF3B5C",
+   "#2BE7FF"
+  ],
+  "hook": "Last country on the ring wins",
+  "cta": "Winner returns tomorrow",
+  "caption": "Last country on the ring wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #physicssimulation #ballrace #sumo",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {},
+  "seed": 26699,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Canada",
+  "win_t": 15.23,
+  "duration": 18.73,
+  "file": "07_sumo_countries.mp4",
+  "ig_id": "18043547687832260",
+  "posted_utc": "2026-10-17T13:01:34Z"
  }
 ]

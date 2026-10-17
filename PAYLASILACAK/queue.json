@@ -302,10 +302,14 @@
    "winner": "Canada",
    "win_t": 15.23,
    "duration": 18.73,
-   "file": "07_sumo_countries.mp4"
+   "file": "07_sumo_countries.mp4",
+   "ig_id": "18043547687832260",
+   "posted_utc": "2026-10-17T13:01:34Z"
   },
   "fb_id": "948556381243067",
-  "fb_scheduled_utc": "2026-10-17 12:30"
+  "fb_scheduled_utc": "2026-10-17 12:30",
+  "tries": 1,
+  "ig_id": "18043547687832260"
  },
  {
   "order": 8,
@@ -503,5 +507,46 @@
   },
   "fb_id": "1678632320647208",
   "fb_scheduled_utc": "2026-10-18 09:30"
+ },
+ {
+  "order": 13,
+  "file": "13_race_footballers.mp4",
+  "job": {
+   "id": "20261017-130137",
+   "mode": "race",
+   "theme": "footballers",
+   "teams": [
+    "Salah",
+    "Ronaldo",
+    "Yamal",
+    "De Bruyne",
+    "Mbappe"
+   ],
+   "colors": [
+    "#3C8CFF",
+    "#B45CFF",
+    "#FF5CD1",
+    "#FF3B5C",
+    "#FF8A2B"
+   ],
+   "hook": "Who takes the checkered flag?",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "Who takes the checkered flag?\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #reels #physicssimulation #racing",
+   "first_comment": "Salah or Ronaldo? Wrong answers only 😅",
+   "params": {
+    "laps": 3,
+    "speed": 255.3741840949776
+   },
+   "seed": 896203,
+   "key": "C",
+   "champ": null,
+   "requested": false,
+   "winner": "Mbappe",
+   "win_t": 20.06,
+   "duration": 23.57,
+   "file": "13_race_footballers.mp4"
+  },
+  "fb_id": "1930094781706505",
+  "fb_scheduled_utc": "2026-10-18 12:30"
  }
 ]
