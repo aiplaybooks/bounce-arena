@@ -68,5 +68,10 @@
   "t": "2026-10-17 19:14",
   "u": "Şu anda sosyal medya platformlarına günde kac tane yayın yapıyoruz?",
   "a": "Günde 4 yayın yapıyoruz — sabit saatlerde (09:30, 16:00, 22:30, 01:30 UTC), her birinde hem IG hem FB'ye post gidiyor. Bu zamanlama `post.yml` workflow'unda sabit, benim strategy.json'dan değiştiremediğim bir yer."
+ },
+ {
+  "t": "2026-10-17 19:17",
+  "u": "Günde 2 yayına düşürüyoruz, 14:00 ve 22:00",
+  "a": "Bunu yapamıyorum — yayın saatleri ve sayısı `post.yml` workflow'unda kodlu (şu an 4 slot: 09:30, 16:00, 22:30, 01:30 UTC), benim `config/strategy.json` ile dokunabileceğim bir yer değil.\n\nMasaüstü Claude Code'a şunu iletmen gerekiyor: \"post.yml'deki cron'u günde 2 slot'a düşür: 14:00 ve 22:00 UTC\" (saatleri UTC olarak mı yoksa Türkiye saati olarak mı istiyorsun, ona da netlik versen iyi olur — 14:00/22:00 TR saatiyse UTC'de 11:00/19:00 olur).\n\nNot: Posting frequency azaltmak kısa vadede toplam izlenme/takipçi hızını da düşürebilir (hedef hâlâ 2026-10-21'e kadar 5k takipçi + 250k izlenme) — bunu bilerek mi istiyorsun, yoksa kalite/tutarlılık için mi azaltıyoruz?"
  }
 ]
