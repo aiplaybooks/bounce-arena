@@ -429,10 +429,14 @@
    "winner": "Canada",
    "win_t": 19.08,
    "duration": 22.58,
-   "file": "10_flip_countries.mp4"
+   "file": "10_flip_countries.mp4",
+   "ig_id": "18121148435283584",
+   "posted_utc": "2026-10-17T22:50:41Z"
   },
   "fb_id": "2316103762558429",
-  "fb_scheduled_utc": "2026-10-17 22:30"
+  "fb_scheduled_utc": "2026-10-17 22:30",
+  "tries": 1,
+  "ig_id": "18121148435283584"
  },
  {
   "order": 11,
@@ -636,5 +640,43 @@
   },
   "fb_id": "1114510934397776",
   "fb_scheduled_utc": "2026-10-18 19:00"
+ },
+ {
+  "order": 16,
+  "file": "16_sumo_brands.mp4",
+  "job": {
+   "id": "20261017-225043",
+   "mode": "sumo",
+   "theme": "brands",
+   "teams": [
+    "Gucci",
+    "Lego",
+    "Disney",
+    "Xbox",
+    "Coca-Cola"
+   ],
+   "colors": [
+    "#FF8A2B",
+    "#2BE7FF",
+    "#3C8CFF",
+    "#FFD23F",
+    "#3DFF8C"
+   ],
+   "hook": "Pick your brand. Don't fall off",
+   "cta": "Follow before the next one drops",
+   "caption": "Pick your brand. Don't fall off\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #bouncingball #oddlysatisfying #sumo",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "params": {},
+   "seed": 768153,
+   "key": "A",
+   "champ": null,
+   "requested": false,
+   "winner": "Xbox",
+   "win_t": 15.29,
+   "duration": 18.8,
+   "file": "16_sumo_brands.mp4"
+  },
+  "fb_id": "954255814031867",
+  "fb_scheduled_utc": "2026-10-18 22:30"
  }
 ]

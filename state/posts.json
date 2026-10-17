@@ -993,5 +993,39 @@
   "file": "09_chain_ai.mp4",
   "ig_id": "18096837053410916",
   "posted_utc": "2026-10-17T19:21:34Z"
+ },
+ {
+  "id": "20261016-104945",
+  "mode": "flip",
+  "theme": "countries",
+  "teams": [
+   "Canada",
+   "Australia",
+   "Brazil",
+   "UK",
+   "USA"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#FF5CD1",
+   "#FFD23F",
+   "#B45CFF",
+   "#3DFF8C"
+  ],
+  "hook": "Last country alive wins",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "Last country alive wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #ballrace #marblerace #gravity",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {},
+  "seed": 902434,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Canada",
+  "win_t": 19.08,
+  "duration": 22.58,
+  "file": "10_flip_countries.mp4",
+  "ig_id": "18121148435283584",
+  "posted_utc": "2026-10-17T22:50:41Z"
  }
 ]
