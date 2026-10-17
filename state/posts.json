@@ -906,5 +906,39 @@
   "file": "07_sumo_countries.mp4",
   "ig_id": "18043547687832260",
   "posted_utc": "2026-10-17T13:01:34Z"
+ },
+ {
+  "id": "20261016-104945",
+  "mode": "tower",
+  "theme": "clubs",
+  "teams": [
+   "PSG",
+   "Chelsea",
+   "Barca",
+   "Bayern",
+   "Arsenal"
+  ],
+  "colors": [
+   "#3C8CFF",
+   "#2BE7FF",
+   "#FF8A2B",
+   "#FFD23F",
+   "#B45CFF"
+  ],
+  "hook": "Pick your club. Reach the crown",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick your club. Reach the crown 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #bouncingball #climb",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {},
+  "seed": 946115,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Chelsea",
+  "win_t": 17.13,
+  "duration": 20.63,
+  "file": "08_tower_clubs.mp4",
+  "ig_id": "18661430662032587",
+  "posted_utc": "2026-10-17T16:15:49Z"
  }
 ]

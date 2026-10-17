@@ -344,10 +344,14 @@
    "winner": "Chelsea",
    "win_t": 17.13,
    "duration": 20.63,
-   "file": "08_tower_clubs.mp4"
+   "file": "08_tower_clubs.mp4",
+   "ig_id": "18661430662032587",
+   "posted_utc": "2026-10-17T16:15:49Z"
   },
   "fb_id": "1327867685982450",
-  "fb_scheduled_utc": "2026-10-17 16:00"
+  "fb_scheduled_utc": "2026-10-17 16:00",
+  "tries": 1,
+  "ig_id": "18661430662032587"
  },
  {
   "order": 9,
@@ -548,5 +552,45 @@
   },
   "fb_id": "1930094781706505",
   "fb_scheduled_utc": "2026-10-18 12:30"
+ },
+ {
+  "order": 14,
+  "file": "14_territory_singers.mp4",
+  "job": {
+   "id": "20261017-161552",
+   "mode": "territory",
+   "theme": "singers",
+   "teams": [
+    "Eminem",
+    "Ed Sheeran",
+    "Bruno",
+    "Beyonce",
+    "Bieber"
+   ],
+   "colors": [
+    "#FF3B5C",
+    "#3C8CFF",
+    "#FF5CD1",
+    "#B45CFF",
+    "#FFD23F"
+   ],
+   "hook": "Pick your singer. Biggest territory wins",
+   "cta": "Follow before the next one drops",
+   "caption": "Pick your singer. Biggest territory wins\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #marblerace #ballrace #paint",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "duration": 23.202808475255612
+   },
+   "seed": 496453,
+   "key": "E",
+   "champ": null,
+   "requested": false,
+   "winner": "Bieber",
+   "win_t": 23.2,
+   "duration": 26.72,
+   "file": "14_territory_singers.mp4"
+  },
+  "fb_id": "1806868927009619",
+  "fb_scheduled_utc": "2026-10-18 16:00"
  }
 ]
