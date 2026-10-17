@@ -583,13 +583,13 @@
   "fb_id": "1150100024216959",
   "posted_utc": "2026-10-16T10:00:13Z",
   "ig": {
-   "views": 2090,
-   "reach": 1723,
-   "likes": 4,
+   "views": 2402,
+   "reach": 1995,
+   "likes": 6,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9939
+   "ig_reels_avg_watch_time": 10578
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -680,13 +680,13 @@
   "ig_id": "18117304195794069",
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
-   "views": 3148,
-   "reach": 2609,
-   "likes": 5,
+   "views": 4265,
+   "reach": 3555,
+   "likes": 6,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10242
+   "ig_reels_avg_watch_time": 10147
   }
  },
  {
@@ -726,13 +726,13 @@
   "ig_id": "18002221868801753",
   "posted_utc": "2026-10-16T19:27:23Z",
   "ig": {
-   "views": 1629,
-   "reach": 1404,
+   "views": 1761,
+   "reach": 1520,
    "likes": 2,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9778
+   "ig_reels_avg_watch_time": 9455
   }
  },
  {
@@ -772,13 +772,13 @@
   "ig_id": "18104278919567093",
   "posted_utc": "2026-10-16T22:56:46Z",
   "ig": {
-   "views": 280,
-   "reach": 246,
+   "views": 1272,
+   "reach": 1137,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6219
+   "ig_reels_avg_watch_time": 8873
   }
  },
  {
@@ -817,6 +817,15 @@
   "duration": 20.5,
   "file": "05_storm_clubs.mp4",
   "ig_id": "18099337556645043",
-  "posted_utc": "2026-10-17T01:56:35Z"
+  "posted_utc": "2026-10-17T01:56:35Z",
+  "ig": {
+   "views": 1146,
+   "reach": 977,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6536
+  }
  }
 ]
