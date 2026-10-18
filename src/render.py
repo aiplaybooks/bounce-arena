@@ -18,6 +18,24 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "assets", "fonts", "Anton-Regular.ttf")
 PALETTE = ["#FF3B5C", "#3C8CFF", "#3DFF8C", "#FFD23F", "#B45CFF", "#FF8A2B", "#2BE7FF", "#FF5CD1"]
 BG_TOP, BG_BOT = (12, 10, 30), (4, 4, 12)
+# Each post gets a different "look" than the previous one (plan.make_job enforces it): background gradient,
+# a faint pattern and a team-colour palette.
+PALETTES = {
+    "neon": PALETTE,
+    "candy": ["#FF4D6D", "#4D9BFF", "#7CFF6B", "#FFE14D", "#C77DFF", "#FF9F45", "#4DFFE0", "#FF7AE0"],
+    "sunset": ["#FF5A5F", "#FFB400", "#FF7F50", "#FFD166", "#EF476F", "#06D6A0", "#118AB2", "#F78FB3"],
+    "ice": ["#7AD7FF", "#A3FFD6", "#FFFFFF", "#9D8CFF", "#5CFFEA", "#FF8FB1", "#FFE29A", "#6FA8FF"],
+}
+LOOKS = {
+    "midnight": {"top": (12, 10, 30), "bot": (4, 4, 12), "pattern": "none", "palette": "neon"},
+    "grid": {"top": (8, 20, 36), "bot": (3, 8, 18), "pattern": "grid", "palette": "ice"},
+    "forest": {"top": (8, 30, 22), "bot": (2, 12, 8), "pattern": "dots", "palette": "candy"},
+    "ember": {"top": (38, 12, 14), "bot": (12, 3, 5), "pattern": "diag", "palette": "sunset"},
+    "violet": {"top": (30, 10, 44), "bot": (10, 3, 20), "pattern": "stars", "palette": "candy"},
+    "ocean": {"top": (6, 26, 46), "bot": (2, 8, 22), "pattern": "dots", "palette": "neon"},
+    "graphite": {"top": (28, 28, 34), "bot": (8, 8, 12), "pattern": "grid", "palette": "sunset"},
+    "teal": {"top": (6, 36, 38), "bot": (2, 12, 16), "pattern": "diag", "palette": "ice"},
+}
 
 
 def hexc(h):
@@ -30,13 +48,16 @@ def mix(a, b, t):
 
 
 class Painter:
-    def __init__(self, teams, colors, hook, mode, cta):
+    def __init__(self, teams, colors, hook, mode, cta, look="midnight"):
         pygame.font.init()
         self.teams, self.mode, self.cta = teams, mode, cta
         self.colors = [hexc(c) for c in colors]
+        lk = LOOKS.get(look, LOOKS["midnight"])
+        self.bg_bot = lk["bot"]
         self.bg = pygame.Surface((W, H))
         for y in range(H):
-            pygame.draw.line(self.bg, mix(BG_TOP, BG_BOT, y / H), (0, y), (W, y))
+            pygame.draw.line(self.bg, mix(lk["top"], lk["bot"], y / H), (0, y), (W, y))
+        self._pattern(lk["pattern"], mix(lk["top"], (255, 255, 255), 0.12))
         self.fonts = {}
         self.label_cache = {}
         self.glow = {}
@@ -46,6 +67,24 @@ class Painter:
         self.base = None
         self.texts = {}
         self.hook_surfs = self._wrap(hook.upper(), 92, W - 120, (255, 255, 255))
+
+    def _pattern(self, kind, col):
+        if kind == "grid":
+            for x in range(0, W, 90):
+                pygame.draw.line(self.bg, col, (x, 0), (x, H))
+            for y in range(0, H, 90):
+                pygame.draw.line(self.bg, col, (0, y), (W, y))
+        elif kind == "dots":
+            for x in range(45, W, 90):
+                for y in range(45, H, 90):
+                    pygame.draw.circle(self.bg, col, (x, y), 3)
+        elif kind == "diag":
+            for k in range(-H, W, 110):
+                pygame.draw.line(self.bg, col, (k, 0), (k + H, H), 2)
+        elif kind == "stars":
+            r = random.Random(7)
+            for _ in range(160):
+                pygame.draw.circle(self.bg, col, (r.randrange(W), r.randrange(H)), r.choice((1, 2, 2, 3)))
 
     def font(self, size):
         size = max(10, int(size))
@@ -109,7 +148,7 @@ class Painter:
         if isinstance(c, int):
             return self.colors[c % len(self.colors)]
         if isinstance(c, tuple) and c and c[0] == "t":
-            return mix(BG_BOT, self.colors[c[1] % len(self.colors)], max(0.0, min(1.0, c[2])))
+            return mix(self.bg_bot, self.colors[c[1] % len(self.colors)], max(0.0, min(1.0, c[2])))
         return c
 
     def shape(self, surf, s):
@@ -213,7 +252,7 @@ class Painter:
             tr = self.trails.setdefault(bi, deque(maxlen=9))
             for k, (tx, ty) in enumerate(tr):
                 f = (k + 1) / (len(tr) + 1)
-                gfx.filled_circle(surf, int(tx), int(ty), max(2, int(r * f * 0.8)), mix(BG_BOT, col, f * 0.55))
+                gfx.filled_circle(surf, int(tx), int(ty), max(2, int(r * f * 0.8)), mix(self.bg_bot, col, f * 0.55))
             tr.append((x, y2))
             g = self.glow_sprite(team, r)
             surf.blit(g, (int(x - g.get_width() / 2), int(y2 - g.get_height() / 2)))
@@ -282,7 +321,7 @@ def standings_for(mode, fr, teams, target_r):
 
 def render(sim, job, out_mp4, audio_wav, preview_dir=None):
     frames, events, winner, win_t = sim
-    painter = Painter(job["teams"], job["colors"], job["hook"], job["mode"], job["cta"])
+    painter = Painter(job["teams"], job["colors"], job["hook"], job["mode"], job["cta"], job.get("look", "midnight"))
     win_frame = int(win_t * FPS)
     ev_by_frame = {}
     for e in events:

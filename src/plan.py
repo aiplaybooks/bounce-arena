@@ -6,7 +6,7 @@ import time
 
 import arenas
 import physics
-from render import ARENA_R, CX, CY, PALETTE
+from render import ARENA_R, CX, CY, LOOKS, PALETTE, PALETTES
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -34,14 +34,27 @@ def wpick_w(v):
     return v if isinstance(v, (int, float)) else v["weight"]
 
 
+def last_job(posts):
+    """Newest job across published posts and the ready queue (the queue is rendered ahead of posting)."""
+    jobs = list(posts) + [i["job"] for i in load("PAYLASILACAK/queue.json", []) if i.get("job")]
+    return max(jobs, key=lambda j: j.get("id", ""), default={})
+
+
 def make_job(force_mode=None, force_theme=None):
     st = load("config/strategy.json", {})
     posts = load("state/posts.json", [])
+    prev = last_job(posts)
     requests = load("state/requests.json", {})
     rng = random.Random(time.time_ns())
-    mode = force_mode or explore(rng, st["formats"], posts, "mode")
+    # every video must differ from the previous one: game shape, theme (names), background look, palette
+    fmts = {k: v for k, v in st["formats"].items() if k != prev.get("mode")} or st["formats"]
+    thms = {k: v for k, v in st["themes"].items() if k != prev.get("theme")} or st["themes"]
+    looks = [k for k in LOOKS if k != prev.get("look")]
+    look = rng.choice(looks)
+    pal = PALETTES[LOOKS[look]["palette"]]
+    mode = force_mode or explore(rng, fmts, posts, "mode")
     fm = st["formats"][mode]
-    theme = force_theme or explore(rng, st["themes"], posts, "theme")
+    theme = force_theme or explore(rng, thms, posts, "theme")
     n = rng.randint(*fm["teams"])
     if theme in st.get("pools", {}):
         n = min(n, len(st["pools"][theme]["names"]))
@@ -65,7 +78,7 @@ def make_job(force_mode=None, force_theme=None):
         picks += extra[: n - len(picks)]
         teams = picks[:n]
         rng.shuffle(teams)
-        colors = PALETTE[:]
+        colors = pal[:]
         rng.shuffle(colors)
         colors = colors[:n]
     elif theme in st.get("pools", {}):
@@ -79,7 +92,7 @@ def make_job(force_mode=None, force_theme=None):
         rng.shuffle(rest)
         teams = (picks + rest)[:n]
         rng.shuffle(teams)
-        colors = PALETTE[:]
+        colors = pal[:]
         rng.shuffle(colors)
         colors = colors[:n]
     else:
@@ -111,7 +124,7 @@ def make_job(force_mode=None, force_theme=None):
     first = rng.choice(st.get("first_comment") or [""]).format(a=teams[0], b=teams[1])
     return {
         "id": time.strftime("%Y%m%d-%H%M%S", time.gmtime()),
-        "mode": mode, "theme": theme, "teams": teams, "colors": colors, "hook": hook,
+        "mode": mode, "theme": theme, "look": look, "teams": teams, "colors": colors, "hook": hook,
         "cta": rng.choice(st["cta"]), "caption": caption, "first_comment": first, "params": params, "seed": seed,
         "key": rng.choice(st["music_keys"]), "champ": champ, "requested": request_line != "",
     }
