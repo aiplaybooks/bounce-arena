@@ -1174,5 +1174,41 @@
   "file": "13_race_footballers.mp4",
   "ig_id": "18108611705253157",
   "posted_utc": "2026-10-18T13:01:34Z"
+ },
+ {
+  "id": "20261017-161552",
+  "mode": "territory",
+  "theme": "singers",
+  "teams": [
+   "Eminem",
+   "Ed Sheeran",
+   "Bruno",
+   "Beyonce",
+   "Bieber"
+  ],
+  "colors": [
+   "#FF3B5C",
+   "#3C8CFF",
+   "#FF5CD1",
+   "#B45CFF",
+   "#FFD23F"
+  ],
+  "hook": "Pick your singer. Biggest territory wins",
+  "cta": "Follow before the next one drops",
+  "caption": "Pick your singer. Biggest territory wins\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #marblerace #ballrace #paint",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "duration": 23.202808475255612
+  },
+  "seed": 496453,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Bieber",
+  "win_t": 23.2,
+  "duration": 26.72,
+  "file": "14_territory_singers.mp4",
+  "ig_id": "18129990227499997",
+  "posted_utc": "2026-10-18T16:16:13Z"
  }
 ]

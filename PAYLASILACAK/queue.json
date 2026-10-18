@@ -608,10 +608,14 @@
    "winner": "Bieber",
    "win_t": 23.2,
    "duration": 26.72,
-   "file": "14_territory_singers.mp4"
+   "file": "14_territory_singers.mp4",
+   "ig_id": "18129990227499997",
+   "posted_utc": "2026-10-18T16:16:13Z"
   },
   "fb_id": "1806868927009619",
-  "fb_scheduled_utc": "2026-10-18 16:00"
+  "fb_scheduled_utc": "2026-10-18 16:00",
+  "tries": 1,
+  "ig_id": "18129990227499997"
  },
  {
   "order": 15,
@@ -810,5 +814,46 @@
   },
   "fb_id": "880685655132576",
   "fb_scheduled_utc": "2026-10-19 12:30"
+ },
+ {
+  "order": 20,
+  "file": "20_golf_brands.mp4",
+  "job": {
+   "id": "20261018-161626",
+   "mode": "golf",
+   "theme": "brands",
+   "look": "graphite",
+   "teams": [
+    "Nike",
+    "Google",
+    "Coca-Cola",
+    "Netflix",
+    "Samsung",
+    "Gucci"
+   ],
+   "colors": [
+    "#EF476F",
+    "#FF5A5F",
+    "#FFB400",
+    "#06D6A0",
+    "#FFD166",
+    "#118AB2"
+   ],
+   "hook": "99% miss the hole. Will your brand?",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "99% miss the hole. Will your brand? 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #bouncingball #golf",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "params": {},
+   "seed": 69752,
+   "key": "C",
+   "champ": null,
+   "requested": false,
+   "winner": "Google",
+   "win_t": 16.0,
+   "duration": 19.52,
+   "file": "20_golf_brands.mp4"
+  },
+  "fb_id": "3545381632302948",
+  "fb_scheduled_utc": "2026-10-19 16:00"
  }
 ]
