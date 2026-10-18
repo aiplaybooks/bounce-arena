@@ -73,5 +73,10 @@
   "t": "2026-10-17 19:17",
   "u": "Günde 2 yayına düşürüyoruz, 14:00 ve 22:00",
   "a": "Bunu yapamıyorum — yayın saatleri ve sayısı `post.yml` workflow'unda kodlu (şu an 4 slot: 09:30, 16:00, 22:30, 01:30 UTC), benim `config/strategy.json` ile dokunabileceğim bir yer değil.\n\nMasaüstü Claude Code'a şunu iletmen gerekiyor: \"post.yml'deki cron'u günde 2 slot'a düşür: 14:00 ve 22:00 UTC\" (saatleri UTC olarak mı yoksa Türkiye saati olarak mı istiyorsun, ona da netlik versen iyi olur — 14:00/22:00 TR saatiyse UTC'de 11:00/19:00 olur).\n\nNot: Posting frequency azaltmak kısa vadede toplam izlenme/takipçi hızını da düşürebilir (hedef hâlâ 2026-10-21'e kadar 5k takipçi + 250k izlenme) — bunu bilerek mi istiyorsun, yoksa kalite/tutarlılık için mi azaltıyoruz?"
+ },
+ {
+  "t": "2026-10-18 06:52",
+  "u": "videoları ayrı ayrı analytic vermene gerek yok, toplu bir şekilde verebilirsin",
+  "a": "Tamam, not aldım — bundan sonra performans/analitik paylaşırken video video değil, toplu (format/tema bazında ortalama vb.) özetleyeceğim."
  }
 ]
