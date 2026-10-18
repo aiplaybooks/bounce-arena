@@ -680,13 +680,13 @@
   "ig_id": "18117304195794069",
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
-   "views": 13471,
-   "reach": 11972,
+   "views": 13523,
+   "reach": 12020,
    "likes": 13,
    "comments": 3,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10426
+   "ig_reels_avg_watch_time": 10424
   }
  },
  {
@@ -726,13 +726,13 @@
   "ig_id": "18002221868801753",
   "posted_utc": "2026-10-16T19:27:23Z",
   "ig": {
-   "views": 2121,
-   "reach": 1840,
+   "views": 2123,
+   "reach": 1842,
    "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9228
+   "ig_reels_avg_watch_time": 9219
   }
  },
  {
@@ -819,13 +819,13 @@
   "ig_id": "18099337556645043",
   "posted_utc": "2026-10-17T01:56:35Z",
   "ig": {
-   "views": 1242,
-   "reach": 1134,
+   "views": 1246,
+   "reach": 1138,
    "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6373
+   "ig_reels_avg_watch_time": 6359
   }
  },
  {
@@ -864,13 +864,13 @@
   "ig_id": "18094702607151101",
   "posted_utc": "2026-10-17T09:53:16Z",
   "ig": {
-   "views": 2100,
-   "reach": 1812,
+   "views": 2128,
+   "reach": 1835,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9859
+   "ig_reels_avg_watch_time": 9813
   }
  },
  {
@@ -907,13 +907,13 @@
   "ig_id": "18043547687832260",
   "posted_utc": "2026-10-17T13:01:34Z",
   "ig": {
-   "views": 385,
-   "reach": 352,
+   "views": 425,
+   "reach": 380,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 4789
+   "ig_reels_avg_watch_time": 5185
   }
  },
  {
@@ -950,13 +950,13 @@
   "ig_id": "18661430662032587",
   "posted_utc": "2026-10-17T16:15:49Z",
   "ig": {
-   "views": 2378,
-   "reach": 2231,
-   "likes": 2,
+   "views": 2565,
+   "reach": 2376,
+   "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6326
+   "ig_reels_avg_watch_time": 6278
   }
  },
  {
@@ -994,13 +994,13 @@
   "ig_id": "18096837053410916",
   "posted_utc": "2026-10-17T19:21:34Z",
   "ig": {
-   "views": 1440,
-   "reach": 1345,
+   "views": 1528,
+   "reach": 1416,
    "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6837
+   "ig_reels_avg_watch_time": 6760
   }
  },
  {
@@ -1037,13 +1037,13 @@
   "ig_id": "18121148435283584",
   "posted_utc": "2026-10-17T22:50:41Z",
   "ig": {
-   "views": 1185,
-   "reach": 1069,
+   "views": 1237,
+   "reach": 1126,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7510
+   "ig_reels_avg_watch_time": 7438
   }
  },
  {
@@ -1082,6 +1082,15 @@
   "duration": 29.58,
   "file": "11_pinball_clubs.mp4",
   "ig_id": "18634787587050900",
-  "posted_utc": "2026-10-18T01:56:35Z"
+  "posted_utc": "2026-10-18T01:56:35Z",
+  "ig": {
+   "views": 164,
+   "reach": 158,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 4604
+  }
  }
 ]
