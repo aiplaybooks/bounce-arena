@@ -1045,5 +1045,43 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 7510
   }
+ },
+ {
+  "id": "20261016-104952",
+  "mode": "pinball",
+  "theme": "clubs",
+  "teams": [
+   "Inter",
+   "City",
+   "Milan",
+   "Barca",
+   "Real",
+   "Chelsea"
+  ],
+  "colors": [
+   "#3C8CFF",
+   "#2BE7FF",
+   "#FFD23F",
+   "#3DFF8C",
+   "#B45CFF",
+   "#FF5CD1"
+  ],
+  "hook": "Highest score wins. Pick your club",
+  "cta": "Follow for the rematch",
+  "caption": "Highest score wins. Pick your club\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #pinball",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "duration": 26.067076614196356
+  },
+  "seed": 549208,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Inter",
+  "win_t": 26.07,
+  "duration": 29.58,
+  "file": "11_pinball_clubs.mp4",
+  "ig_id": "18634787587050900",
+  "posted_utc": "2026-10-18T01:56:35Z"
  }
 ]

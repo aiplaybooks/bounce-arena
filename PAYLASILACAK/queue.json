@@ -475,10 +475,14 @@
    "winner": "Inter",
    "win_t": 26.07,
    "duration": 29.58,
-   "file": "11_pinball_clubs.mp4"
+   "file": "11_pinball_clubs.mp4",
+   "ig_id": "18634787587050900",
+   "posted_utc": "2026-10-18T01:56:35Z"
   },
   "fb_id": "2923082311386156",
-  "fb_scheduled_utc": "2026-10-18 01:30"
+  "fb_scheduled_utc": "2026-10-18 01:30",
+  "tries": 1,
+  "ig_id": "18634787587050900"
  },
  {
   "order": 12,
@@ -678,5 +682,44 @@
   },
   "fb_id": "954255814031867",
   "fb_scheduled_utc": "2026-10-18 22:30"
+ },
+ {
+  "order": 17,
+  "file": "17_chain_billionaires.mp4",
+  "job": {
+   "id": "20261018-015637",
+   "mode": "chain",
+   "theme": "billionaires",
+   "teams": [
+    "Page",
+    "Arnault",
+    "Ambani",
+    "Elon"
+   ],
+   "colors": [
+    "#FF5CD1",
+    "#2BE7FF",
+    "#FF8A2B",
+    "#B45CFF"
+   ],
+   "hook": "One touch = chain reaction",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "One touch = chain reaction\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #chainreaction",
+   "first_comment": "Comment a name and it races next 🏁",
+   "params": {
+    "duration": 25.628090693223708,
+    "chain": 0.22
+   },
+   "seed": 291979,
+   "key": "G",
+   "champ": null,
+   "requested": false,
+   "winner": "Ambani",
+   "win_t": 25.63,
+   "duration": 29.13,
+   "file": "17_chain_billionaires.mp4"
+  },
+  "fb_id": "1758416785451681",
+  "fb_scheduled_utc": "2026-10-19 01:30"
  }
 ]
