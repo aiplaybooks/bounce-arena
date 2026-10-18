@@ -1228,5 +1228,41 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 7576
   }
+ },
+ {
+  "id": "20261017-192136",
+  "mode": "maze",
+  "theme": "colors",
+  "teams": [
+   "Yellow",
+   "Pink",
+   "Orange",
+   "Purple",
+   "Cyan"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#FF5CD1",
+   "#FF8A2B",
+   "#B45CFF",
+   "#2BE7FF"
+  ],
+  "hook": "Only one color finds the exit",
+  "cta": "Comment who races next",
+  "caption": "Only one color finds the exit\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #reels #satisfyingvideo #maze",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "size": 12
+  },
+  "seed": 793295,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Pink",
+  "win_t": 16.52,
+  "duration": 20.02,
+  "file": "15_maze_colors.mp4",
+  "ig_id": "18101671520168768",
+  "posted_utc": "2026-10-18T19:21:07Z"
  }
 ]
