@@ -1,4 +1,5 @@
 """Replays a recorded simulation into a 1080x1920 60fps MP4 (pygame -> ffmpeg pipe)."""
+import colorsys
 import math
 import os
 import random
@@ -27,14 +28,14 @@ PALETTES = {
     "ice": ["#7AD7FF", "#A3FFD6", "#FFFFFF", "#9D8CFF", "#5CFFEA", "#FF8FB1", "#FFE29A", "#6FA8FF"],
 }
 LOOKS = {
-    "midnight": {"top": (12, 10, 30), "bot": (4, 4, 12), "pattern": "none", "palette": "neon"},
-    "grid": {"top": (8, 20, 36), "bot": (3, 8, 18), "pattern": "grid", "palette": "ice"},
-    "forest": {"top": (8, 30, 22), "bot": (2, 12, 8), "pattern": "dots", "palette": "candy"},
-    "ember": {"top": (38, 12, 14), "bot": (12, 3, 5), "pattern": "diag", "palette": "sunset"},
-    "violet": {"top": (30, 10, 44), "bot": (10, 3, 20), "pattern": "stars", "palette": "candy"},
-    "ocean": {"top": (6, 26, 46), "bot": (2, 8, 22), "pattern": "dots", "palette": "neon"},
-    "graphite": {"top": (28, 28, 34), "bot": (8, 8, 12), "pattern": "grid", "palette": "sunset"},
-    "teal": {"top": (6, 36, 38), "bot": (2, 12, 16), "pattern": "diag", "palette": "ice"},
+    "midnight": {"hue": 0, "top": (12, 10, 30), "bot": (4, 4, 12), "pattern": "none", "palette": "neon"},
+    "grid": {"hue": 60, "top": (8, 20, 36), "bot": (3, 8, 18), "pattern": "grid", "palette": "ice"},
+    "forest": {"hue": 120, "top": (8, 30, 22), "bot": (2, 12, 8), "pattern": "dots", "palette": "candy"},
+    "ember": {"hue": 200, "top": (38, 12, 14), "bot": (12, 3, 5), "pattern": "diag", "palette": "sunset"},
+    "violet": {"hue": 280, "top": (30, 10, 44), "bot": (10, 3, 20), "pattern": "stars", "palette": "candy"},
+    "ocean": {"hue": 330, "top": (6, 26, 46), "bot": (2, 8, 22), "pattern": "dots", "palette": "neon"},
+    "graphite": {"hue": 160, "top": (28, 28, 34), "bot": (8, 8, 12), "pattern": "grid", "palette": "sunset"},
+    "teal": {"hue": 20, "top": (6, 36, 38), "bot": (2, 12, 16), "pattern": "diag", "palette": "ice"},
 }
 
 
@@ -54,10 +55,12 @@ class Painter:
         self.colors = [hexc(c) for c in colors]
         lk = LOOKS.get(look, LOOKS["midnight"])
         self.bg_bot = lk["bot"]
+        self.hue = lk["hue"]
+        self.tints = {}
         self.bg = pygame.Surface((W, H))
         for y in range(H):
             pygame.draw.line(self.bg, mix(lk["top"], lk["bot"], y / H), (0, y), (W, y))
-        self._pattern(lk["pattern"], mix(lk["top"], (255, 255, 255), 0.12))
+        self._pattern(lk["pattern"], mix(lk["top"], (255, 255, 255), 0.2))
         self.fonts = {}
         self.label_cache = {}
         self.glow = {}
@@ -144,11 +147,27 @@ class Painter:
             self.label_cache[key] = self._outlined(name, f, (255, 255, 255), 2) if size >= 11 and r >= 15 else None
         return self.label_cache[key]
 
+    def tint(self, c):
+        """Rotates the hue of arena colours per look; greys, white and black stay as they are."""
+        if not self.hue:
+            return c
+        c = tuple(c[:3])
+        if c not in self.tints:
+            h, sat, v = colorsys.rgb_to_hsv(*(x / 255 for x in c))
+            if sat < 0.25:
+                self.tints[c] = c
+            else:
+                r, g, b = colorsys.hsv_to_rgb((h + self.hue / 360) % 1.0, sat, v)
+                self.tints[c] = (int(r * 255), int(g * 255), int(b * 255))
+        return self.tints[c]
+
     def col(self, c):
         if isinstance(c, int):
             return self.colors[c % len(self.colors)]
         if isinstance(c, tuple) and c and c[0] == "t":
             return mix(self.bg_bot, self.colors[c[1] % len(self.colors)], max(0.0, min(1.0, c[2])))
+        if isinstance(c, tuple) and len(c) >= 3:
+            return self.tint(c)
         return c
 
     def shape(self, surf, s):
@@ -201,7 +220,8 @@ class Painter:
         x0, y0, cs, n, owner = g
         for i, o in enumerate(owner):
             r, c = divmod(i, n)
-            col = (26, 26, 48) if o < 0 else mix((26, 26, 48), self.colors[o % len(self.colors)], 0.62)
+            base = self.tint((26, 26, 48))
+            col = base if o < 0 else mix(base, self.colors[o % len(self.colors)], 0.62)
             pygame.draw.rect(surf, col, (int(x0 + c * cs) + 1, int(y0 + r * cs) + 1, int(cs) - 2, int(cs) - 2))
 
     def ring(self, surf, R, thick, gap, ang, color):
@@ -241,7 +261,7 @@ class Painter:
             self.shape(surf, s)
         nr = len(fr["rings"])
         for i, (R, thick, gap, ang) in enumerate(fr["rings"]):
-            hue = (190 + 120 * i / max(1, nr - 1)) % 360
+            hue = (190 + self.hue + 120 * i / max(1, nr - 1)) % 360
             c = pygame.Color(0)
             c.hsva = (hue, 75, 100, 100)
             self.ring(surf, R, thick, gap, ang, (c.r, c.g, c.b))
