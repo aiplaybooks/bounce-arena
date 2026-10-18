@@ -90,13 +90,13 @@
   "ig_id": "18337121866276430",
   "posted_utc": "2026-10-14T21:07:13Z",
   "ig": {
-   "views": 932,
-   "reach": 776,
+   "views": 933,
+   "reach": 778,
    "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 12600
+   "ig_reels_avg_watch_time": 12590
   }
  },
  {
@@ -142,13 +142,13 @@
   "fb_id": "1574886487742298",
   "posted_utc": "2026-10-14T22:57:16Z",
   "ig": {
-   "views": 1352,
-   "reach": 1169,
+   "views": 1353,
+   "reach": 1170,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9204
+   "ig_reels_avg_watch_time": 9197
   },
   "fb": {
    "post_video_avg_time_watched": 20327,
@@ -203,13 +203,13 @@
   "fb_id": "4796839457255165",
   "posted_utc": "2026-10-15T01:58:55Z",
   "ig": {
-   "views": 143,
-   "reach": 119,
+   "views": 144,
+   "reach": 121,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 8493
+   "ig_reels_avg_watch_time": 8432
   },
   "fb": {
    "post_video_avg_time_watched": 15086,
@@ -253,13 +253,13 @@
   "fb_id": "959769323361030",
   "posted_utc": "2026-10-15T10:00:40Z",
   "ig": {
-   "views": 130,
-   "reach": 112,
+   "views": 132,
+   "reach": 114,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 8018
+   "ig_reels_avg_watch_time": 7894
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -307,13 +307,13 @@
   "fb_id": "1137703832164170",
   "posted_utc": "2026-10-15T13:15:09Z",
   "ig": {
-   "views": 154,
-   "reach": 125,
+   "views": 180,
+   "reach": 148,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 7489
+   "ig_reels_avg_watch_time": 7058
   },
   "fb": {
    "post_video_avg_time_watched": 3108,
@@ -357,13 +357,13 @@
   "fb_id": "3678799068940321",
   "posted_utc": "2026-10-15T16:23:51Z",
   "ig": {
-   "views": 128,
-   "reach": 108,
+   "views": 130,
+   "reach": 111,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6512
+   "ig_reels_avg_watch_time": 6418
   },
   "fb": {
    "post_video_avg_time_watched": 17096,
@@ -412,13 +412,13 @@
   "fb_id": "1144594181577592",
   "posted_utc": "2026-10-15T19:30:34Z",
   "ig": {
-   "views": 447,
-   "reach": 385,
+   "views": 1205,
+   "reach": 1016,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 5791
+   "ig_reels_avg_watch_time": 6641
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -471,13 +471,13 @@
   "fb_id": "2363845604354872",
   "posted_utc": "2026-10-15T22:55:56Z",
   "ig": {
-   "views": 131,
-   "reach": 113,
+   "views": 136,
+   "reach": 116,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6156
+   "ig_reels_avg_watch_time": 6166
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -528,13 +528,13 @@
   "fb_id": "1791298305326499",
   "posted_utc": "2026-10-16T01:59:21Z",
   "ig": {
-   "views": 146,
-   "reach": 121,
+   "views": 151,
+   "reach": 125,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10400
+   "ig_reels_avg_watch_time": 10394
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -581,6 +581,552 @@
   "duration": 23.82,
   "ig_id": "18005380364795353",
   "fb_id": "1150100024216959",
-  "posted_utc": "2026-10-16T10:00:13Z"
+  "posted_utc": "2026-10-16T10:00:13Z",
+  "ig": {
+   "views": 2469,
+   "reach": 2049,
+   "likes": 6,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 10625
+  },
+  "fb": {
+   "post_video_avg_time_watched": 0,
+   "blue_reels_play_count": 0,
+   "post_video_followers": 0
+  }
+ },
+ {
+  "id": "20261016-104941",
+  "mode": "maze",
+  "theme": "countries",
+  "teams": [
+   "USA",
+   "Canada",
+   "Nigeria",
+   "Australia",
+   "UK",
+   "Germany"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#B45CFF",
+   "#FFD23F",
+   "#FF8A2B",
+   "#2BE7FF",
+   "#3DFF8C"
+  ],
+  "hook": "Pick your country. First one out wins",
+  "cta": "Comment who races next",
+  "caption": "Pick your country. First one out wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #satisfyingvideo #maze",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {
+   "size": 12
+  },
+  "seed": 661104,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Nigeria",
+  "win_t": 18.49,
+  "duration": 22.0,
+  "file": "01_maze_countries.mp4",
+  "ig_id": "17922714978223884",
+  "posted_utc": "2026-10-16T13:13:35Z",
+  "ig": {
+   "views": 137,
+   "reach": 120,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 8084
+  }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "golf",
+  "theme": "clubs",
+  "teams": [
+   "Real",
+   "City",
+   "Inter",
+   "Arsenal",
+   "Chelsea",
+   "Bayern"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#FF8A2B",
+   "#3C8CFF",
+   "#B45CFF",
+   "#FF3B5C"
+  ],
+  "hook": "Pick your club before it drops",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick your club before it drops\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #oddlysatisfying #ballrace #golf",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {},
+  "seed": 984099,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Arsenal",
+  "win_t": 15.92,
+  "duration": 19.43,
+  "file": "02_golf_clubs.mp4",
+  "ig_id": "18117304195794069",
+  "posted_utc": "2026-10-16T16:21:35Z",
+  "ig": {
+   "views": 13523,
+   "reach": 12020,
+   "likes": 13,
+   "comments": 3,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 10424
+  }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "plinko",
+  "theme": "ai",
+  "teams": [
+   "Copilot",
+   "Claude",
+   "DeepSeek",
+   "Codex",
+   "Llama"
+  ],
+  "colors": [
+   "#3DFF8C",
+   "#FF8A2B",
+   "#FF5CD1",
+   "#3C8CFF",
+   "#B45CFF"
+  ],
+  "hook": "Pick the luckiest AI",
+  "cta": "Follow for the rematch",
+  "caption": "Pick the luckiest AI\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #marblerace #physicssimulation #plinko",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {
+   "per_team": 4,
+   "interval": 0.8569542054404076
+  },
+  "seed": 502060,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Copilot",
+  "win_t": 20.41,
+  "duration": 23.92,
+  "file": "03_plinko_ai.mp4",
+  "ig_id": "18002221868801753",
+  "posted_utc": "2026-10-16T19:27:23Z",
+  "ig": {
+   "views": 2123,
+   "reach": 1842,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 9219
+  }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "race",
+  "theme": "countries",
+  "teams": [
+   "Australia",
+   "Sweden",
+   "USA",
+   "France",
+   "UK"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#3DFF8C",
+   "#FF3B5C",
+   "#FF8A2B",
+   "#B45CFF"
+  ],
+  "hook": "Who takes the checkered flag?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Who takes the checkered flag?\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #reels #marblerace #racing",
+  "first_comment": "Australia or Sweden? Wrong answers only 😅",
+  "params": {
+   "laps": 3,
+   "speed": 262.5857837132431
+  },
+  "seed": 38197,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "France",
+  "win_t": 19.67,
+  "duration": 23.17,
+  "file": "04_race_countries.mp4",
+  "ig_id": "18104278919567093",
+  "posted_utc": "2026-10-16T22:56:46Z",
+  "ig": {
+   "views": 1399,
+   "reach": 1247,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 8692
+  }
+ },
+ {
+  "id": "20261016-104948",
+  "mode": "storm",
+  "theme": "clubs",
+  "teams": [
+   "Chelsea",
+   "City",
+   "PSG",
+   "Juve",
+   "Milan",
+   "Real"
+  ],
+  "colors": [
+   "#3DFF8C",
+   "#FF5CD1",
+   "#B45CFF",
+   "#FFD23F",
+   "#FF3B5C",
+   "#3C8CFF"
+  ],
+  "hook": "Pick the club that survives",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick the club that survives 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #asmr #bouncingball #battleroyale",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "rate": 11.495109676167843
+  },
+  "seed": 588238,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Real",
+  "win_t": 16.99,
+  "duration": 20.5,
+  "file": "05_storm_clubs.mp4",
+  "ig_id": "18099337556645043",
+  "posted_utc": "2026-10-17T01:56:35Z",
+  "ig": {
+   "views": 1246,
+   "reach": 1138,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6359
+  }
+ },
+ {
+  "id": "20261016-104947",
+  "mode": "territory",
+  "theme": "ai",
+  "teams": [
+   "Claude",
+   "Codex",
+   "Gemini",
+   "Llama",
+   "ChatGPT"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#FF8A2B",
+   "#B45CFF",
+   "#FF3B5C",
+   "#2BE7FF"
+  ],
+  "hook": "Who owns the board in 22 seconds?",
+  "cta": "Winner returns tomorrow",
+  "caption": "Who owns the board in 22 seconds? 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #ballrace #marblerace #paint",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "duration": 21.729866823636062
+  },
+  "seed": 340347,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "ChatGPT",
+  "win_t": 21.73,
+  "duration": 25.23,
+  "file": "06_territory_ai.mp4",
+  "ig_id": "18094702607151101",
+  "posted_utc": "2026-10-17T09:53:16Z",
+  "ig": {
+   "views": 2128,
+   "reach": 1835,
+   "likes": 1,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 9813
+  }
+ },
+ {
+  "id": "20261016-104937",
+  "mode": "sumo",
+  "theme": "countries",
+  "teams": [
+   "Canada",
+   "Australia",
+   "France",
+   "USA",
+   "UK"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#FF8A2B",
+   "#B45CFF",
+   "#FF3B5C",
+   "#2BE7FF"
+  ],
+  "hook": "Last country on the ring wins",
+  "cta": "Winner returns tomorrow",
+  "caption": "Last country on the ring wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #physicssimulation #ballrace #sumo",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {},
+  "seed": 26699,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Canada",
+  "win_t": 15.23,
+  "duration": 18.73,
+  "file": "07_sumo_countries.mp4",
+  "ig_id": "18043547687832260",
+  "posted_utc": "2026-10-17T13:01:34Z",
+  "ig": {
+   "views": 425,
+   "reach": 380,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 5185
+  }
+ },
+ {
+  "id": "20261016-104945",
+  "mode": "tower",
+  "theme": "clubs",
+  "teams": [
+   "PSG",
+   "Chelsea",
+   "Barca",
+   "Bayern",
+   "Arsenal"
+  ],
+  "colors": [
+   "#3C8CFF",
+   "#2BE7FF",
+   "#FF8A2B",
+   "#FFD23F",
+   "#B45CFF"
+  ],
+  "hook": "Pick your club. Reach the crown",
+  "cta": "Winner returns tomorrow",
+  "caption": "Pick your club. Reach the crown 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #physicssimulation #bouncingball #climb",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {},
+  "seed": 946115,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Chelsea",
+  "win_t": 17.13,
+  "duration": 20.63,
+  "file": "08_tower_clubs.mp4",
+  "ig_id": "18661430662032587",
+  "posted_utc": "2026-10-17T16:15:49Z",
+  "ig": {
+   "views": 2565,
+   "reach": 2376,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6278
+  }
+ },
+ {
+  "id": "20261016-104940",
+  "mode": "chain",
+  "theme": "ai",
+  "teams": [
+   "Gemini",
+   "Claude",
+   "DeepSeek",
+   "Llama"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#2BE7FF",
+   "#FF5CD1",
+   "#B45CFF"
+  ],
+  "hook": "Pick your AI. Most booms wins",
+  "cta": "Follow for the rematch",
+  "caption": "Pick your AI. Most booms wins\n\nComment who you'd bet on and we'll race them next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #asmr #reels #chainreaction",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {
+   "duration": 25.125349606414666,
+   "chain": 0.22
+  },
+  "seed": 761116,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Claude",
+  "win_t": 25.13,
+  "duration": 28.63,
+  "file": "09_chain_ai.mp4",
+  "ig_id": "18096837053410916",
+  "posted_utc": "2026-10-17T19:21:34Z",
+  "ig": {
+   "views": 1528,
+   "reach": 1416,
+   "likes": 3,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6760
+  }
+ },
+ {
+  "id": "20261016-104945",
+  "mode": "flip",
+  "theme": "countries",
+  "teams": [
+   "Canada",
+   "Australia",
+   "Brazil",
+   "UK",
+   "USA"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#FF5CD1",
+   "#FFD23F",
+   "#B45CFF",
+   "#3DFF8C"
+  ],
+  "hook": "Last country alive wins",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "Last country alive wins\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #ballrace #marblerace #gravity",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {},
+  "seed": 902434,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Canada",
+  "win_t": 19.08,
+  "duration": 22.58,
+  "file": "10_flip_countries.mp4",
+  "ig_id": "18121148435283584",
+  "posted_utc": "2026-10-17T22:50:41Z",
+  "ig": {
+   "views": 1237,
+   "reach": 1126,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 7438
+  }
+ },
+ {
+  "id": "20261016-104952",
+  "mode": "pinball",
+  "theme": "clubs",
+  "teams": [
+   "Inter",
+   "City",
+   "Milan",
+   "Barca",
+   "Real",
+   "Chelsea"
+  ],
+  "colors": [
+   "#3C8CFF",
+   "#2BE7FF",
+   "#FFD23F",
+   "#3DFF8C",
+   "#B45CFF",
+   "#FF5CD1"
+  ],
+  "hook": "Highest score wins. Pick your club",
+  "cta": "Follow for the rematch",
+  "caption": "Highest score wins. Pick your club\n\nDrop your pick in the comments and it races next 🏁\nNew physics battle every day.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #pinball",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "duration": 26.067076614196356
+  },
+  "seed": 549208,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Inter",
+  "win_t": 26.07,
+  "duration": 29.58,
+  "file": "11_pinball_clubs.mp4",
+  "ig_id": "18634787587050900",
+  "posted_utc": "2026-10-18T01:56:35Z",
+  "ig": {
+   "views": 164,
+   "reach": 158,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 4604
+  }
+ },
+ {
+  "id": "20261016-104943",
+  "mode": "hole",
+  "theme": "ai",
+  "teams": [
+   "DeepSeek",
+   "ChatGPT",
+   "Codex",
+   "Gemini",
+   "Grok",
+   "Llama"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#3DFF8C",
+   "#3C8CFF",
+   "#B45CFF",
+   "#FF8A2B"
+  ],
+  "hook": "Last AI standing wins",
+  "cta": "Follow for the rematch",
+  "caption": "Last AI standing wins 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #bouncingball #marblerace #blackhole",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {},
+  "seed": 879577,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "DeepSeek",
+  "win_t": 17.44,
+  "duration": 20.95,
+  "file": "12_hole_ai.mp4",
+  "ig_id": "18375076123213177",
+  "posted_utc": "2026-10-18T09:53:24Z"
  }
 ]

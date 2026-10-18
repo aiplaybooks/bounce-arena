@@ -36,10 +36,14 @@
    "winner": "Nigeria",
    "win_t": 18.49,
    "duration": 22.0,
-   "file": "01_maze_countries.mp4"
+   "file": "01_maze_countries.mp4",
+   "ig_id": "17922714978223884",
+   "posted_utc": "2026-10-16T13:13:35Z"
   },
   "fb_id": "1040388832355550",
-  "fb_scheduled_utc": "2026-10-16 12:30"
+  "fb_scheduled_utc": "2026-10-16 12:30",
+  "tries": 1,
+  "ig_id": "17922714978223884"
  },
  {
   "order": 2,
@@ -76,10 +80,14 @@
    "winner": "Arsenal",
    "win_t": 15.92,
    "duration": 19.43,
-   "file": "02_golf_clubs.mp4"
+   "file": "02_golf_clubs.mp4",
+   "ig_id": "18117304195794069",
+   "posted_utc": "2026-10-16T16:21:35Z"
   },
   "fb_id": "1470965901571305",
-  "fb_scheduled_utc": "2026-10-16 16:00"
+  "fb_scheduled_utc": "2026-10-16 16:00",
+  "tries": 1,
+  "ig_id": "18117304195794069"
  },
  {
   "order": 3,
@@ -117,10 +125,14 @@
    "winner": "Copilot",
    "win_t": 20.41,
    "duration": 23.92,
-   "file": "03_plinko_ai.mp4"
+   "file": "03_plinko_ai.mp4",
+   "ig_id": "18002221868801753",
+   "posted_utc": "2026-10-16T19:27:23Z"
   },
   "fb_id": "2193533994558648",
-  "fb_scheduled_utc": "2026-10-16 19:00"
+  "fb_scheduled_utc": "2026-10-16 19:00",
+  "tries": 1,
+  "ig_id": "18002221868801753"
  },
  {
   "order": 4,
@@ -158,10 +170,14 @@
    "winner": "France",
    "win_t": 19.67,
    "duration": 23.17,
-   "file": "04_race_countries.mp4"
+   "file": "04_race_countries.mp4",
+   "ig_id": "18104278919567093",
+   "posted_utc": "2026-10-16T22:56:46Z"
   },
   "fb_id": "1666926661698474",
-  "fb_scheduled_utc": "2026-10-16 22:30"
+  "fb_scheduled_utc": "2026-10-16 22:30",
+  "tries": 1,
+  "ig_id": "18104278919567093"
  },
  {
   "order": 5,
@@ -200,10 +216,14 @@
    "winner": "Real",
    "win_t": 16.99,
    "duration": 20.5,
-   "file": "05_storm_clubs.mp4"
+   "file": "05_storm_clubs.mp4",
+   "ig_id": "18099337556645043",
+   "posted_utc": "2026-10-17T01:56:35Z"
   },
   "fb_id": "1646590043534861",
-  "fb_scheduled_utc": "2026-10-17 01:30"
+  "fb_scheduled_utc": "2026-10-17 01:30",
+  "tries": 1,
+  "ig_id": "18099337556645043"
  },
  {
   "order": 6,
@@ -240,10 +260,14 @@
    "winner": "ChatGPT",
    "win_t": 21.73,
    "duration": 25.23,
-   "file": "06_territory_ai.mp4"
+   "file": "06_territory_ai.mp4",
+   "ig_id": "18094702607151101",
+   "posted_utc": "2026-10-17T09:53:16Z"
   },
   "fb_id": "28754453164212717",
-  "fb_scheduled_utc": "2026-10-17 09:30"
+  "fb_scheduled_utc": "2026-10-17 09:30",
+  "tries": 1,
+  "ig_id": "18094702607151101"
  },
  {
   "order": 7,
@@ -278,10 +302,14 @@
    "winner": "Canada",
    "win_t": 15.23,
    "duration": 18.73,
-   "file": "07_sumo_countries.mp4"
+   "file": "07_sumo_countries.mp4",
+   "ig_id": "18043547687832260",
+   "posted_utc": "2026-10-17T13:01:34Z"
   },
   "fb_id": "948556381243067",
-  "fb_scheduled_utc": "2026-10-17 12:30"
+  "fb_scheduled_utc": "2026-10-17 12:30",
+  "tries": 1,
+  "ig_id": "18043547687832260"
  },
  {
   "order": 8,
@@ -316,10 +344,14 @@
    "winner": "Chelsea",
    "win_t": 17.13,
    "duration": 20.63,
-   "file": "08_tower_clubs.mp4"
+   "file": "08_tower_clubs.mp4",
+   "ig_id": "18661430662032587",
+   "posted_utc": "2026-10-17T16:15:49Z"
   },
   "fb_id": "1327867685982450",
-  "fb_scheduled_utc": "2026-10-17 16:00"
+  "fb_scheduled_utc": "2026-10-17 16:00",
+  "tries": 1,
+  "ig_id": "18661430662032587"
  },
  {
   "order": 9,
@@ -355,10 +387,14 @@
    "winner": "Claude",
    "win_t": 25.13,
    "duration": 28.63,
-   "file": "09_chain_ai.mp4"
+   "file": "09_chain_ai.mp4",
+   "ig_id": "18096837053410916",
+   "posted_utc": "2026-10-17T19:21:34Z"
   },
   "fb_id": "943308468504074",
-  "fb_scheduled_utc": "2026-10-17 19:00"
+  "fb_scheduled_utc": "2026-10-17 19:00",
+  "tries": 1,
+  "ig_id": "18096837053410916"
  },
  {
   "order": 10,
@@ -393,10 +429,14 @@
    "winner": "Canada",
    "win_t": 19.08,
    "duration": 22.58,
-   "file": "10_flip_countries.mp4"
+   "file": "10_flip_countries.mp4",
+   "ig_id": "18121148435283584",
+   "posted_utc": "2026-10-17T22:50:41Z"
   },
   "fb_id": "2316103762558429",
-  "fb_scheduled_utc": "2026-10-17 22:30"
+  "fb_scheduled_utc": "2026-10-17 22:30",
+  "tries": 1,
+  "ig_id": "18121148435283584"
  },
  {
   "order": 11,
@@ -435,10 +475,14 @@
    "winner": "Inter",
    "win_t": 26.07,
    "duration": 29.58,
-   "file": "11_pinball_clubs.mp4"
+   "file": "11_pinball_clubs.mp4",
+   "ig_id": "18634787587050900",
+   "posted_utc": "2026-10-18T01:56:35Z"
   },
   "fb_id": "2923082311386156",
-  "fb_scheduled_utc": "2026-10-18 01:30"
+  "fb_scheduled_utc": "2026-10-18 01:30",
+  "tries": 1,
+  "ig_id": "18634787587050900"
  },
  {
   "order": 12,
@@ -475,9 +519,251 @@
    "winner": "DeepSeek",
    "win_t": 17.44,
    "duration": 20.95,
-   "file": "12_hole_ai.mp4"
+   "file": "12_hole_ai.mp4",
+   "ig_id": "18375076123213177",
+   "posted_utc": "2026-10-18T09:53:24Z"
   },
   "fb_id": "1678632320647208",
-  "fb_scheduled_utc": "2026-10-18 09:30"
+  "fb_scheduled_utc": "2026-10-18 09:30",
+  "tries": 1,
+  "ig_id": "18375076123213177"
+ },
+ {
+  "order": 13,
+  "file": "13_race_footballers.mp4",
+  "job": {
+   "id": "20261017-130137",
+   "mode": "race",
+   "theme": "footballers",
+   "teams": [
+    "Salah",
+    "Ronaldo",
+    "Yamal",
+    "De Bruyne",
+    "Mbappe"
+   ],
+   "colors": [
+    "#3C8CFF",
+    "#B45CFF",
+    "#FF5CD1",
+    "#FF3B5C",
+    "#FF8A2B"
+   ],
+   "hook": "Who takes the checkered flag?",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "Who takes the checkered flag?\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #reels #physicssimulation #racing",
+   "first_comment": "Salah or Ronaldo? Wrong answers only 😅",
+   "params": {
+    "laps": 3,
+    "speed": 255.3741840949776
+   },
+   "seed": 896203,
+   "key": "C",
+   "champ": null,
+   "requested": false,
+   "winner": "Mbappe",
+   "win_t": 20.06,
+   "duration": 23.57,
+   "file": "13_race_footballers.mp4"
+  },
+  "fb_id": "1930094781706505",
+  "fb_scheduled_utc": "2026-10-18 12:30"
+ },
+ {
+  "order": 14,
+  "file": "14_territory_singers.mp4",
+  "job": {
+   "id": "20261017-161552",
+   "mode": "territory",
+   "theme": "singers",
+   "teams": [
+    "Eminem",
+    "Ed Sheeran",
+    "Bruno",
+    "Beyonce",
+    "Bieber"
+   ],
+   "colors": [
+    "#FF3B5C",
+    "#3C8CFF",
+    "#FF5CD1",
+    "#B45CFF",
+    "#FFD23F"
+   ],
+   "hook": "Pick your singer. Biggest territory wins",
+   "cta": "Follow before the next one drops",
+   "caption": "Pick your singer. Biggest territory wins\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #marblerace #ballrace #paint",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "duration": 23.202808475255612
+   },
+   "seed": 496453,
+   "key": "E",
+   "champ": null,
+   "requested": false,
+   "winner": "Bieber",
+   "win_t": 23.2,
+   "duration": 26.72,
+   "file": "14_territory_singers.mp4"
+  },
+  "fb_id": "1806868927009619",
+  "fb_scheduled_utc": "2026-10-18 16:00"
+ },
+ {
+  "order": 15,
+  "file": "15_maze_colors.mp4",
+  "job": {
+   "id": "20261017-192136",
+   "mode": "maze",
+   "theme": "colors",
+   "teams": [
+    "Yellow",
+    "Pink",
+    "Orange",
+    "Purple",
+    "Cyan"
+   ],
+   "colors": [
+    "#FFD23F",
+    "#FF5CD1",
+    "#FF8A2B",
+    "#B45CFF",
+    "#2BE7FF"
+   ],
+   "hook": "Only one color finds the exit",
+   "cta": "Comment who races next",
+   "caption": "Only one color finds the exit\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #reels #satisfyingvideo #maze",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "size": 12
+   },
+   "seed": 793295,
+   "key": "E",
+   "champ": null,
+   "requested": false,
+   "winner": "Pink",
+   "win_t": 16.52,
+   "duration": 20.02,
+   "file": "15_maze_colors.mp4"
+  },
+  "fb_id": "1114510934397776",
+  "fb_scheduled_utc": "2026-10-18 19:00"
+ },
+ {
+  "order": 16,
+  "file": "16_sumo_brands.mp4",
+  "job": {
+   "id": "20261017-225043",
+   "mode": "sumo",
+   "theme": "brands",
+   "teams": [
+    "Gucci",
+    "Lego",
+    "Disney",
+    "Xbox",
+    "Coca-Cola"
+   ],
+   "colors": [
+    "#FF8A2B",
+    "#2BE7FF",
+    "#3C8CFF",
+    "#FFD23F",
+    "#3DFF8C"
+   ],
+   "hook": "Pick your brand. Don't fall off",
+   "cta": "Follow before the next one drops",
+   "caption": "Pick your brand. Don't fall off\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #bouncingball #oddlysatisfying #sumo",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "params": {},
+   "seed": 768153,
+   "key": "A",
+   "champ": null,
+   "requested": false,
+   "winner": "Xbox",
+   "win_t": 15.29,
+   "duration": 18.8,
+   "file": "16_sumo_brands.mp4"
+  },
+  "fb_id": "954255814031867",
+  "fb_scheduled_utc": "2026-10-18 22:30"
+ },
+ {
+  "order": 17,
+  "file": "17_chain_billionaires.mp4",
+  "job": {
+   "id": "20261018-015637",
+   "mode": "chain",
+   "theme": "billionaires",
+   "teams": [
+    "Page",
+    "Arnault",
+    "Ambani",
+    "Elon"
+   ],
+   "colors": [
+    "#FF5CD1",
+    "#2BE7FF",
+    "#FF8A2B",
+    "#B45CFF"
+   ],
+   "hook": "One touch = chain reaction",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "One touch = chain reaction\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #chainreaction",
+   "first_comment": "Comment a name and it races next 🏁",
+   "params": {
+    "duration": 25.628090693223708,
+    "chain": 0.22
+   },
+   "seed": 291979,
+   "key": "G",
+   "champ": null,
+   "requested": false,
+   "winner": "Ambani",
+   "win_t": 25.63,
+   "duration": 29.13,
+   "file": "17_chain_billionaires.mp4"
+  },
+  "fb_id": "1758416785451681",
+  "fb_scheduled_utc": "2026-10-19 01:30"
+ },
+ {
+  "order": 18,
+  "file": "18_tower_singers.mp4",
+  "job": {
+   "id": "20261018-095326",
+   "mode": "tower",
+   "theme": "singers",
+   "teams": [
+    "Bruno",
+    "Eminem",
+    "Billie",
+    "Bieber",
+    "Adele",
+    "Beyonce"
+   ],
+   "colors": [
+    "#FFD23F",
+    "#B45CFF",
+    "#2BE7FF",
+    "#3DFF8C",
+    "#FF8A2B",
+    "#3C8CFF"
+   ],
+   "hook": "First singer to the crown wins",
+   "cta": "Follow before the next one drops",
+   "caption": "First singer to the crown wins 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #oddlysatisfying #climb",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "params": {},
+   "seed": 411593,
+   "key": "D",
+   "champ": null,
+   "requested": false,
+   "winner": "Bieber",
+   "win_t": 16.28,
+   "duration": 19.78,
+   "file": "18_tower_singers.mp4"
+  },
+  "fb_id": "1520259586529332",
+  "fb_scheduled_utc": "2026-10-19 09:30"
  }
 ]

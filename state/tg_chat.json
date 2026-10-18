@@ -58,5 +58,25 @@
   "t": "2026-10-16 10:02",
   "u": "Sürekli aynı temada üretiyorsun, farklı bounce tipleri geliştir.",
   "a": "Dürüst olmam lazım: gerçekten yeni bir \"bounce tipi\" (escape/grow dışında üçüncü bir fizik mekaniği) eklemek `src/physics.py` + `src/render.py`'de kod yazılmasını gerektiriyor — benim `config/strategy.json` ile yapabileceğim bir şey değil. Bunu masaüstü Claude Code'a iletmen gerekiyor, ben orada dokunamam.\n\nAma şu an elimdekiyle yaptığım iki değişiklik var:\n1. `champion_rematch_prob` 0.5 → 0.2: aynı şampiyonun tekrar tekrar aynı rakiple yarışması (çoğu zaman countries'te) %50 ihtimalle oluyordu, bu \"hep aynı eşleşme\" hissi yaratıyordu — düşürdüm.\n2. Tema ağırlıklarını daha dengeli yaptım: countries 6→4, colors/singers/footballers 2-4→3, brands 3 sabit, billionaires 1 (en düşük izlenme aldığı için). Önceden countries çok baskındı, şimdi daha çeşitli temalar dönecek.\n\nFormat tarafında (escape/grow) zaten elimdeki tek seçenek bu ikisi — üçüncü bir mekanik istersen kodun genelleştirilmesi lazım, önerini masaüstü tarafına iletebilirsin."
+ },
+ {
+  "t": "2026-10-16 11:47",
+  "u": "sistem çalışıyor mu ?",
+  "a": "Evet, sistem çalışıyor. Son post (`20261016-095845`, escape/footballers, \"Which player escapes first?\") 10:00 UTC'de hem IG hem FB'ye başarıyla gitti (ig_id ve fb_id var) — henüz metrikleri gelmedi, çok yeni.\n\nGenel durum (06:56 UTC özeti): takipçi 26/5000, izlenme 3572/250000, 10 post atılmış (bu yeniyle 11 oldu). En iyi performans escape/countries (ort. 608 izlenme), en zayıf grow/billionaires ve escape/billionaires (~130).\n\nSıradaki slot 16:00 UTC'de. Her şey otomatik akıyor, bir sorun yok."
+ },
+ {
+  "t": "2026-10-17 19:14",
+  "u": "Şu anda sosyal medya platformlarına günde kac tane yayın yapıyoruz?",
+  "a": "Günde 4 yayın yapıyoruz — sabit saatlerde (09:30, 16:00, 22:30, 01:30 UTC), her birinde hem IG hem FB'ye post gidiyor. Bu zamanlama `post.yml` workflow'unda sabit, benim strategy.json'dan değiştiremediğim bir yer."
+ },
+ {
+  "t": "2026-10-17 19:17",
+  "u": "Günde 2 yayına düşürüyoruz, 14:00 ve 22:00",
+  "a": "Bunu yapamıyorum — yayın saatleri ve sayısı `post.yml` workflow'unda kodlu (şu an 4 slot: 09:30, 16:00, 22:30, 01:30 UTC), benim `config/strategy.json` ile dokunabileceğim bir yer değil.\n\nMasaüstü Claude Code'a şunu iletmen gerekiyor: \"post.yml'deki cron'u günde 2 slot'a düşür: 14:00 ve 22:00 UTC\" (saatleri UTC olarak mı yoksa Türkiye saati olarak mı istiyorsun, ona da netlik versen iyi olur — 14:00/22:00 TR saatiyse UTC'de 11:00/19:00 olur).\n\nNot: Posting frequency azaltmak kısa vadede toplam izlenme/takipçi hızını da düşürebilir (hedef hâlâ 2026-10-21'e kadar 5k takipçi + 250k izlenme) — bunu bilerek mi istiyorsun, yoksa kalite/tutarlılık için mi azaltıyoruz?"
+ },
+ {
+  "t": "2026-10-18 06:52",
+  "u": "videoları ayrı ayrı analytic vermene gerek yok, toplu bir şekilde verebilirsin",
+  "a": "Tamam, not aldım — bundan sonra performans/analitik paylaşırken video video değil, toplu (format/tema bazında ortalama vb.) özetleyeceğim."
  }
 ]
