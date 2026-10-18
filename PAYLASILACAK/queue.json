@@ -519,10 +519,14 @@
    "winner": "DeepSeek",
    "win_t": 17.44,
    "duration": 20.95,
-   "file": "12_hole_ai.mp4"
+   "file": "12_hole_ai.mp4",
+   "ig_id": "18375076123213177",
+   "posted_utc": "2026-10-18T09:53:24Z"
   },
   "fb_id": "1678632320647208",
-  "fb_scheduled_utc": "2026-10-18 09:30"
+  "fb_scheduled_utc": "2026-10-18 09:30",
+  "tries": 1,
+  "ig_id": "18375076123213177"
  },
  {
   "order": 13,
@@ -721,5 +725,45 @@
   },
   "fb_id": "1758416785451681",
   "fb_scheduled_utc": "2026-10-19 01:30"
+ },
+ {
+  "order": 18,
+  "file": "18_tower_singers.mp4",
+  "job": {
+   "id": "20261018-095326",
+   "mode": "tower",
+   "theme": "singers",
+   "teams": [
+    "Bruno",
+    "Eminem",
+    "Billie",
+    "Bieber",
+    "Adele",
+    "Beyonce"
+   ],
+   "colors": [
+    "#FFD23F",
+    "#B45CFF",
+    "#2BE7FF",
+    "#3DFF8C",
+    "#FF8A2B",
+    "#3C8CFF"
+   ],
+   "hook": "First singer to the crown wins",
+   "cta": "Follow before the next one drops",
+   "caption": "First singer to the crown wins 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #oddlysatisfying #climb",
+   "first_comment": "Did you call it? 👀 Reply with your pick",
+   "params": {},
+   "seed": 411593,
+   "key": "D",
+   "champ": null,
+   "requested": false,
+   "winner": "Bieber",
+   "win_t": 16.28,
+   "duration": 19.78,
+   "file": "18_tower_singers.mp4"
+  },
+  "fb_id": "1520259586529332",
+  "fb_scheduled_utc": "2026-10-19 09:30"
  }
 ]

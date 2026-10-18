@@ -1092,5 +1092,41 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 4604
   }
+ },
+ {
+  "id": "20261016-104943",
+  "mode": "hole",
+  "theme": "ai",
+  "teams": [
+   "DeepSeek",
+   "ChatGPT",
+   "Codex",
+   "Gemini",
+   "Grok",
+   "Llama"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#3DFF8C",
+   "#3C8CFF",
+   "#B45CFF",
+   "#FF8A2B"
+  ],
+  "hook": "Last AI standing wins",
+  "cta": "Follow for the rematch",
+  "caption": "Last AI standing wins 👀\n\nComment your pick BEFORE the end 👇\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #bouncingball #marblerace #blackhole",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {},
+  "seed": 879577,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "DeepSeek",
+  "win_t": 17.44,
+  "duration": 20.95,
+  "file": "12_hole_ai.mp4",
+  "ig_id": "18375076123213177",
+  "posted_utc": "2026-10-18T09:53:24Z"
  }
 ]
