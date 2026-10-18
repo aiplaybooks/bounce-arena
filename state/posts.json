@@ -1264,5 +1264,39 @@
   "file": "15_maze_colors.mp4",
   "ig_id": "18101671520168768",
   "posted_utc": "2026-10-18T19:21:07Z"
+ },
+ {
+  "id": "20261017-225043",
+  "mode": "sumo",
+  "theme": "brands",
+  "teams": [
+   "Gucci",
+   "Lego",
+   "Disney",
+   "Xbox",
+   "Coca-Cola"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#2BE7FF",
+   "#3C8CFF",
+   "#FFD23F",
+   "#3DFF8C"
+  ],
+  "hook": "Pick your brand. Don't fall off",
+  "cta": "Follow before the next one drops",
+  "caption": "Pick your brand. Don't fall off\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #bouncingball #oddlysatisfying #sumo",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {},
+  "seed": 768153,
+  "key": "A",
+  "champ": null,
+  "requested": false,
+  "winner": "Xbox",
+  "win_t": 15.29,
+  "duration": 18.8,
+  "file": "16_sumo_brands.mp4",
+  "ig_id": "18153292696555814",
+  "posted_utc": "2026-10-18T22:52:23Z"
  }
 ]

@@ -694,10 +694,14 @@
    "winner": "Xbox",
    "win_t": 15.29,
    "duration": 18.8,
-   "file": "16_sumo_brands.mp4"
+   "file": "16_sumo_brands.mp4",
+   "ig_id": "18153292696555814",
+   "posted_utc": "2026-10-18T22:52:23Z"
   },
   "fb_id": "954255814031867",
-  "fb_scheduled_utc": "2026-10-18 22:30"
+  "fb_scheduled_utc": "2026-10-18 22:30",
+  "tries": 1,
+  "ig_id": "18153292696555814"
  },
  {
   "order": 17,
@@ -898,5 +902,48 @@
   },
   "fb_id": "950632901028763",
   "fb_scheduled_utc": "2026-10-19 19:00"
+ },
+ {
+  "order": 22,
+  "file": "22_maze_brands.mp4",
+  "job": {
+   "id": "20261018-225226",
+   "mode": "maze",
+   "theme": "brands",
+   "look": "violet",
+   "teams": [
+    "McDonalds",
+    "Google",
+    "Lego",
+    "Apple",
+    "Gucci",
+    "Netflix"
+   ],
+   "colors": [
+    "#4D9BFF",
+    "#FFE14D",
+    "#C77DFF",
+    "#FF4D6D",
+    "#FF7AE0",
+    "#4DFFE0"
+   ],
+   "hook": "Pick your brand. First one out wins",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "Pick your brand. First one out wins 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #marblerace #reels #maze",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "size": 12
+   },
+   "seed": 134817,
+   "key": "G",
+   "champ": null,
+   "requested": false,
+   "winner": "Lego",
+   "win_t": 13.42,
+   "duration": 16.93,
+   "file": "22_maze_brands.mp4"
+  },
+  "fb_id": "955186587650167",
+  "fb_scheduled_utc": "2026-10-19 22:30"
  }
 ]
