@@ -1137,5 +1137,42 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 7587
   }
+ },
+ {
+  "id": "20261017-130137",
+  "mode": "race",
+  "theme": "footballers",
+  "teams": [
+   "Salah",
+   "Ronaldo",
+   "Yamal",
+   "De Bruyne",
+   "Mbappe"
+  ],
+  "colors": [
+   "#3C8CFF",
+   "#B45CFF",
+   "#FF5CD1",
+   "#FF3B5C",
+   "#FF8A2B"
+  ],
+  "hook": "Who takes the checkered flag?",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "Who takes the checkered flag?\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #reels #physicssimulation #racing",
+  "first_comment": "Salah or Ronaldo? Wrong answers only 😅",
+  "params": {
+   "laps": 3,
+   "speed": 255.3741840949776
+  },
+  "seed": 896203,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Mbappe",
+  "win_t": 20.06,
+  "duration": 23.57,
+  "file": "13_race_footballers.mp4",
+  "ig_id": "18108611705253157",
+  "posted_utc": "2026-10-18T13:01:34Z"
  }
 ]
