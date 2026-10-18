@@ -2,7 +2,7 @@
   "_note": "Claude tunes this file from state/summary.md. Weights are relative.",
   "formats": {
     "escape": {
-      "weight": 2,
+      "weight": 1,
       "teams": [
         5,
         8
@@ -20,12 +20,12 @@
         1.5
       ],
       "seconds": [
-        16,
-        26
+        12,
+        18
       ]
     },
     "grow": {
-      "weight": 1,
+      "weight": 0.5,
       "teams": [
         4,
         6
@@ -39,33 +39,33 @@
         135
       ],
       "seconds": [
-        14,
-        22
+        12,
+        18
       ]
     },
     "maze": {
-      "weight": 1,
+      "weight": 3,
       "teams": [
         4,
         6
       ],
       "seconds": [
-        16,
-        26
+        12,
+        18
       ],
       "params": {
         "size": 12
       }
     },
     "golf": {
-      "weight": 4,
+      "weight": 3,
       "teams": [
         5,
         6
       ],
       "seconds": [
-        13,
-        24
+        12,
+        18
       ]
     },
     "plinko": {
@@ -75,8 +75,8 @@
         5
       ],
       "seconds": [
-        15,
-        26
+        12,
+        18
       ],
       "params": {
         "per_team": 4,
@@ -87,7 +87,7 @@
       }
     },
     "race": {
-      "weight": 3,
+      "weight": 1,
       "teams": [
         4,
         5
@@ -105,14 +105,14 @@
       }
     },
     "storm": {
-      "weight": 2,
+      "weight": 3,
       "teams": [
         5,
         6
       ],
       "seconds": [
-        14,
-        26
+        12,
+        18
       ],
       "params": {
         "rate": [
@@ -122,7 +122,7 @@
       }
     },
     "territory": {
-      "weight": 3,
+      "weight": 1,
       "teams": [
         4,
         5
@@ -139,14 +139,14 @@
       }
     },
     "sumo": {
-      "weight": 1,
+      "weight": 3,
       "teams": [
         5,
         6
       ],
       "seconds": [
-        14,
-        26
+        12,
+        18
       ]
     },
     "tower": {
@@ -156,12 +156,12 @@
         6
       ],
       "seconds": [
-        14,
-        28
+        12,
+        18
       ]
     },
     "chain": {
-      "weight": 2,
+      "weight": 1,
       "teams": [
         4,
         5
@@ -179,14 +179,14 @@
       }
     },
     "flip": {
-      "weight": 2,
+      "weight": 3,
       "teams": [
         5,
         6
       ],
       "seconds": [
-        14,
-        28
+        12,
+        18
       ]
     },
     "pinball": {
@@ -207,14 +207,14 @@
       }
     },
     "hole": {
-      "weight": 2,
+      "weight": 3,
       "teams": [
         5,
         6
       ],
       "seconds": [
-        14,
-        28
+        12,
+        18
       ]
     }
   },
@@ -262,7 +262,7 @@
     "Cyan",
     "Pink"
   ],
-  "champion_rematch_prob": 0.2,
+  "champion_rematch_prob": 0.1,
   "hooks": {
     "escape": [
       "Which country escapes first?",
