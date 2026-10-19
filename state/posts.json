@@ -1405,5 +1405,42 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 8111
   }
+ },
+ {
+  "id": "20261018-130136",
+  "mode": "flip",
+  "theme": "billionaires",
+  "look": "teal",
+  "teams": [
+   "Dangote",
+   "Buffett",
+   "Ellison",
+   "Arnault",
+   "Zuckerberg",
+   "Bezos"
+  ],
+  "colors": [
+   "#5CFFEA",
+   "#6FA8FF",
+   "#A3FFD6",
+   "#FFE29A",
+   "#7AD7FF",
+   "#9D8CFF"
+  ],
+  "hook": "Gravity never stops. Pick wisely",
+  "cta": "Comment who races next",
+  "caption": "Gravity never stops. Pick wisely\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #satisfyingvideo #marblerace #gravity",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {},
+  "seed": 542253,
+  "key": "E",
+  "champ": null,
+  "requested": false,
+  "winner": "Arnault",
+  "win_t": 13.48,
+  "duration": 16.98,
+  "file": "19_flip_billionaires.mp4",
+  "ig_id": "18039752288834024",
+  "posted_utc": "2026-10-19T13:15:41Z"
  }
 ]

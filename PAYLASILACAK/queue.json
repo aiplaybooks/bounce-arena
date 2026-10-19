@@ -826,10 +826,14 @@
    "winner": "Arnault",
    "win_t": 13.48,
    "duration": 16.98,
-   "file": "19_flip_billionaires.mp4"
+   "file": "19_flip_billionaires.mp4",
+   "ig_id": "18039752288834024",
+   "posted_utc": "2026-10-19T13:15:41Z"
   },
   "fb_id": "880685655132576",
-  "fb_scheduled_utc": "2026-10-19 12:30"
+  "fb_scheduled_utc": "2026-10-19 12:30",
+  "tries": 1,
+  "ig_id": "18039752288834024"
  },
  {
   "order": 20,
@@ -1037,5 +1041,46 @@
   },
   "fb_id": "1644173543781843",
   "fb_scheduled_utc": "2026-10-20 09:30"
+ },
+ {
+  "order": 25,
+  "file": "25_hole_colors.mp4",
+  "job": {
+   "id": "20261019-131544",
+   "mode": "hole",
+   "theme": "colors",
+   "look": "graphite",
+   "teams": [
+    "Pink",
+    "Orange",
+    "Red",
+    "Blue",
+    "Green",
+    "Purple"
+   ],
+   "colors": [
+    "#FF5CD1",
+    "#FF8A2B",
+    "#FF3B5C",
+    "#3C8CFF",
+    "#3DFF8C",
+    "#B45CFF"
+   ],
+   "hook": "Who escapes the black hole?",
+   "cta": "Tag a friend who'd pick wrong",
+   "caption": "Who escapes the black hole?\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #asmr #bouncingball #blackhole",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {},
+   "seed": 459658,
+   "key": "C",
+   "champ": null,
+   "requested": false,
+   "winner": "Orange",
+   "win_t": 13.22,
+   "duration": 16.73,
+   "file": "25_hole_colors.mp4"
+  },
+  "fb_id": "1744318086645055",
+  "fb_scheduled_utc": "2026-10-20 12:30"
  }
 ]
