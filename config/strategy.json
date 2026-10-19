@@ -25,7 +25,7 @@
       ]
     },
     "grow": {
-      "weight": 0.6,
+      "weight": 0.4,
       "teams": [
         4,
         6
@@ -295,7 +295,8 @@
       "Hole in one... which {noun}?",
       "Rolling to the hole. Who wins?",
       "Pick your {noun} before it drops",
-      "99% miss the hole. Will your {noun}?"
+      "99% miss the hole. Will your {noun}?",
+      "One putt. One winner. Pick yours"
     ],
     "plinko": [
       "Which {noun} wins the Plinko?",
@@ -337,7 +338,8 @@
       "Who climbs to the top first?",
       "Pick your {noun}. Reach the crown",
       "Can your {noun} reach the crown first?",
-      "Every step counts. Pick your {noun}"
+      "Every step counts. Pick your {noun}",
+      "Only one {noun} wears the crown"
     ],
     "chain": [
       "Which {noun} blows up the most?",
