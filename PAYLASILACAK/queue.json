@@ -871,10 +871,14 @@
    "winner": "Google",
    "win_t": 16.0,
    "duration": 19.52,
-   "file": "20_golf_brands.mp4"
+   "file": "20_golf_brands.mp4",
+   "ig_id": "17892335976614361",
+   "posted_utc": "2026-10-19T16:24:27Z"
   },
   "fb_id": "3545381632302948",
-  "fb_scheduled_utc": "2026-10-19 16:00"
+  "fb_scheduled_utc": "2026-10-19 16:00",
+  "tries": 1,
+  "ig_id": "17892335976614361"
  },
  {
   "order": 21,
@@ -1082,5 +1086,47 @@
   },
   "fb_id": "1744318086645055",
   "fb_scheduled_utc": "2026-10-20 12:30"
+ },
+ {
+  "order": 26,
+  "file": "26_chain_brands.mp4",
+  "job": {
+   "id": "20261019-162429",
+   "mode": "chain",
+   "theme": "brands",
+   "look": "violet",
+   "teams": [
+    "Pepsi",
+    "Netflix",
+    "Gucci",
+    "Apple",
+    "Amazon"
+   ],
+   "colors": [
+    "#4DFFE0",
+    "#FF7AE0",
+    "#7CFF6B",
+    "#C77DFF",
+    "#FF4D6D"
+   ],
+   "hook": "One spark changes everything",
+   "cta": "Follow before the next one drops",
+   "caption": "One spark changes everything\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #asmr #ballrace #chainreaction",
+   "first_comment": "Comment a name and it races next 🏁",
+   "params": {
+    "duration": 18.10046216420512,
+    "chain": 0.22
+   },
+   "seed": 776518,
+   "key": "C",
+   "champ": null,
+   "requested": false,
+   "winner": "Pepsi",
+   "win_t": 18.1,
+   "duration": 21.62,
+   "file": "26_chain_brands.mp4"
+  },
+  "fb_id": "1828901628294762",
+  "fb_scheduled_utc": "2026-10-20 16:00"
  }
 ]

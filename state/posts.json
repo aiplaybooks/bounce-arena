@@ -1442,5 +1442,42 @@
   "file": "19_flip_billionaires.mp4",
   "ig_id": "18039752288834024",
   "posted_utc": "2026-10-19T13:15:41Z"
+ },
+ {
+  "id": "20261018-161626",
+  "mode": "golf",
+  "theme": "brands",
+  "look": "graphite",
+  "teams": [
+   "Nike",
+   "Google",
+   "Coca-Cola",
+   "Netflix",
+   "Samsung",
+   "Gucci"
+  ],
+  "colors": [
+   "#EF476F",
+   "#FF5A5F",
+   "#FFB400",
+   "#06D6A0",
+   "#FFD166",
+   "#118AB2"
+  ],
+  "hook": "99% miss the hole. Will your brand?",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "99% miss the hole. Will your brand? 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #bouncingball #golf",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {},
+  "seed": 69752,
+  "key": "C",
+  "champ": null,
+  "requested": false,
+  "winner": "Google",
+  "win_t": 16.0,
+  "duration": 19.52,
+  "file": "20_golf_brands.mp4",
+  "ig_id": "17892335976614361",
+  "posted_utc": "2026-10-19T16:24:27Z"
  }
 ]
