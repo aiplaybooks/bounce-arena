@@ -78,5 +78,10 @@
   "t": "2026-10-18 06:52",
   "u": "videoları ayrı ayrı analytic vermene gerek yok, toplu bir şekilde verebilirsin",
   "a": "Tamam, not aldım — bundan sonra performans/analitik paylaşırken video video değil, toplu (format/tema bazında ortalama vb.) özetleyeceğim."
+ },
+ {
+  "t": "2026-10-19 16:23",
+  "u": "Tüm paylaşımları 2 günde 1 olarak değiştirelim.",
+  "a": "Bunu da yapamıyorum — paylaşım sıklığı `post.yml` workflow'unun cron zamanlamasında kodlu (şu an günde 4 slot), benim `config/strategy.json` ile dokunabileceğim bir yer değil.\n\nMasaüstü Claude Code'a şunu iletmen gerekiyor: \"post.yml cron'unu günde 1 slot'a düşür (2 günde bir paylaşım)\" — hangi saat/UTC olsun istediğini de belirtirsen iyi olur.\n\nNot: Hedef hâlâ 2026-10-21'e kadar 5k takipçi + 250k izlenme. Günde 4'ten 2 günde 1'e inmek bu hedefe ulaşma şansını ciddi düşürür — bilerek mi istiyorsun, yoksa başka bir sebebi mi var (kalite, maliyet, API limiti)?"
  }
 ]
