@@ -44,7 +44,7 @@
       ]
     },
     "maze": {
-      "weight": 3,
+      "weight": 2,
       "teams": [
         4,
         6
@@ -87,7 +87,7 @@
       }
     },
     "race": {
-      "weight": 1,
+      "weight": 2,
       "teams": [
         4,
         5
@@ -122,7 +122,7 @@
       }
     },
     "territory": {
-      "weight": 1,
+      "weight": 2,
       "teams": [
         4,
         5
@@ -161,7 +161,7 @@
       ]
     },
     "chain": {
-      "weight": 1,
+      "weight": 2,
       "teams": [
         4,
         5
@@ -179,7 +179,7 @@
       }
     },
     "flip": {
-      "weight": 3,
+      "weight": 2,
       "teams": [
         5,
         6
