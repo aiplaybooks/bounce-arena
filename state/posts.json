@@ -1316,5 +1316,40 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 4983
   }
+ },
+ {
+  "id": "20261018-015637",
+  "mode": "chain",
+  "theme": "billionaires",
+  "teams": [
+   "Page",
+   "Arnault",
+   "Ambani",
+   "Elon"
+  ],
+  "colors": [
+   "#FF5CD1",
+   "#2BE7FF",
+   "#FF8A2B",
+   "#B45CFF"
+  ],
+  "hook": "One touch = chain reaction",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "One touch = chain reaction\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #bouncingball #physicssimulation #chainreaction",
+  "first_comment": "Comment a name and it races next 🏁",
+  "params": {
+   "duration": 25.628090693223708,
+   "chain": 0.22
+  },
+  "seed": 291979,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Ambani",
+  "win_t": 25.63,
+  "duration": 29.13,
+  "file": "17_chain_billionaires.mp4",
+  "ig_id": "18129612562698714",
+  "posted_utc": "2026-10-19T01:59:41Z"
  }
 ]

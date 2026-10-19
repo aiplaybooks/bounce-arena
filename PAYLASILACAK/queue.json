@@ -737,10 +737,14 @@
    "winner": "Ambani",
    "win_t": 25.63,
    "duration": 29.13,
-   "file": "17_chain_billionaires.mp4"
+   "file": "17_chain_billionaires.mp4",
+   "ig_id": "18129612562698714",
+   "posted_utc": "2026-10-19T01:59:41Z"
   },
   "fb_id": "1758416785451681",
-  "fb_scheduled_utc": "2026-10-19 01:30"
+  "fb_scheduled_utc": "2026-10-19 01:30",
+  "tries": 1,
+  "ig_id": "18129612562698714"
  },
  {
   "order": 18,
@@ -945,5 +949,46 @@
   },
   "fb_id": "955186587650167",
   "fb_scheduled_utc": "2026-10-19 22:30"
+ },
+ {
+  "order": 23,
+  "file": "23_tower_colors.mp4",
+  "job": {
+   "id": "20261019-015944",
+   "mode": "tower",
+   "theme": "colors",
+   "look": "teal",
+   "teams": [
+    "Red",
+    "Green",
+    "Blue",
+    "Pink",
+    "Purple",
+    "Orange"
+   ],
+   "colors": [
+    "#FF3B5C",
+    "#3DFF8C",
+    "#3C8CFF",
+    "#FF5CD1",
+    "#B45CFF",
+    "#FF8A2B"
+   ],
+   "hook": "First color to the crown wins",
+   "cta": "Comment who races next",
+   "caption": "First color to the crown wins\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #bouncingball #reels #climb",
+   "first_comment": "Comment your pick and it races next 🏁",
+   "params": {},
+   "seed": 385138,
+   "key": "D",
+   "champ": null,
+   "requested": false,
+   "winner": "Red",
+   "win_t": 15.05,
+   "duration": 18.55,
+   "file": "23_tower_colors.mp4"
+  },
+  "fb_id": "1092796203598288",
+  "fb_scheduled_utc": "2026-10-20 01:30"
  }
 ]
