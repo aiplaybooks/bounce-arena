@@ -1,20 +1,31 @@
-"""Schedules every not-yet-scheduled video in PAYLASILACAK/ on the Facebook Page, one per Instagram cron slot, in queue order."""
+"""Schedules every not-yet-scheduled video in PAYLASILACAK/ on the Facebook Page, one per Instagram slot (every EVERY_DAYS days), in queue order."""
 import datetime as dt
 import sys
 
 import publish
 
-SLOTS = [(1, 30), (9, 30), (12, 30), (16, 0), (19, 0), (22, 30)]  # same UTC slots as post.yml
+SLOTS = [(16, 0)]  # same UTC slot as post.yml (19:00 Turkey time, best IG hour in analytics)
+EVERY_DAYS = 2  # one post every 2 days (owner, 2026-10-19)
 
 
-def upcoming(after):
+def last_post(q):
+    """UTC time of the last Instagram post in the queue (None if nothing posted yet)."""
+    ts = [i["job"]["posted_utc"] for i in q if i.get("ig_id") and i.get("job", {}).get("posted_utc")]
+    return dt.datetime.strptime(max(ts), "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc) if ts else None
+
+
+def upcoming(after, q=None):
+    """Slots after `after`, EVERY_DAYS apart, starting EVERY_DAYS after the last Instagram post."""
     day = after.replace(hour=0, minute=0, second=0, microsecond=0)
+    lp = last_post(q or [])
+    if lp:
+        day = max(day, lp.replace(hour=0, minute=0, second=0, microsecond=0) + dt.timedelta(days=EVERY_DAYS))
     while True:
         for h, m in SLOTS:
             t = day.replace(hour=h, minute=m)
             if t > after:
                 yield t
-        day += dt.timedelta(days=1)
+        day += dt.timedelta(days=EVERY_DAYS)
 
 
 def next_slot(q):
@@ -22,7 +33,7 @@ def next_slot(q):
     now = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=15)
     last = max([dt.datetime.strptime(i["fb_scheduled_utc"], "%Y-%m-%d %H:%M").replace(tzinfo=dt.timezone.utc)
                 for i in q if i.get("fb_scheduled_utc") and not i.get("ig_id")] + [now])
-    return next(upcoming(max(now, last)))
+    return next(upcoming(max(now, last), q))
 
 
 def schedule_item(q, item, pdir):
@@ -45,7 +56,7 @@ def main():
     import mkqueue
     import run
     q = run.load_queue()
-    slots = upcoming(dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=20))
+    slots = upcoming(dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=20), q)
     for it in run.pending(q):
         t = next(slots)  # slot k is also when Instagram posts the k-th pending video
         if it.get("fb_id"):

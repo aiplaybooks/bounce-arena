@@ -3,6 +3,7 @@
 python src/run.py [--dry-run] [--preview] [--mode escape|grow] [--theme countries|colors]
 """
 import argparse
+import datetime as dt
 import json
 import os
 import sys
@@ -137,8 +138,13 @@ def add_video(q):
 def queue_cycle():
     """Scheduled slot: post the next ready video to Instagram (IG only; Facebook is scheduled by hand), delete it
     from PAYLASILACAK/, then top the folder up with fresh videos."""
+    import fb_schedule
     import mkqueue
     q = load_queue()
+    lp = fb_schedule.last_post(q)  # the cron fires daily; post only every EVERY_DAYS days
+    if lp and dt.datetime.now(dt.timezone.utc) - lp < dt.timedelta(days=fb_schedule.EVERY_DAYS, hours=-6):
+        print("skip: last post", lp.isoformat(), "- posting every", fb_schedule.EVERY_DAYS, "days")
+        return
     if not pending(q):
         add_video(q)  # nothing ready: make one now so this slot still posts
     publish_next(q)
@@ -150,7 +156,7 @@ def queue_cycle():
         except Exception:
             traceback.print_exc()
             break
-    import fb_schedule  # every ready video also gets scheduled on the Facebook Page, in queue order
+    # every ready video also gets scheduled on the Facebook Page, in queue order
     for it in pending(q):
         if not it.get("fb_id") and it.get("fb_tries", 0) < 3:
             fb_schedule.schedule_item(q, it, PDIR)

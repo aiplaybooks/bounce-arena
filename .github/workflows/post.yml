@@ -1,13 +1,8 @@
 name: post
 on:
   schedule:
-    # UTC slots: AU evening, UK lunch/US morning, US lunch, UK evening, US evening ET, US evening PT
-    - cron: "30 9 * * *"
-    - cron: "30 12 * * *"
+    # 16:00 UTC = 19:00 Turkey time (best IG hour). Fires daily; run.py posts only every 2 days.
     - cron: "0 16 * * *"
-    - cron: "0 19 * * *"
-    - cron: "30 22 * * *"
-    - cron: "30 1 * * *"
   workflow_dispatch:
     inputs:
       dry_run: {type: boolean, default: true, description: "render only, do not publish"}
