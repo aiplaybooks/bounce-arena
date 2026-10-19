@@ -167,13 +167,13 @@
         5
       ],
       "seconds": [
-        21,
-        27
+        17,
+        22
       ],
       "params": {
         "duration": [
-          22,
-          26
+          18,
+          22
         ],
         "chain": 0.22
       }
@@ -219,12 +219,12 @@
     }
   },
   "themes": {
-    "countries": 4,
+    "countries": 3,
     "colors": 1,
-    "singers": 1,
+    "singers": 2,
     "footballers": 4,
     "billionaires": 1,
-    "brands": 3,
+    "brands": 2,
     "clubs": 4,
     "ai": 4
   },

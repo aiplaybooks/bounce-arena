@@ -142,13 +142,13 @@
   "fb_id": "1574886487742298",
   "posted_utc": "2026-10-14T22:57:16Z",
   "ig": {
-   "views": 1354,
-   "reach": 1171,
+   "views": 1355,
+   "reach": 1172,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9190
+   "ig_reels_avg_watch_time": 9182
   },
   "fb": {
    "post_video_avg_time_watched": 20327,
@@ -357,13 +357,13 @@
   "fb_id": "3678799068940321",
   "posted_utc": "2026-10-15T16:23:51Z",
   "ig": {
-   "views": 130,
-   "reach": 111,
+   "views": 134,
+   "reach": 112,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6418
+   "ig_reels_avg_watch_time": 6415
   },
   "fb": {
    "post_video_avg_time_watched": 17096,
@@ -412,13 +412,13 @@
   "fb_id": "1144594181577592",
   "posted_utc": "2026-10-15T19:30:34Z",
   "ig": {
-   "views": 1205,
-   "reach": 1016,
+   "views": 1207,
+   "reach": 1018,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6641
+   "ig_reels_avg_watch_time": 6644
   },
   "fb": {
    "post_video_avg_time_watched": 0,
@@ -680,13 +680,13 @@
   "ig_id": "18117304195794069",
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
-   "views": 13581,
-   "reach": 12078,
+   "views": 13596,
+   "reach": 12092,
    "likes": 13,
    "comments": 3,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10418
+   "ig_reels_avg_watch_time": 10413
   }
  },
  {
@@ -950,13 +950,13 @@
   "ig_id": "18661430662032587",
   "posted_utc": "2026-10-17T16:15:49Z",
   "ig": {
-   "views": 2883,
-   "reach": 2685,
+   "views": 2893,
+   "reach": 2693,
    "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6271
+   "ig_reels_avg_watch_time": 6281
   }
  },
  {
@@ -994,13 +994,13 @@
   "ig_id": "18096837053410916",
   "posted_utc": "2026-10-17T19:21:34Z",
   "ig": {
-   "views": 1636,
-   "reach": 1516,
+   "views": 1642,
+   "reach": 1524,
    "likes": 4,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6689
+   "ig_reels_avg_watch_time": 6672
   }
  },
  {
@@ -1037,13 +1037,13 @@
   "ig_id": "18121148435283584",
   "posted_utc": "2026-10-17T22:50:41Z",
   "ig": {
-   "views": 1255,
-   "reach": 1147,
+   "views": 1258,
+   "reach": 1150,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7441
+   "ig_reels_avg_watch_time": 7456
   }
  },
  {
@@ -1084,13 +1084,13 @@
   "ig_id": "18634787587050900",
   "posted_utc": "2026-10-18T01:56:35Z",
   "ig": {
-   "views": 1280,
-   "reach": 1185,
+   "views": 1311,
+   "reach": 1211,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7305
+   "ig_reels_avg_watch_time": 7243
   }
  },
  {
@@ -1129,13 +1129,13 @@
   "ig_id": "18375076123213177",
   "posted_utc": "2026-10-18T09:53:24Z",
   "ig": {
-   "views": 1735,
-   "reach": 1578,
+   "views": 1921,
+   "reach": 1755,
    "likes": 2,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6851
+   "ig_reels_avg_watch_time": 7449
   }
  },
  {
@@ -1175,13 +1175,13 @@
   "ig_id": "18108611705253157",
   "posted_utc": "2026-10-18T13:01:34Z",
   "ig": {
-   "views": 1479,
-   "reach": 1314,
+   "views": 1613,
+   "reach": 1442,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7595
+   "ig_reels_avg_watch_time": 7555
   }
  },
  {
@@ -1220,13 +1220,13 @@
   "ig_id": "18129990227499997",
   "posted_utc": "2026-10-18T16:16:13Z",
   "ig": {
-   "views": 354,
-   "reach": 225,
-   "likes": 0,
+   "views": 1598,
+   "reach": 1400,
+   "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 7576
+   "ig_reels_avg_watch_time": 8487
   }
  },
  {
@@ -1263,7 +1263,16 @@
   "duration": 20.02,
   "file": "15_maze_colors.mp4",
   "ig_id": "18101671520168768",
-  "posted_utc": "2026-10-18T19:21:07Z"
+  "posted_utc": "2026-10-18T19:21:07Z",
+  "ig": {
+   "views": 1316,
+   "reach": 1217,
+   "likes": 2,
+   "comments": 1,
+   "shares": 0,
+   "saved": 1,
+   "ig_reels_avg_watch_time": 7234
+  }
  },
  {
   "id": "20261017-225043",
@@ -1297,6 +1306,15 @@
   "duration": 18.8,
   "file": "16_sumo_brands.mp4",
   "ig_id": "18153292696555814",
-  "posted_utc": "2026-10-18T22:52:23Z"
+  "posted_utc": "2026-10-18T22:52:23Z",
+  "ig": {
+   "views": 123,
+   "reach": 110,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 4983
+  }
  }
 ]
