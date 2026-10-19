@@ -781,10 +781,14 @@
    "winner": "Bieber",
    "win_t": 16.28,
    "duration": 19.78,
-   "file": "18_tower_singers.mp4"
+   "file": "18_tower_singers.mp4",
+   "ig_id": "18112013168574313",
+   "posted_utc": "2026-10-19T10:04:03Z"
   },
   "fb_id": "1520259586529332",
-  "fb_scheduled_utc": "2026-10-19 09:30"
+  "fb_scheduled_utc": "2026-10-19 09:30",
+  "tries": 1,
+  "ig_id": "18112013168574313"
  },
  {
   "order": 19,
@@ -990,5 +994,48 @@
   },
   "fb_id": "1092796203598288",
   "fb_scheduled_utc": "2026-10-20 01:30"
+ },
+ {
+  "order": 24,
+  "file": "24_maze_brands.mp4",
+  "job": {
+   "id": "20261019-100405",
+   "mode": "maze",
+   "theme": "brands",
+   "look": "forest",
+   "teams": [
+    "Coca-Cola",
+    "Xbox",
+    "Gucci",
+    "Disney",
+    "Netflix",
+    "Apple"
+   ],
+   "colors": [
+    "#C77DFF",
+    "#FF7AE0",
+    "#FFE14D",
+    "#FF4D6D",
+    "#FF9F45",
+    "#7CFF6B"
+   ],
+   "hook": "Only one brand makes it out. Who?",
+   "cta": "Winner returns tomorrow",
+   "caption": "Only one brand makes it out. Who?\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #marblerace #ballrace #maze",
+   "first_comment": "Who did you pick? Be honest 👇",
+   "params": {
+    "size": 12
+   },
+   "seed": 474817,
+   "key": "D",
+   "champ": null,
+   "requested": false,
+   "winner": "Xbox",
+   "win_t": 12.72,
+   "duration": 16.22,
+   "file": "24_maze_brands.mp4"
+  },
+  "fb_id": "1644173543781843",
+  "fb_scheduled_utc": "2026-10-20 09:30"
  }
 ]

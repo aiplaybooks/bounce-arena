@@ -1360,5 +1360,41 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 8434
   }
+ },
+ {
+  "id": "20261018-095326",
+  "mode": "tower",
+  "theme": "singers",
+  "teams": [
+   "Bruno",
+   "Eminem",
+   "Billie",
+   "Bieber",
+   "Adele",
+   "Beyonce"
+  ],
+  "colors": [
+   "#FFD23F",
+   "#B45CFF",
+   "#2BE7FF",
+   "#3DFF8C",
+   "#FF8A2B",
+   "#3C8CFF"
+  ],
+  "hook": "First singer to the crown wins",
+  "cta": "Follow before the next one drops",
+  "caption": "First singer to the crown wins 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #satisfyingvideo #oddlysatisfying #climb",
+  "first_comment": "Did you call it? 👀 Reply with your pick",
+  "params": {},
+  "seed": 411593,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Bieber",
+  "win_t": 16.28,
+  "duration": 19.78,
+  "file": "18_tower_singers.mp4",
+  "ig_id": "18112013168574313",
+  "posted_utc": "2026-10-19T10:04:03Z"
  }
 ]
