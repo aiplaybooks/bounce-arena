@@ -25,7 +25,7 @@
       ]
     },
     "grow": {
-      "weight": 0.6,
+      "weight": 0.4,
       "teams": [
         4,
         6
@@ -58,7 +58,7 @@
       }
     },
     "golf": {
-      "weight": 3,
+      "weight": 4,
       "teams": [
         5,
         6
@@ -122,7 +122,7 @@
       }
     },
     "territory": {
-      "weight": 2,
+      "weight": 3,
       "teams": [
         4,
         5
@@ -139,7 +139,7 @@
       }
     },
     "sumo": {
-      "weight": 1,
+      "weight": 0.5,
       "teams": [
         5,
         6
@@ -150,7 +150,7 @@
       ]
     },
     "tower": {
-      "weight": 3,
+      "weight": 4,
       "teams": [
         5,
         6
@@ -222,11 +222,11 @@
     "countries": 3,
     "colors": 1,
     "singers": 2,
-    "footballers": 4,
-    "billionaires": 1,
-    "brands": 1,
-    "clubs": 4,
-    "ai": 4
+    "footballers": 5,
+    "billionaires": 0.5,
+    "brands": 0.5,
+    "clubs": 6,
+    "ai": 5
   },
   "countries_core": [
     "USA",
@@ -296,7 +296,8 @@
       "Rolling to the hole. Who wins?",
       "Pick your {noun} before it drops",
       "99% miss the hole. Will your {noun}?",
-      "One putt. One winner. Pick yours"
+      "One putt. One winner. Pick yours",
+      "Last putt wins. Pick your {noun}"
     ],
     "plinko": [
       "Which {noun} wins the Plinko?",
@@ -339,7 +340,8 @@
       "Pick your {noun}. Reach the crown",
       "Can your {noun} reach the crown first?",
       "Every step counts. Pick your {noun}",
-      "Only one {noun} wears the crown"
+      "Only one {noun} wears the crown",
+      "Race to the crown. Pick your {noun}"
     ],
     "chain": [
       "Which {noun} blows up the most?",
