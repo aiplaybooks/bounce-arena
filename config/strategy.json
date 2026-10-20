@@ -25,7 +25,7 @@
       ]
     },
     "grow": {
-      "weight": 0.4,
+      "weight": 0.8,
       "teams": [
         4,
         6
@@ -139,7 +139,7 @@
       }
     },
     "sumo": {
-      "weight": 0.5,
+      "weight": 0.8,
       "teams": [
         5,
         6
@@ -220,11 +220,11 @@
   },
   "themes": {
     "countries": 3,
-    "colors": 1,
+    "colors": 1.2,
     "singers": 2,
     "footballers": 5,
-    "billionaires": 0.5,
-    "brands": 0.5,
+    "billionaires": 1.2,
+    "brands": 1.2,
     "clubs": 6,
     "ai": 5
   },
