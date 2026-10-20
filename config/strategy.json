@@ -139,7 +139,7 @@
       }
     },
     "sumo": {
-      "weight": 2,
+      "weight": 1,
       "teams": [
         5,
         6
@@ -224,7 +224,7 @@
     "singers": 2,
     "footballers": 4,
     "billionaires": 1,
-    "brands": 2,
+    "brands": 1,
     "clubs": 4,
     "ai": 4
   },
