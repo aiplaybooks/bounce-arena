@@ -681,12 +681,12 @@
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
    "views": 13686,
-   "reach": 12177,
+   "reach": 12178,
    "likes": 13,
    "comments": 3,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 10407
+   "ig_reels_avg_watch_time": 10408
   }
  },
  {
@@ -950,13 +950,13 @@
   "ig_id": "18661430662032587",
   "posted_utc": "2026-10-17T16:15:49Z",
   "ig": {
-   "views": 2898,
-   "reach": 2696,
+   "views": 2899,
+   "reach": 2700,
    "likes": 3,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 6287
+   "ig_reels_avg_watch_time": 6285
   }
  },
  {
@@ -1265,13 +1265,13 @@
   "ig_id": "18101671520168768",
   "posted_utc": "2026-10-18T19:21:07Z",
   "ig": {
-   "views": 1334,
-   "reach": 1235,
+   "views": 1335,
+   "reach": 1236,
    "likes": 2,
    "comments": 1,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 7219
+   "ig_reels_avg_watch_time": 7214
   }
  },
  {
@@ -1531,6 +1531,15 @@
   "duration": 16.6,
   "file": "21_flip_colors.mp4",
   "ig_id": "18107716922260230",
-  "posted_utc": "2026-10-21T16:24:15Z"
+  "posted_utc": "2026-10-21T16:24:15Z",
+  "ig": {
+   "views": 898,
+   "reach": 639,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 6202
+  }
  }
 ]
