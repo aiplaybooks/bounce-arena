@@ -914,10 +914,14 @@
    "winner": "Orange",
    "win_t": 13.09,
    "duration": 16.6,
-   "file": "21_flip_colors.mp4"
+   "file": "21_flip_colors.mp4",
+   "ig_id": "18107716922260230",
+   "posted_utc": "2026-10-21T16:24:15Z"
   },
   "fb_id": "950632901028763",
-  "fb_scheduled_utc": "2026-10-21 16:00"
+  "fb_scheduled_utc": "2026-10-21 16:00",
+  "tries": 1,
+  "ig_id": "18107716922260230"
  },
  {
   "order": 22,
@@ -1128,5 +1132,44 @@
   },
   "fb_id": "1828901628294762",
   "fb_scheduled_utc": "2026-10-31 16:00"
+ },
+ {
+  "order": 27,
+  "file": "27_tower_clubs.mp4",
+  "job": {
+   "id": "20261021-162417",
+   "mode": "tower",
+   "theme": "clubs",
+   "look": "grid",
+   "teams": [
+    "Barca",
+    "United",
+    "Milan",
+    "Dortmund",
+    "Arsenal"
+   ],
+   "colors": [
+    "#7AD7FF",
+    "#9D8CFF",
+    "#5CFFEA",
+    "#FFE29A",
+    "#FFFFFF"
+   ],
+   "hook": "First club to the crown wins",
+   "cta": "Comment who races next",
+   "caption": "First club to the crown wins\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #oddlysatisfying #ballrace #climb",
+   "first_comment": "Comment your pick and it races next 🏁",
+   "params": {},
+   "seed": 456171,
+   "key": "A",
+   "champ": null,
+   "requested": false,
+   "winner": "Arsenal",
+   "win_t": 16.32,
+   "duration": 19.82,
+   "file": "27_tower_clubs.mp4"
+  },
+  "fb_id": "1423935856618666",
+  "fb_scheduled_utc": "2026-11-02 16:00"
  }
 ]

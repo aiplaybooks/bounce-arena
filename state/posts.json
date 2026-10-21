@@ -1497,5 +1497,40 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 1109
   }
+ },
+ {
+  "id": "20261018-192109",
+  "mode": "flip",
+  "theme": "colors",
+  "look": "midnight",
+  "teams": [
+   "Orange",
+   "Yellow",
+   "Pink",
+   "Blue",
+   "Cyan"
+  ],
+  "colors": [
+   "#FF8A2B",
+   "#FFD23F",
+   "#FF5CD1",
+   "#3C8CFF",
+   "#2BE7FF"
+  ],
+  "hook": "Dodge the spikes. Pick one",
+  "cta": "Follow before the next one drops",
+  "caption": "Dodge the spikes. Pick one\n\nDrop your pick in the comments and it races next 🏁\nTag someone who'd lose this bet 📤\nNew physics battle every day — follow so you catch the next one.\n\n#satisfying #physics #simulation #ballrace #oddlysatisfying #gravity",
+  "first_comment": "Comment your pick and it races next 🏁",
+  "params": {},
+  "seed": 586867,
+  "key": "D",
+  "champ": null,
+  "requested": false,
+  "winner": "Orange",
+  "win_t": 13.09,
+  "duration": 16.6,
+  "file": "21_flip_colors.mp4",
+  "ig_id": "18107716922260230",
+  "posted_utc": "2026-10-21T16:24:15Z"
  }
 ]
