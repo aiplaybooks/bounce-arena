@@ -1,5 +1,5 @@
-# Summary 2026-10-21 18:53 UTC
-Followers IG 8 + FB 25 = 33 / 5000 | Views 45778 / 250000 | Posts 32
+# Summary 2026-10-22 00:57 UTC
+Followers IG 8 + FB 25 = 33 / 5000 | Views 46144 / 250000 | Posts 32
 
 | id | mode/theme | hook | views IG/FB | avg watch s IG | likes | cmts | shares | saves |
 |---|---|---|---|---|---|---|---|---|
@@ -16,4 +16,4 @@ Followers IG 8 + FB 25 = 33 / 5000 | Views 45778 / 250000 | Posts 32
 | 20261014-225544 | escape/countries | 99% pick wrong. Can you call it? | 1357/1 | 9.2 (len 21.83) | 0 | 1 | 0 | 0 |
 | 20261017-192136 | maze/colors | Only one color finds the exit | 1335/- | 7.2 (len 20.02) | 2 | 1 | 0 | 1 |
 
-Avg views by format: escape/countries 612 (n=4), grow/singers 160 (n=2), grow/billionaires 136 (n=1), escape/footballers 1842 (n=2), escape/billionaires 141 (n=1), escape/colors 153 (n=1), maze/countries 139 (n=1), golf/clubs 13686 (n=1), plinko/ai 2133 (n=1), race/countries 1408 (n=1), storm/clubs 1252 (n=1), territory/ai 2141 (n=1), sumo/countries 483 (n=1), tower/clubs 2899 (n=1), chain/ai 1644 (n=1), flip/countries 1259 (n=1), pinball/clubs 1321 (n=1), hole/ai 2020 (n=1), race/footballers 1724 (n=1), territory/singers 1659 (n=1), maze/colors 1335 (n=1), sumo/brands 163 (n=1), chain/billionaires 1288 (n=1), tower/singers 1325 (n=1), flip/billionaires 111 (n=1), golf/brands 5 (n=1), flip/colors 898 (n=1)
+Avg views by format: escape/countries 612 (n=4), grow/singers 160 (n=2), grow/billionaires 136 (n=1), escape/footballers 1842 (n=2), escape/billionaires 141 (n=1), escape/colors 153 (n=1), maze/countries 139 (n=1), golf/clubs 13686 (n=1), plinko/ai 2133 (n=1), race/countries 1408 (n=1), storm/clubs 1252 (n=1), territory/ai 2141 (n=1), sumo/countries 483 (n=1), tower/clubs 2899 (n=1), chain/ai 1644 (n=1), flip/countries 1259 (n=1), pinball/clubs 1321 (n=1), hole/ai 2020 (n=1), race/footballers 1724 (n=1), territory/singers 1659 (n=1), maze/colors 1335 (n=1), sumo/brands 163 (n=1), chain/billionaires 1288 (n=1), tower/singers 1325 (n=1), flip/billionaires 111 (n=1), golf/brands 5 (n=1), flip/colors 1264 (n=1)
