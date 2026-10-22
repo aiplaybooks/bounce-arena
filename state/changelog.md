@@ -1,5 +1,11 @@
 # Strategy changelog
 
+## 2026-10-22 06:58 UTC
+- No strategy.json changes: state/posts.json's last entry is still 20261018-192109 (flip/colors, posted 2026-10-21T16:24:15Z) — views only moved 46144->46229 (+85) over this window, pure aging on the same 32 posts, followers flat at 33 (IG 8 + FB 25). Next post is due ~2026-10-23T16:24 UTC per the 2-day cadence — this is now the 3rd consecutive round with zero fresh data point.
+- Re-verified floor compliance on current weights: format leader golf=5 -> 20% floor 1, all 13 formats sit at or above it (escape/grow/sumo/pinball=1 is the floor itself); theme leader clubs=6 -> floor 1.2, billionaires/brands sit exactly at 1.2. No violations found, nothing to fix.
+- state/requests.json is still empty ({}), so countries_core/extra, first_comment, captions, hooks and tags stay untouched again.
+- Reality check: 46229/250000 views (18.5%), 33/5000 followers — the week-1 goal window closed yesterday with the raw target unreached (final tally noted in the 00:57 UTC entry). Next time: judge the ~2026-10-23T16:24 UTC post as the first new data point in 2+ days; until then repeating this table is noise, not signal.
+
 ## 2026-10-15 (desktop)
 - Added first_comment (auto first comment on IG+FB), one publish retry, autonomous tuner after each analytics run.
 
