@@ -217,3 +217,6 @@
 - Theme floor already compliant (leader clubs=6 -> floor 1.2; colors/billionaires/brands all sit at 1.2) — no fix needed there.
 - state/requests.json is still empty (no comment requests), so countries_core/extra, first_comment, captions, hooks and tags stay untouched again. Table is identical to last round (same 12 rows, same n=1 standouts), so nothing new to judge.
 - Next time: judge the ~16:24 UTC post as the first new data point in 2+ days; re-check floor compliance any time a leader weight is raised (this is the second time this exact bug has recurred — consider flagging to the owner that the tuner should compute floors programmatically instead of by hand each round).
+
+## 2026-10-22 07:05 UTC
+- No weight/hook changes. Views 44878->46229 (+1351), followers 32->33, 32 posts (1 new post, n=1 per format still); top is golf/clubs 13688 views (already weight 5, theme clubs 6 highest), then tower/clubs 2899, escape/footballers 2474; shares/saves still 0 everywhere so CTA unchanged. requests.json empty. Floors OK (format leader 5 -> 1; theme leader 6 -> 1.2).
