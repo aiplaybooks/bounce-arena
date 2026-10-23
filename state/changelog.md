@@ -244,3 +244,6 @@
 
 ## 2026-10-22 07:05 UTC
 - No weight/hook changes. Views 44878->46229 (+1351), followers 32->33, 32 posts (1 new post, n=1 per format still); top is golf/clubs 13688 views (already weight 5, theme clubs 6 highest), then tower/clubs 2899, escape/footballers 2474; shares/saves still 0 everywhere so CTA unchanged. requests.json empty. Floors OK (format leader 5 -> 1; theme leader 6 -> 1.2).
+
+## 2026-10-23 UTC
+- No weight/hook changes. Views 46229->46279 (+50), followers 33, still 32 posts (no new posts; n=1 per format). Top golf/clubs 13696, tower/clubs 2899; shares/saves 0 so CTA unchanged. No publish errors in summary.
