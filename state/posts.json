@@ -680,8 +680,8 @@
   "ig_id": "18117304195794069",
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
-   "views": 13700,
-   "reach": 12189,
+   "views": 13705,
+   "reach": 12193,
    "likes": 13,
    "comments": 3,
    "shares": 0,
@@ -1579,6 +1579,15 @@
   "duration": 16.93,
   "file": "22_maze_brands.mp4",
   "ig_id": "18121044869036672",
-  "posted_utc": "2026-10-23T16:54:46Z"
+  "posted_utc": "2026-10-23T16:54:46Z",
+  "ig": {
+   "views": 0,
+   "reach": 0,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 0
+  }
  }
 ]

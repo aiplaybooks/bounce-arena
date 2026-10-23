@@ -1,5 +1,12 @@
 # Strategy changelog
 
+## 2026-10-23 18:54 UTC
+- No strategy.json changes. A real new post finally landed — 20261018-225226 (maze/brands, hook "Pick your brand. First one out wins", posted 2026-10-23T16:54:46Z) — the first fresh post in over 2 days, but its ig block still reads all zeros (views/reach/likes/watch time), i.e. IG insights haven't backfilled yet, so there is still no usable performance signal this round. Publish itself succeeded (ig_id present, no error), so no KOD needed.
+- Totals: 46289/250000 views (18.5%), 33/5000 followers (IG 8 + FB 25), 33 posts — up from 32 posts/46279 views last round; the delta is just aging views on the old 32 plus the brand-new zero-metric post.
+- Re-verified floor compliance on current weights: format leader golf=5 -> 20% floor 1, all 13 formats sit at or above it; theme leader clubs=6 -> floor 1.2, billionaires/brands sit exactly at it. No violations found, nothing to fix.
+- state/requests.json is still empty ({}), so countries_core/extra, first_comment, captions, hooks and tags stay untouched again.
+- Next time: judge 20261018-225226 (maze weight 2, brands theme weight 1.2 — both currently weak/floor tier) once its IG metrics populate — this is the first real explore()-driven data point in a while and the one to act on next round.
+
 ## 2026-10-23 12:55 UTC
 - No strategy.json changes: state/posts.json's last entry is still 20261018-192109 (flip/colors, posted 2026-10-21T16:24:15Z) — views only moved 46279->46284 (+5) over this ~6h window, pure aging on the same 32 posts, followers flat at 33 (IG 8 + FB 25). Next post is still due ~2026-10-23T16:24 UTC per the 2-day cadence (~3.5h after this run), so this window again has zero fresh data point to judge.
 - Re-verified floor compliance on current weights: format leader golf=5 -> 20% floor 1, all 13 formats sit at or above it (escape/grow/sumo/pinball=1 is the floor itself); theme leader clubs=6 -> floor 1.2, billionaires/brands sit exactly at it. No violations found, nothing to fix.
