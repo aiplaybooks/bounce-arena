@@ -1541,5 +1541,44 @@
    "saved": 0,
    "ig_reels_avg_watch_time": 6574
   }
+ },
+ {
+  "id": "20261018-225226",
+  "mode": "maze",
+  "theme": "brands",
+  "look": "violet",
+  "teams": [
+   "McDonalds",
+   "Google",
+   "Lego",
+   "Apple",
+   "Gucci",
+   "Netflix"
+  ],
+  "colors": [
+   "#4D9BFF",
+   "#FFE14D",
+   "#C77DFF",
+   "#FF4D6D",
+   "#FF7AE0",
+   "#4DFFE0"
+  ],
+  "hook": "Pick your brand. First one out wins",
+  "cta": "Tag a friend who'd pick wrong",
+  "caption": "Pick your brand. First one out wins 👀\n\nComment your pick BEFORE the end 👇\nSend this to someone who'd pick wrong 📤\nThe winner returns in the next battle — follow so you don't miss it.\n\n#satisfying #physics #simulation #marblerace #reels #maze",
+  "first_comment": "Who did you pick? Be honest 👇",
+  "params": {
+   "size": 12
+  },
+  "seed": 134817,
+  "key": "G",
+  "champ": null,
+  "requested": false,
+  "winner": "Lego",
+  "win_t": 13.42,
+  "duration": 16.93,
+  "file": "22_maze_brands.mp4",
+  "ig_id": "18121044869036672",
+  "posted_utc": "2026-10-23T16:54:46Z"
  }
 ]

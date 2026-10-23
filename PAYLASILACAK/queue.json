@@ -961,10 +961,14 @@
    "winner": "Lego",
    "win_t": 13.42,
    "duration": 16.93,
-   "file": "22_maze_brands.mp4"
+   "file": "22_maze_brands.mp4",
+   "ig_id": "18121044869036672",
+   "posted_utc": "2026-10-23T16:54:46Z"
   },
   "fb_id": "955186587650167",
-  "fb_scheduled_utc": "2026-10-23 16:00"
+  "fb_scheduled_utc": "2026-10-23 16:00",
+  "tries": 1,
+  "ig_id": "18121044869036672"
  },
  {
   "order": 23,
@@ -1171,5 +1175,48 @@
   },
   "fb_id": "1423935856618666",
   "fb_scheduled_utc": "2026-11-02 16:00"
+ },
+ {
+  "order": 28,
+  "file": "28_pinball_brands.mp4",
+  "job": {
+   "id": "20261023-165451",
+   "mode": "pinball",
+   "theme": "brands",
+   "look": "ocean",
+   "teams": [
+    "McDonalds",
+    "Coca-Cola",
+    "Samsung",
+    "Gucci",
+    "Pepsi",
+    "Amazon"
+   ],
+   "colors": [
+    "#FF5CD1",
+    "#FFD23F",
+    "#FF3B5C",
+    "#2BE7FF",
+    "#3C8CFF",
+    "#B45CFF"
+   ],
+   "hook": "Can your brand rack up the high score?",
+   "cta": "Winner returns tomorrow",
+   "caption": "Can your brand rack up the high score?\n\nComment who you'd bet on and we'll race them next 🏁\nShare this with someone who'd pick wrong 📤\nNew physics battle every day — follow to see who wins next.\n\n#satisfying #physics #simulation #bouncingball #marblerace #pinball",
+   "first_comment": "Comment your pick and it races next 🏁",
+   "params": {
+    "duration": 25.672653242447772
+   },
+   "seed": 258902,
+   "key": "D",
+   "champ": null,
+   "requested": false,
+   "winner": "Amazon",
+   "win_t": 25.67,
+   "duration": 29.18,
+   "file": "28_pinball_brands.mp4"
+  },
+  "fb_id": "1144085848576454",
+  "fb_scheduled_utc": "2026-11-04 16:00"
  }
 ]
