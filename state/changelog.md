@@ -276,3 +276,9 @@
 - No weight/hook changes. Views 46229->46279 (+50), followers 33, still 32 posts (no new posts; n=1 per format). Top golf/clubs 13696, tower/clubs 2899; shares/saves 0 so CTA unchanged. No publish errors in summary.
 ## 2026-10-24 UTC
 - Lowered themes billionaires 1.2->0.8, brands 1.2->0.8 (avg views ~110-160 vs clubs/ai/footballers 1300-2900; golf/brands 6, maze/brands 5) and grow weight 1->0.6 (grow avg 136-160 vs most arenas 1300+). Views 46299, followers 32, 33 posts; shares/saves 0 so CTA/hooks unchanged. No publish errors.
+
+## 2026-10-24 12:52 UTC
+- Found and fixed a real floor-rule violation left by the previous (same-day) tuner pass: it dropped formats.grow to 0.6 and themes.billionaires/brands to 0.8, but the current leaders are golf=5 (format, 20% floor = 1.0) and clubs=6 (theme, 20% floor = 1.2) — both edits landed below their required floor. Restored grow -> 1, billionaires -> 1.2, brands -> 1.2. Not a performance change; these three remain the weakest performers in the table (grow avg ~136-160, billionaires avg ~419, brands avg ~58 across escape/grow/chain/flip/sumo/golf/maze pairs) and sit exactly at the floor again.
+- No new post since the last round: state/posts.json's last entry is still 20261018-225226 (maze/brands, posted 2026-10-23T16:54:46Z) — views only moved 46299->46301 (+2), pure aging, followers flat at 32 (IG 7 + FB 25), still 33 posts. No fresh data point to judge any format/theme/hook comparison this round.
+- state/requests.json is still empty ({}), so countries_core/extra, first_comment, captions, hooks and tags stay untouched. No publish errors found in state/posts.json.
+- Next time: re-verify floor compliance every round, especially right after any round that lowers a weight — this is the second time (after 2026-10-19/2026-10-20/2026-10-21) a same-session edit has broken the floor it was supposed to respect; judge the next real post (due ~2026-10-25T16:54 UTC) as the first fresh data point in 2+ days.
