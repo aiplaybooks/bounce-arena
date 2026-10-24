@@ -1,5 +1,12 @@
 # Strategy changelog
 
+## 2026-10-24 01:02 UTC
+- No strategy.json changes: still 33 posts, the last being 20261018-225226 (maze/brands, posted 2026-10-23T16:54:46Z). Its IG block is still all zeros (views 0, likes 0, watch time 0, only reach=1 and comments=1 i.e. the bot's own auto first_comment) ~8h after publish — same insights-lag pattern noted last round, not yet a usable data point.
+- Views only moved 46289->46290 (+1) over this ~6h window, pure aging on the existing 32 metriced posts; followers flat at 33 (IG 8 + FB 25). No new signal for any format/theme/hook comparison.
+- Re-verified floor compliance: format leader golf=5 -> 20% floor 1, all 13 formats sit at or above it; theme leader clubs=6 -> floor 1.2, billionaires/brands sit exactly at it. No violations found.
+- state/requests.json is still empty ({}), so countries_core/extra, first_comment, captions, hooks and tags stay untouched again.
+- Next time: if maze/brands' IG metrics are still all-zero (beyond reach=1/comments=1) after 24h+ since publish, that crosses from "insights lag" into a real analytics/publish issue worth a KOD flag — check then.
+
 ## 2026-10-23 18:54 UTC
 - No strategy.json changes. A real new post finally landed — 20261018-225226 (maze/brands, hook "Pick your brand. First one out wins", posted 2026-10-23T16:54:46Z) — the first fresh post in over 2 days, but its ig block still reads all zeros (views/reach/likes/watch time), i.e. IG insights haven't backfilled yet, so there is still no usable performance signal this round. Publish itself succeeded (ig_id present, no error), so no KOD needed.
 - Totals: 46289/250000 views (18.5%), 33/5000 followers (IG 8 + FB 25), 33 posts — up from 32 posts/46279 views last round; the delta is just aging views on the old 32 plus the brand-new zero-metric post.
