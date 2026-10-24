@@ -25,7 +25,7 @@
       ]
     },
     "grow": {
-      "weight": 1,
+      "weight": 0.6,
       "teams": [
         4,
         6
@@ -223,8 +223,8 @@
     "colors": 2,
     "singers": 2,
     "footballers": 5,
-    "billionaires": 1.2,
-    "brands": 1.2,
+    "billionaires": 0.8,
+    "brands": 0.8,
     "clubs": 6,
     "ai": 5
   },

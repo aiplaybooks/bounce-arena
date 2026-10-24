@@ -274,3 +274,5 @@
 
 ## 2026-10-23 UTC
 - No weight/hook changes. Views 46229->46279 (+50), followers 33, still 32 posts (no new posts; n=1 per format). Top golf/clubs 13696, tower/clubs 2899; shares/saves 0 so CTA unchanged. No publish errors in summary.
+## 2026-10-24 UTC
+- Lowered themes billionaires 1.2->0.8, brands 1.2->0.8 (avg views ~110-160 vs clubs/ai/footballers 1300-2900; golf/brands 6, maze/brands 5) and grow weight 1->0.6 (grow avg 136-160 vs most arenas 1300+). Views 46299, followers 32, 33 posts; shares/saves 0 so CTA/hooks unchanged. No publish errors.
