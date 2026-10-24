@@ -1,5 +1,12 @@
 # Strategy changelog
 
+## 2026-10-24 06:54 UTC
+- No strategy.json changes: 33 posts total (unchanged), views 46279->46299 (+20) over this ~6h window — the last post is still 20261018-225226 (maze/brands, posted 2026-10-23T16:54:46Z), ~14h old now, still the only data point since the prior round and n=1.
+- maze/brands' IG metrics are no longer stuck at zero (previous rounds flagged "all zeros ~8h after publish" as insights lag) — now reads 5 views/2 reach, confirming it's a real (very weak) result, not a lag/bug. This matches brands' long-standing weakest-theme pattern (golf/brands 6 views over several days, sumo/brands ~164 historically) — brands is already pinned at the 20%-of-leader floor (1.2, leader clubs=6), so no further demotion is possible under the floor rule even though the data keeps confirming it's the weakest theme by a wide margin.
+- Followers ticked IG 8->7 (FB flat at 25, total 32) — a net loss of one IG follower since last round, the first such drop observed. Too small a sample (1 account) to read as a trend or act on; noting it in case a pattern emerges over future rounds.
+- Re-verified floor compliance: format leader golf=5 -> 20% floor 1, all 13 formats sit at or above it; theme leader clubs=6 -> floor 1.2, billionaires/brands sit exactly at it. No violations. state/requests.json is still empty ({}), so countries_core/extra, first_comment, captions, hooks and tags stay untouched. No publish errors found in state/posts.json.
+- Next time: judge the ~2026-10-25T16:54 UTC post as the next fresh data point; watch whether the IG follower count recovers or keeps slipping over the next couple of rounds.
+
 ## 2026-10-24 01:02 UTC
 - No strategy.json changes: still 33 posts, the last being 20261018-225226 (maze/brands, posted 2026-10-23T16:54:46Z). Its IG block is still all zeros (views 0, likes 0, watch time 0, only reach=1 and comments=1 i.e. the bot's own auto first_comment) ~8h after publish — same insights-lag pattern noted last round, not yet a usable data point.
 - Views only moved 46289->46290 (+1) over this ~6h window, pure aging on the existing 32 metriced posts; followers flat at 33 (IG 8 + FB 25). No new signal for any format/theme/hook comparison.

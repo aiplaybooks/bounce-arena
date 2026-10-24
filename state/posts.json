@@ -413,7 +413,7 @@
   "posted_utc": "2026-10-15T19:30:34Z",
   "ig": {
    "views": 1211,
-   "reach": 1020,
+   "reach": 1021,
    "likes": 0,
    "comments": 1,
    "shares": 0,
@@ -681,7 +681,7 @@
   "posted_utc": "2026-10-16T16:21:35Z",
   "ig": {
    "views": 13706,
-   "reach": 12195,
+   "reach": 12196,
    "likes": 13,
    "comments": 3,
    "shares": 0,
@@ -864,13 +864,13 @@
   "ig_id": "18094702607151101",
   "posted_utc": "2026-10-17T09:53:16Z",
   "ig": {
-   "views": 2141,
-   "reach": 1848,
+   "views": 2142,
+   "reach": 1849,
    "likes": 1,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 9825
+   "ig_reels_avg_watch_time": 9832
   }
  },
  {
@@ -1265,13 +1265,13 @@
   "ig_id": "18101671520168768",
   "posted_utc": "2026-10-18T19:21:07Z",
   "ig": {
-   "views": 1335,
-   "reach": 1236,
+   "views": 1337,
+   "reach": 1237,
    "likes": 2,
    "comments": 1,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 7214
+   "ig_reels_avg_watch_time": 7226
   }
  },
  {
@@ -1489,13 +1489,13 @@
   "ig_id": "17892335976614361",
   "posted_utc": "2026-10-19T16:24:27Z",
   "ig": {
-   "views": 5,
-   "reach": 3,
+   "views": 6,
+   "reach": 4,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 1109
+   "ig_reels_avg_watch_time": 1106
   }
  },
  {
@@ -1581,13 +1581,13 @@
   "ig_id": "18121044869036672",
   "posted_utc": "2026-10-23T16:54:46Z",
   "ig": {
-   "views": 0,
-   "reach": 1,
+   "views": 5,
+   "reach": 2,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 0
+   "ig_reels_avg_watch_time": 13669
   }
  }
 ]
